@@ -116,7 +116,7 @@ $(function () {
 
 	  // First time - remove the prompt
 	  if (dropZoneElement.querySelector(".drop-zone__prompt")) {
-	    dropZoneElement.querySelector(".drop-zone__prompt").remove();
+	    dropZoneElement.querySelector(".drop-zone__prompt h5").textContent = "";
 	  }
 
 	  // First time - there is no thumbnail element, so lets create it
@@ -124,9 +124,12 @@ $(function () {
 	    thumbnailElement = document.createElement("div");
 	    thumbnailElement.classList.add("drop-zone__thumb");
 	    dropZoneElement.appendChild(thumbnailElement);
+
 	  }
 
 	  thumbnailElement.dataset.label = file.name;
+		dropZoneElement.querySelector(".drop-zone__prompt h5").textContent = file.name;
+
 		dropZoneElement.classList.add("drop-zone--over");
 
 
@@ -142,9 +145,6 @@ $(function () {
 	    thumbnailElement.style.backgroundImage = null;
 	  }
 	}
-
-
-
 
 	function checkboxDropdown(el) {
 	  var $el = $(el)
