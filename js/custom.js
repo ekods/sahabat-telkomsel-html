@@ -115,9 +115,9 @@ $(function () {
 	  let thumbnailElement = dropZoneElement.querySelector(".drop-zone__thumb");
 
 	  // First time - remove the prompt
-	  // if (dropZoneElement.querySelector(".drop-zone__prompt")) {
-	  //   dropZoneElement.querySelector(".drop-zone__prompt").remove();
-	  // }
+	  if (dropZoneElement.querySelector(".drop-zone__prompt")) {
+	    dropZoneElement.querySelector(".drop-zone__prompt").remove();
+	  }
 
 	  // First time - there is no thumbnail element, so lets create it
 	  if (!thumbnailElement) {
