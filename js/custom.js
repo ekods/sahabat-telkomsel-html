@@ -99,6 +99,9 @@ $(function () {
 	    }
 
 	    dropZoneElement.classList.remove("drop-zone--over");
+
+			document.getElementByClassName('drop-zone"').classList.add('someclassname')
+
 	  });
 	});
 
@@ -112,9 +115,9 @@ $(function () {
 	  let thumbnailElement = dropZoneElement.querySelector(".drop-zone__thumb");
 
 	  // First time - remove the prompt
-	  if (dropZoneElement.querySelector(".drop-zone__prompt")) {
-	    dropZoneElement.querySelector(".drop-zone__prompt").remove();
-	  }
+	  // if (dropZoneElement.querySelector(".drop-zone__prompt")) {
+	  //   dropZoneElement.querySelector(".drop-zone__prompt").remove();
+	  // }
 
 	  // First time - there is no thumbnail element, so lets create it
 	  if (!thumbnailElement) {
@@ -124,6 +127,8 @@ $(function () {
 	  }
 
 	  thumbnailElement.dataset.label = file.name;
+		dropZoneElement.classList.add("drop-zone--over");
+
 
 	  // Show thumbnail for image files
 	  if (file.type.startsWith("image/")) {
