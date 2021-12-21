@@ -19,19 +19,23 @@
                         <div class="site-inner">
                             <div class="w-100 m-top-20">
                                 <div class="section-title m-bottom-40">
-                                    <h2 class="wow fadeInDown fred" data-wow-duration="1s" data-wow-delay="0.6s">Reset Password</h2>
-                                    <p class="section-subtitle wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s">Kesulitan untuk masuk dengan akunmu? Ikuti langkah berikut untuk mengatur ulang passwordmu.</p>
+                                    <h2 class="wow fadeInDown fred" data-wow-duration="1s" data-wow-delay="0.6s">Buat Password Baru</h2>
+                                    <p class="section-subtitle wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s">Kesulitan untuk masuk menggunakan akun kamu? Ikuti langkah berikut untuk mengatur ulang passwordmu.</p>
                                 </div>
                                 <div class="contact-form row">
                                     <form class="form" name="ajax-form" id="ajax-form" action="" method="post">
                                         <div class="col-sm-12 contact-form-item">
-                                            <label for="">Email yang terdaftar<span>*</span></label>
-
-                                            <input name="name" id="name" type="text" placeholder="user@mail.com">
+                                            <label for="">Password baru<span>*</span></label>
+                                            <input name="name" id="name" type="password" placeholder="New Password">
                                         </div>
 
                                         <div class="col-sm-12 contact-form-item">
-                                            <a class="btn btn-main btn-theme wow fadeInUp animated w-100" data-toggle="modal" data-target="#snkModal" data-lang="en" style="visibility: visible; animation-name: fadeInUp;">Kirim Kode Verifikasi</a>
+                                            <label for="">Ketik ulang password baru<span>*</span></label>
+                                            <input name="name" id="name" type="password" placeholder="Confirmation New Password">
+                                        </div>
+
+                                        <div class="col-sm-12 contact-form-item">
+                                            <a class="btn btn-main btn-theme wow fadeInUp animated w-100" data-toggle="modal" data-target="#snkModal" data-lang="en" style="visibility: visible; animation-name: fadeInUp;">Simpan</a>
                                         </div>
                                         <div class="clear"></div>
                                     </form>
@@ -65,16 +69,16 @@
         <button type="button" class="close btn-close" data-dismiss="modal" aria-label="Close"></button>
         <div class="modal-body">
           <div class="modal-head text-center">
-            <img class="box-150" src="img/st/email-info.svg" alt="logo" data-rjs="2" data-rjs-processed="true">
-            <h3 class="font-telkomselbatiksans">Link Reset Password Berhasil Dikirim!</h3>
+            <img class="box-150" src="img/st/newpassword.svg" alt="logo" data-rjs="2" data-rjs-processed="true">
+            <h3 class="font-telkomselbatiksans">Password Berhasil Diperbaharui!</h3>
           </div>
 
           <div class="m-top-30 text-center">
-            <h5>Kami telah mengirimkan link ke email kamu untuk melanjutkan</h5>
+            <h5>Passwordmu sudah berhasil diperbaharui, silakan login ulang menggunakan password yang baru.</h5>
           </div>
 
           <div class="m-top-60 text-center">
-            <button id="submit-snk" class="btn btn-main btn-theme" onclick="window.location.href='onboarding-silver-1.php'" disabled>oke</button>
+            <button id="submit-snk" class="btn btn-main btn-theme" onclick="window.location.href='onboarding-silver-1.php'" disabled>Login Ulang</button>
           </div>
         </div>
       </div>
