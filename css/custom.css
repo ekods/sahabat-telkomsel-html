@@ -771,6 +771,18 @@ input[type=file].drop-zone__input {
   height: auto;
 }
 
+.box-355 {
+  width: 100%;
+  max-width: 355px;
+  height: auto;
+}
+
+.box-150 {
+  width: 100%;
+  max-width: 150px;
+  height: auto;
+}
+
 .onboarding-box {
   display: flex;
   flex-direction: row;

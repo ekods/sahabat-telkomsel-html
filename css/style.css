@@ -2423,8 +2423,39 @@ blockquote {
   background: #FF0025
 }
 /*--------------------------------------------------
+    **. Page Break
+---------------------------------------------------*/
+
+.page-break {
+  border-right: 1px solid #DBDBDB;
+  height: 50vh;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/*--------------------------------------------------
+    **. Utilities
+---------------------------------------------------*/
+
+.d-none {
+  display: none;
+}
+
+.d-block {
+  display: block;
+}
+
+@media screen and (max-width:992px){
+  .d-lg-none {
+    display: none;
+  }
+}
+
+
+/*--------------------------------------------------
     **. Responsive {should come last}
 ---------------------------------------------------*/
+
 @media only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 991px), only screen and (min--moz-device-pixel-ratio: 2) and (max-width: 991px), only screen and (-o-min-device-pixel-ratio: 2/1) and (max-width: 991px), only screen and (min-device-pixel-ratio: 2) and (max-width: 991px), only screen and (min-resolution: 192dpi) and (max-width: 991px), only screen and (min-resolution: 2dppx) and (max-width: 991px) {
   -webkit-font-smoothing: subpixel-antialiased;
   .btn-main {

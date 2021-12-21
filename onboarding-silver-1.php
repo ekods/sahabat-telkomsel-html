@@ -32,6 +32,9 @@
                   </div>
                 </div>
               </div>
+              <div class="col-md-12 m-top-60">
+                <p class="section-subtitle">Belum menerima email verifikasi? <a href=""><span class="fred bold">Kirim Ulang Email</span></a></p>
+              </div>
 
               <!-- <div class="user-box white-color user-gold">
                 <div class="user-box-images">
