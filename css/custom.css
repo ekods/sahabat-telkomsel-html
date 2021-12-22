@@ -48,8 +48,16 @@
   color: #666666;
 }
 
+.neutral-40 {
+  color: #999999;
+}
+
 .uppercase {
   text-transform: uppercase;
+}
+
+.semi-bold {
+  font-weight: 500;
 }
 
 .bold {
@@ -1217,6 +1225,71 @@ button.close.btn-close {
 .highlight-content h3,
 .highlight-content p {
   margin: 0;
+}
+
+.box-12 {
+  width: 100%;
+  max-width: 12px;
+}
+
+.box-9 {
+  width: 100%;
+  max-width: 9px;
+}
+
+.d-inline-table {
+  display: inline-table;
+}
+
+.custom-pl-2 {
+  padding-left: 2px;
+}
+
+.btn-default.tag {
+  color: #000;
+  background: #F2F2F2;
+  border-radius: 40px;
+  font-size: 12px;
+  padding: 6px 10px;
+  width: auto;
+  border: none;
+  margin-top: 3px;
+}
+
+.mission-slider .owl-item {
+  width: 300px;
+}
+
+.mission {
+  min-width: 300px;
+}
+
+.mission .blog-post-body {
+  padding: 5px 15px 15px 15px;
+}
+
+.mission .note {
+  position: absolute;
+  width: 112px;
+  height: 32px;
+  left: 0px;
+  top: 0px;
+  background: #FF0025;
+  border-radius: 0px 0px 14px 0px;
+}
+
+.note p {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+  letter-spacing: 2px;
+  color: #FFFFFF;
+  margin: 7px 12px;
+}
+
+.position-relative {
+  position: relative;
 }
 
 

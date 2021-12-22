@@ -10,18 +10,17 @@
 
         <div class="col-right">
           <div class="bg-content">
-
+            <!-- Title  -->
             <div class="title-gradient"><h3 class="bold">Dashboard</h3></div>
-
+            <!-- MileStone  -->
             <div class="p-top-50">
               <h4 class="bold">Level Sahabat Telkomsel</h4>
-              <!-- <input id="qty" name="qty" type="range" min="0" max="100" step="1">  -->
               <div>
                 <input class="milestone" type="range" min="0" max="6000" step="1" value="0">
                 <output class="output"></output>
               </div>
             </div>
-
+            <!-- Highlight  -->
             <div class="p-top-50"> 
               <h4 class="bold">Ringkasan Aktivitas</h4>
               <div class="row">
@@ -83,6 +82,143 @@
               </div>
             </div>
 
+            <!-- Slider Waiting List  -->
+            <div class="p-top-50">
+              <h4 class="bold">Menunggu Persetujuan (12)</h4>
+              <p class="neutral">Daftar Posting Challenge yang menunggu approval dari Telkomsel</p>
+              <div class="row owl-carousel mission-slider">
+
+                <div class="col-md-4 col-sm-12 blog mission" >
+                  <div class="blog-inner">
+                    <div class="position-relative">
+                      <div class="note">
+                        <p>Menunggu</p>
+                      </div>
+                      <img src="img/st/dummy/slide-dummy.jpg" alt="">
+                    </div>
+                    <div class="blog-post-body">
+                        <h4 class="bold m-bottom-10">Nomor Anti Hangus</h4>
+                        <div class="p-bottom-10">
+                          <div class="neutral-40 no-margin">
+                                <div class="box-12 d-inline-table "><img src="img/st/lock-icon.svg" alt=""> </div>
+                                <p class="d-inline-table no-margin">Open Public by <span class="bold">Telkomsel</span></p>
+                          </div>
+                          <div class="neutral-40 no-margin custom-pl-2">
+                                <div class="box-9 d-inline-table "><img src="img/st/time-icon.svg" alt=""> </div>
+                                <p class="d-inline-table no-margin">20-24 November 2021</p>
+                          </div>
+                        </div>
+                        <p class="p-bottom-20">
+                          Sebuah rahasia yang terkubur muncul kembali saat insiden yang mirip dengan Kasus Chimera yang...
+                        </p>
+                        <div>
+                          <a class="btn btn-default semi-bold tag d-inline-table">#Tsel4U2497</a>
+                          <a class="btn btn-default semi-bold tag d-inline-table">#TselVIU</a>
+                          <a class="btn btn-default semi-bold tag d-inline-table">#TselVIU</a>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-4 col-sm-12 blog mission" >
+                  <div class="blog-inner">
+                    <div class="position-relative">
+                      <div class="note">
+                        <p>Menunggu</p>
+                      </div>
+                      <img src="img/st/dummy/slide-dummy.jpg" alt="">
+                    </div>
+                    <div class="blog-post-body">
+                        <h4 class="bold m-bottom-10">Nomor Anti Hangus</h4>
+                        <div class="p-bottom-10">
+                          <div class="neutral-40 no-margin">
+                                <div class="box-12 d-inline-table "><img src="img/st/lock-icon.svg" alt=""> </div>
+                                <p class="d-inline-table no-margin">Open Public by <span class="bold">Telkomsel</span></p>
+                          </div>
+                          <div class="neutral-40 no-margin custom-pl-2">
+                                <div class="box-9 d-inline-table "><img src="img/st/time-icon.svg" alt=""> </div>
+                                <p class="d-inline-table no-margin">20-24 November 2021</p>
+                          </div>
+                        </div>
+                        <p class="p-bottom-20">
+                          Sebuah rahasia yang terkubur muncul kembali saat insiden yang mirip dengan Kasus Chimera yang...
+                        </p>
+                        <div>
+                          <a class="btn btn-default semi-bold tag d-inline-table">#Tsel4U2497</a>
+                          <a class="btn btn-default semi-bold tag d-inline-table">#TselVIU</a>
+                          <a class="btn btn-default semi-bold tag d-inline-table">#TselVIU</a>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-4 col-sm-12 blog mission" >
+                  <div class="blog-inner">
+                    <div class="position-relative">
+                      <div class="note">
+                        <p>Menunggu</p>
+                      </div>
+                      <img src="img/st/dummy/slide-dummy.jpg" alt="">
+                    </div>
+                    <div class="blog-post-body">
+                        <h4 class="bold m-bottom-10">Nomor Anti Hangus</h4>
+                        <div class="p-bottom-10">
+                          <div class="neutral-40 no-margin">
+                                <div class="box-12 d-inline-table "><img src="img/st/lock-icon.svg" alt=""> </div>
+                                <p class="d-inline-table no-margin">Open Public by <span class="bold">Telkomsel</span></p>
+                          </div>
+                          <div class="neutral-40 no-margin custom-pl-2">
+                                <div class="box-9 d-inline-table "><img src="img/st/time-icon.svg" alt=""> </div>
+                                <p class="d-inline-table no-margin">20-24 November 2021</p>
+                          </div>
+                        </div>
+                        <p class="p-bottom-20">
+                          Sebuah rahasia yang terkubur muncul kembali saat insiden yang mirip dengan Kasus Chimera yang...
+                        </p>
+                        <div>
+                          <a class="btn btn-default semi-bold tag d-inline-table">#Tsel4U2497</a>
+                          <a class="btn btn-default semi-bold tag d-inline-table">#TselVIU</a>
+                          <a class="btn btn-default semi-bold tag d-inline-table">#TselVIU</a>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-4 col-sm-12 blog mission" >
+                  <div class="blog-inner">
+                    <div class="position-relative">
+                      <div class="note">
+                        <p>Menunggu</p>
+                      </div>
+                      <img src="img/st/dummy/slide-dummy.jpg" alt="">
+                    </div>
+                    <div class="blog-post-body">
+                        <h4 class="bold m-bottom-10">Nomor Anti Hangus</h4>
+                        <div class="p-bottom-10">
+                          <div class="neutral-40 no-margin">
+                                <div class="box-12 d-inline-table "><img src="img/st/lock-icon.svg" alt=""> </div>
+                                <p class="d-inline-table no-margin">Open Public by <span class="bold">Telkomsel</span></p>
+                          </div>
+                          <div class="neutral-40 no-margin custom-pl-2">
+                                <div class="box-9 d-inline-table "><img src="img/st/time-icon.svg" alt=""> </div>
+                                <p class="d-inline-table no-margin">20-24 November 2021</p>
+                          </div>
+                        </div>
+                        <p class="p-bottom-20">
+                          Sebuah rahasia yang terkubur muncul kembali saat insiden yang mirip dengan Kasus Chimera yang...
+                        </p>
+                        <div>
+                          <a class="btn btn-default semi-bold tag d-inline-table">#Tsel4U2497</a>
+                          <a class="btn btn-default semi-bold tag d-inline-table">#TselVIU</a>
+                          <a class="btn btn-default semi-bold tag d-inline-table">#TselVIU</a>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
           </div>
         </div>
       </div>
@@ -91,6 +227,9 @@
   </section>
 
   <script>
+    $(document).ready(function(){
+      $(".owl-carousel").owlCarousel();
+    });
 
     $(function() {
         const $document   = $(document),
