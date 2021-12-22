@@ -12,9 +12,9 @@
         <div class="row" style="z-index: 2; position: relative;">
           <div class="col-md-7 pull-right">
 
-            <div class="box-inner-50">
+            <div class="dflex flex-wrap-wrap box-inner">
 
-              <div class="section-title m-top-60  m-bottom-60">
+              <div class="section-title m-bottom-20">
                   <h2 class="wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.6s">Selamat bergabung menjadi Sahabat Gaul!</h2>
                   <p class="section-subtitle wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s">Sebelum memulai perjalananmu, cek email yang sudah didaftarkan untuk melakukan <span class="bold">verifikasi akun</span> kamu</p>
               </div>

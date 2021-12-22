@@ -26,6 +26,10 @@
   align-items: center;
 }
 
+.flex-wrap-wrap {
+  flex-wrap: wrap;
+}
+
 .w-100 {
   width: 100%;
 }
@@ -46,6 +50,12 @@
 
 .bold {
   font-weight: 700;
+}
+
+.box-inner {
+  background: rgba(250, 250, 250, 0.9);
+  padding: 40px 20px;
+  border-radius: 10px;
 }
 
 .page-fit {

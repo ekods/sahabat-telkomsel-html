@@ -155,7 +155,7 @@
                   </div>
                   <div class="contact-form row">
 
-                    <form class="form" name="ajax-form" action="https://theteamtheteam.com/sahabat-telkomsel/onboarding-silver-1.php" method="post">
+                    <form class="form" name="ajax-form" action="onboarding-silver-1.php" method="post">
                       <div class="col-sm-12 contact-form-item">
                         <div class="avatar-input">
                           <div class="avatar-upload">
