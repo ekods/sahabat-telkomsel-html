@@ -17,7 +17,7 @@
               <h4 class="bold">Level Sahabat Telkomsel</h4>
               <!-- <input id="qty" name="qty" type="range" min="0" max="100" step="1">  -->
               <div>
-                <input class="milestone" type="range" min="0" max="100" step="1" value="0">
+                <input class="milestone" type="range" min="0" max="6000" step="1" value="0">
                 <output class="output"></output>
               </div>
             </div>
@@ -71,3 +71,5 @@
   </script>
 
 <?php include('footer-1.php'); ?>
+
+
