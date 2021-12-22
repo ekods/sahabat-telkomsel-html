@@ -254,26 +254,78 @@
                           </div>
                       </div>
                       <div class="col-sm-12 contact-form-item">
+                        <div class="w-100" id="op-sekolah" style="display:none;">
+                          <label for="">Nama Sekolah<span>*</span></label>
+                          <div class="row">
+                            <select class="selectpicker col-md-12" data-show-subtext="true" data-live-search="true">
+                              <option value="">Pilih Sekolah</option>
+                              <option value="SMA A">SMA A</option>
+                              <option value="SMA B">SMA B</option>
+                              <option value="SMA C">SMA C</option>
+                              <option value="SMA D">SMA D</option>
+                              <option value="SMA E">SMA E</option>
+                              <option value="SMA F">SMA F</option>
+                              <option value="SMA G">SMA G</option>
+                              <option value="SMA H">SMA H</option>
+                              <option value="SMA I">SMA I</option>
+                            </select>
+                          </div>
+                        </div>
+
+                        <div class="w-100" id="op-kampus" style="display:none;">
+                          <label for="">Nama Kampus<span>*</span></label>
+                          <div class="row">
+                            <select class="selectpicker col-md-12" data-show-subtext="true" data-live-search="true">
+                              <option value="">Pilih Kampus</option>
+                              <option value="Kampus A">Kampus A</option>
+                              <option value="Kampus B">Kampus B</option>
+                              <option value="Kampus C">Kampus C</option>
+                              <option value="Kampus D">Kampus D</option>
+                              <option value="Kampus E">Kampus E</option>
+                              <option value="Kampus F">Kampus F</option>
+                              <option value="Kampus G">Kampus G</option>
+                              <option value="Kampus H">Kampus H</option>
+                              <option value="Kampus I">Kampus I</option>
+                            </select>
+                          </div>
+                        </div>
+
+                        <div class="w-100 m-top-10">
+                          <div id="op-lain"  style="display:none;">
+                            <input name="" id="op-lain-in" type="checkbox" style="float:left; margin-right: 15px;"> <label for="op-lain">Lainnya</label>
+                          </div>
+
+                          <input name="name" id="input-lainnnya" type="text" placeholder="Lainnya" style="display:none;">
+                        </div>
+                      </div>
+
+
+
+                      <div class="col-sm-12 contact-form-item">
                         <div class="row">
                           <div class="col-md-6 col-sm-6">
                             <label for="">Provinsi Tinggal / Domisili<span>*</span></label>
-                            <select class="selectpicker" data-show-subtext="true" data-live-search="true">
-                              <option value="">Pilih Provinsi</option>
-                              <option value="dki-jakarta">DKI Jakarta</option>
-                              <option value="jawa-barat">Jawa Barat</option>
-                              <option value="jawa-timur">Jawa Timur</option>
-                              <option value="jawa-tengah">Jawa Tengah</option>
-                            </select>
+                            <div class="row">
+                              <select class="selectpicker col-md-12" data-show-subtext="true" data-live-search="true">
+                                <option value="">Pilih Provinsi</option>
+                                <option value="dki-jakarta">DKI Jakarta</option>
+                                <option value="jawa-barat">Jawa Barat</option>
+                                <option value="jawa-timur">Jawa Timur</option>
+                                <option value="jawa-tengah">Jawa Tengah</option>
+                              </select>
+                            </div>
                           </div>
                           <div class="col-md-6 col-sm-6">
                             <label for="">Kota Tempat Tinggal / Domisili<span>*</span></label>
-                            <select class="selectpicker" data-show-subtext="true" data-live-search="true">
-                              <option value="">Pilih Kota</option>
-                              <option value="jakarta-pusat">Jakarta Pusat</option>
-                              <option value="jakarta-barat">Jakarta Barat</option>
-                              <option value="jakarta-selatan">Jakarta Selatan</option>
-                              <option value="jakarta-timur">Jakarta Timur</option>
-                            </select>
+                            <div class="row">
+                              <select class="selectpicker col-md-12" data-show-subtext="true" data-live-search="true">
+                                <option value="">Pilih Kota</option>
+                                <option value="jakarta-pusat">Jakarta Pusat</option>
+                                <option value="jakarta-barat">Jakarta Barat</option>
+                                <option value="jakarta-selatan">Jakarta Selatan</option>
+                                <option value="jakarta-timur">Jakarta Timur</option>
+                              </select>
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -414,12 +466,46 @@
     function showresult(str) {
       if (str == "internal-telkomsel") {
         $("#op-status-pekerjaan").css('display', 'block');
+
+        $("#op-kampus").css('display', 'none');
+        $("#op-sekolah").css('display', 'none');
+        $("#op-lain").css('display', 'none');
         return;
       }else{
         $("#op-status-pekerjaan").css('display', 'none');
+        $("#op-lain").css('display', 'none');
+      }
 
+      if (str == "pelajar") {
+        $("#op-sekolah").css('display', 'block');
+        $("#op-lain").css('display', 'block');
+
+        $("#op-kampus").css('display', 'none');
+        return;
+      }else{
+        $("#op-sekolah").css('display', 'none');
+        $("#op-lain").css('display', 'none');
+      }
+
+      if (str == "mahasiswa") {
+        $("#op-kampus").css('display', 'block');
+        $("#op-lain").css('display', 'block');
+
+        $("#op-sekolah").css('display', 'none');
+        return;
+      }else{
+        $("#op-kampus").css('display', 'none');
+        $("#op-lain").css('display', 'none');
       }
     }
+
+    $('#op-lain-in').change(function(){
+
+        if(this.checked)
+            $('#input-lainnnya').fadeIn();
+        else
+            $('#input-lainnnya').fadeOut();
+          });
     </script>
 
 
