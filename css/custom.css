@@ -44,6 +44,10 @@
   color: var(--red) !important;
 }
 
+.neutral {
+  color: #666666;
+}
+
 .uppercase {
   text-transform: uppercase;
 }
@@ -1197,8 +1201,25 @@ button.close.btn-close {
 
 .bg-aktivitas {
   background: rgba(255, 0, 37, 0.1);
-  border-radius: 0px 20px 0px 0px;
+  border-radius: 10px 20px 0px 10px;
+  padding: 20px;
 }
+
+.highlight {
+  background: #FFFFFF;
+  border-radius: 10px;
+}
+
+.highlight-content {
+  padding-left: 0;
+}
+
+.highlight-content h3,
+.highlight-content p {
+  margin: 0;
+}
+
+
 
 .bootstrap-select .btn-default {
   background: #FAFAFA;

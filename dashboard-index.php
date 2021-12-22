@@ -25,12 +25,61 @@
             <div class="p-top-50"> 
               <h4 class="bold">Ringkasan Aktivitas</h4>
               <div class="row">
-                <div class="col-4">
-                  <div class="bg-aktivitas">
-                    <img src="" alt="">
-                  </div>
 
+                <div class="col-md-4">
+                  <div class="highlight">
+                    <div class="row">
+                      <div class="col-md-4">
+                        <div class="bg-aktivitas">
+                          <img src="img/st/aktifitas-icon.svg" alt="">
+                        </div>
+                      </div>
+                      <div class="col-md-8 no-padding">
+                        <div class="highlight-content p-top-10">
+                          <h3 class="font-telkomselbatiksans fred">12</h3>
+                          <p class="neutral">Menunggu Persetujuan</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
+
+                <div class="col-md-4">
+                  <div class="highlight">
+                    <div class="row">
+                      <div class="col-md-4">
+                        <div class="bg-aktivitas">
+                          <img src="img/st/aktifitas-icon-1.svg" alt="">
+                        </div>
+                      </div>
+                      <div class="col-md-8 no-padding">
+                        <div class="highlight-content p-top-10">
+                          <h3 class="font-telkomselbatiksans fred">30</h3>
+                          <p class="neutral">Postingan Berjalan</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-4">
+                  <div class="highlight">
+                    <div class="row">
+                      <div class="col-md-4">
+                        <div class="bg-aktivitas">
+                          <img src="img/st/aktifitas-icon-2.svg" alt="">
+                        </div>
+                      </div>
+                      <div class="col-md-8 no-padding">
+                        <div class="highlight-content p-top-10">
+                          <h3 class="font-telkomselbatiksans fred">206</h3>
+                          <p class="neutral">Postingan yang Diikuti</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
               </div>
             </div>
 
