@@ -9,7 +9,7 @@
           <img src="img/st/Frame 3926.jpg" alt="">
         </div>
 
-        <div class="row" style="z-index: 2; position: relative;">
+        <div class="row justify-content-end" style="z-index: 2; position: relative;">
           <div class="col-md-7 pull-right">
 
             <div class="box-inner-50">

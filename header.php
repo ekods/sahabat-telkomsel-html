@@ -15,7 +15,8 @@
     <link rel="shortcut icon" href="img/favicon.ico">
 
     <!-- Bootstrap CSS -->
-    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <!-- <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" /> -->
 
     <!-- CSS Files For Plugin -->
     <link href="css/animate.css" rel="stylesheet">
@@ -50,48 +51,37 @@
     <!-- Start Navigation -->
     <header class="nav-solid" id="home">
 
-        <nav class="navbar navbar-fixed-top">
-            <div class="navigation">
-                <div class="container-fluid">
-                    <div class="row">
-
-                        <div class="navbar-header">
-                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
-                                <span class="sr-only">Toggle navigation</span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                            </button>
-
-                            <!-- Logo -->
-                            <div class="logo-container">
-                                <div class="logo-wrap local-scroll">
-                                  <a href="index.php">
-                                    <img class="logo" src="img/logo.svg" alt="logo" data-rjs="2">
-                                  </a>
-                                </div>
-                            </div>
-                        </div> <!-- end navbar-header -->
-
-                        <div class="col-md-8 col-xs-12 nav-wrap">
-                            <div class="collapse navbar-collapse" id="navbar-collapse">
-
-                                <ul class="nav navbar-nav navbar-right">
-                                    <li><a data-scroll href="index.php#benefit">Benefit</a></li>
-                                    <li><a data-scroll href="index.php#testimonial">Testimonial</a></li>
-                                    <li><a data-scroll href="index.php#konten">Konten</a></li>
-                                    <li><a href="hubungi-kami.php">Hubungi Kami</a></li>
-                                    <li><a href="javascript:void(0);" class="uppercase fred offpage-nav-login">Masuk</a></li>
-                                    <li><a href="#" class="uppercase nav-btn offpage-nav-register">Daftar</a></li>
-                                </ul>
-
-                            </div>
-                        </div> <!-- /.col -->
-
-                    </div> <!-- /.row -->
-                </div> <!--/.container -->
-            </div> <!-- /.navigation-overlay -->
-        </nav> <!-- /.navbar -->
+        <nav class="navbar w-100 navbar-expand-lg navbar-light bg-light">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="logo-container ml-4 mr-auto ml-lg-0">
+                <div class="logo-wrap local-scroll">
+                    <a href="index.php">
+                        <img class="logo" src="img/logo.svg" alt="logo" data-rjs="2">
+                    </a>
+                </div>
+            </div>
+            <div class="d-block d-lg-none">
+                <ul class="ml-auto nav navbar-nav navbar-right">
+                    <li><a href="#" class="uppercase nav-btn offpage-nav-register">Daftar</a></li>
+                </ul>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="ml-auto nav navbar-nav navbar-right">
+                    <li class="text-center my-2"><a data-scroll href="index.php#benefit">Benefit</a></li>
+                    <li class="text-center my-2"><a data-scroll href="index.php#testimonial">Testimonial</a></li>
+                    <li class="text-center my-2"><a data-scroll href="index.php#konten">Konten</a></li>
+                    <li class="text-center my-2"><a href="hubungi-kami.php">Hubungi Kami</a></li>
+                    <li class="text-center my-2">
+                        <p class="d-block d-lg-none">Sudah tergabung menjadi Sahabat Telkomsel?</p>
+                        <a href="javascript:void(0);" class="uppercase fred offpage-nav-login">Masuk</a>
+                    </li>
+                    <li class="text-center my-2 d-none d-lg-block"><a href="#" class="uppercase nav-btn offpage-nav-register">Daftar</a></li>
+                </ul>
+            </div>
+    
+        </nav>
 
     </header>
     <!-- End Navigation -->
