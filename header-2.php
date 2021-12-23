@@ -15,14 +15,15 @@
     <link rel="shortcut icon" href="img/favicon.ico">
 
     <!-- Bootstrap CSS -->
-    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-
+    <!-- <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" /> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <!-- CSS Files For Plugin -->
     <link href="css/animate.css" rel="stylesheet">
     <link href="css/font-awesome/font-awesome.min.css" rel="stylesheet">
     <link href="css/magnific-popup.css" rel="stylesheet" />
     <link href="css/YTPlayer.css" rel="stylesheet" />
-    <link href="inc/owlcarousel/css/owl.carousel.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link href="inc/owlcarousel/css/owl.carousel.min.css" rel="stylesheet" /> -->
     <link href="inc/owlcarousel/css/owl.theme.default.min.css" rel="stylesheet" />
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.6.3/css/bootstrap-select.min.css" />
@@ -55,10 +56,10 @@
         <nav class="navbar navbar-fixed-top">
             <div class="navigation">
                 <div class="container-fluid">
-                    <div class="row header-inner">
+                    <div class="row header-inner w-100">
 
-                        <div class="navbar-header">
-                            <!-- Logo -->
+                        <!-- <div class="navbar-header">
+    
                             <div class="logo-container">
                                 <div class="logo-wrap local-scroll">
                                   <a href="index.php">
@@ -66,9 +67,16 @@
                                   </a>
                                 </div>
                             </div>
-                        </div> <!-- end navbar-header -->
+                        </div>  -->
+                        <div class="logo-container ml-4 mr-auto ml-lg-0">
+                            <div class="logo-wrap local-scroll">
+                                <a href="index.php">
+                                    <img class="logo" src="img/logo.svg" alt="logo" data-rjs="2">
+                                </a>
+                            </div>
+                        </div>
 
-                        <div class="col-md-8 col-xs-12 nav-wrap">
+                        <div class="col-2 nav-wrap ml-auto mr-0">
                           <div class="flex-none flex w-40 px-2">
                         			<div class="nav-right">
                                 <div class="nav-right-item">
@@ -77,23 +85,15 @@
                                   </a>
                                 </div>
                         				<div class="nav-right-item">
-                                  <div class="dropdown">
+                                  <div class="dropdown user-profile">
                                     <a href="#" class="dropdown-toggle"  data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                                       <div class="avatar-h">
                                         <img src="img/st/dummy/254a838cf18e359b6692764d3eae4ec1.png" alt="">
                                       </div>
                                     </a>
                                     <ul class="dropdown-menu">
-                                      <li>
-                                        <a href="#">
-                                          <p>Account</p>
-                                        </a>
-                                      </li>
-                                      <li>
-                                        <a href="#">
-                                          <p>Logout</p>
-                                        </a>
-                                      </li>
+                                      <li class="dropdown-item"><a href="#"><p>Account</p></a></li>
+                                      <li class="dropdown-item"><a href="#"><p>Logout</p></a></li>
                                     </ul>
                                   </div>
                         				</div>

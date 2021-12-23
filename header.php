@@ -57,9 +57,9 @@
             </button>
             <div class="logo-container ml-4 mr-auto ml-lg-0">
                 <div class="logo-wrap local-scroll">
-                <a href="index.php">
-                    <img class="logo" src="img/logo.svg" alt="logo" data-rjs="2">
-                </a>
+                    <a href="index.php">
+                        <img class="logo" src="img/logo.svg" alt="logo" data-rjs="2">
+                    </a>
                 </div>
             </div>
             <div class="d-block d-lg-none">

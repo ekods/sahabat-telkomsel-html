@@ -9,7 +9,7 @@
           <img src="img/st/Vector.png" alt="">
         </div>
 
-        <div class="row" style="z-index: 2; position: relative;">
+        <div class="row justify-content-end" style="z-index: 2; position: relative;">
           <div class="col-md-7 pull-right">
 
             <div class="dflex flex-wrap-wrap box-inner">
