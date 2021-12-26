@@ -15,10 +15,33 @@
             <!-- MileStone  -->
             <div class="p-top-50">
               <h4 class="bold">Level Sahabat Telkomsel</h4>
-              <div>
-                <input class="milestone" type="range" min="0" max="6000" step="1" value="0">
-                <output class="output"></output>
-              </div>
+              
+              <section id="milestone" class="section">
+                <div class="rangeContainer">
+                  <input id="diamondRange" class="slider" type="range" min="1" max="4" value="1">
+                  <span class="nub"></span>
+                  <div class="milestone-wrapper">
+                    <span id="first" class="dottt active" data-range="1"></span>
+                    <span class="dottt" data-range="2">2</span>
+                    <span class="dottt" data-range="3">
+                      <div class="milestone-locked-wrapper">
+                        <img src="img/st/milestone-locked.svg" alt="">
+                        <div class="">
+                          Close Friend
+                        </div>
+                      </div>
+                    </span>
+                    <span class="dottt" data-range="4">
+                      <div class="milestone-locked-wrapper">
+                        <img src="img/st/milestone-locked.svg" alt="">
+                        <div class="">
+                          Soulmate
+                        </div>
+                      </div>
+                    </span>
+                  </div>
+                </div>
+              </section>
             </div>
             <!-- Highlight  -->
             <div class="p-top-50"> 
@@ -158,6 +181,8 @@
 
       fetchSlider(sliderChallenge.id, sliderChallenge.slider);
 
+      milestone();
+
       callOwlSlider();
     });
 
@@ -214,6 +239,57 @@
           `<a><img src="img/st/${arrow.next}-icon.svg" alt=""></a>`
           ]
       });
+
+    }
+
+    function milestone(){
+          const slider = document.getElementById("diamondRange"),
+          milestoneWrapper = document.querySelector(".milestone-wrapper"),
+          milestoneDetail = Array.prototype.slice.call(document.querySelectorAll(".dottt"));
+
+        function setActive() {
+          milestoneDetail.map(function (dottt) {
+            let milestoneIndex = parseInt(dottt.getAttribute("data-range"));
+            dottt.classList.remove("active");
+            dottt.classList.remove("passed");
+            if (milestoneIndex <= Math.floor(slider.value)) {
+              dottt.classList.add("passed");
+              if (milestoneIndex === Math.round(slider.value)) {
+                dottt.classList.add("active");
+              }
+            }
+          });
+        }
+
+        function updateMilestone() {
+          const firstMilestone = document.querySelector(".dottt:nth-child(1)#first"),
+                secondMilestone = document.querySelector(".dottt:nth-child(2)"),
+                thrirdMilestone = document.querySelector(".dottt:nth-child(3)"),
+                lastMilestone = document.querySelector(".dottt:nth-child(4)"),
+                min = this.getAttribute("min"),
+                perc = (this.value - min) * 33,
+                currentMilestone = Math.floor(this.value);
+          console.log(perc);
+          console.log(currentMilestone, `current`);
+          if (currentMilestone >= 1) {
+            this.style.backgroundImage =
+              "linear-gradient(to right, #FDA22B, #FF0025 " + perc + "%, #DBDBDB " + perc + "%, #DBDBDB " + perc + "%)";
+              // firstMilestone.removeChild(firstMilestone);
+              if( !document.querySelector(".dottt:nth-child(1)#first .crown-wrapper") ) {
+                $(`.dottt#first`).append(`
+                  <div class="crown-wrapper"><img src="img/st/crown.svg"></div>
+                `)
+                  // firstMilestone.appendChild(document.createElement('img')).src='img/st/crown.svg';
+              }
+          } 
+
+          if (currentMilestone >= 4) {
+            lastMilestone.textContent = "✓";
+          } 
+          setActive();
+        }
+
+        slider.addEventListener("change", updateMilestone);
 
     }
 
