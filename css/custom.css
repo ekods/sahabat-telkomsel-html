@@ -1413,14 +1413,7 @@ button.close.btn-close {
   pointer-events: none;
   line-height: 1;
 }
-/* .milestone-wrapper .dottt:nth-child(1).active {
-  color: #3b3a3b;
-  background-image: url(../img/st/current-milestone.svg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 46px;
-  height: 52px;
-} */
+
 .milestone-wrapper .dottt:nth-child(4).passed.active {
   color: #008631;
   font-size: 14px;
@@ -1430,7 +1423,7 @@ button.close.btn-close {
   color: #efefef;
 }
 .milestone-wrapper .dottt:last-child {
-  border: 1px solid #efefef;
+  margin-right: -5px;
 }
 .milestone-wrapper .dottt:last-child.passed.active {
   font-size: 14px;
@@ -1438,8 +1431,20 @@ button.close.btn-close {
 .milestone-wrapper .dottt.passed {
   color: #3b3a3b;
 }
-.milestone-wrapper .dottt.passed.active {
-  color: #008631;
+
+.milestone-wrapper .detail {
+  color: #B3B3B3;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  bottom: -100%;
+}
+
+.milestone-wrapper .dottt.passed.active .detail{
+  color: #FDA22B;
+  width: 80px;
+  margin-top: 100px;
+  position: relative;
 }
 
 #milestone .slider::-webkit-slider-thumb {
@@ -1476,10 +1481,34 @@ button.close.btn-close {
 }
 
 .crown-wrapper {
+  position: relative;
   width: 30px;
-  margin-left: -20px;
+  margin-left: -30px;
 }
 
+.crown-wrapper .detail {
+  width: max-content;
+}
+
+#third .crown-wrapper .detail,
+#second .crown-wrapper .detail,
+#first .crown-wrapper .detail {
+  position: absolute;
+  bottom: -150%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+
+.dottt.passed.active .milestone-locked-wrapper {
+  display: block;
+}
+
+.dottt.passed .milestone-locked-wrapper,
+.dottt.passed.active img {
+  display: none;
+}
 
 /* MILESTONE END */
 

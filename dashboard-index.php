@@ -21,20 +21,28 @@
                   <input id="diamondRange" class="slider" type="range" min="1" max="4" value="1">
                   <span class="nub"></span>
                   <div class="milestone-wrapper">
-                    <span id="first" class="dottt active" data-range="1"></span>
-                    <span class="dottt" data-range="2">2</span>
-                    <span class="dottt" data-range="3">
-                      <div class="milestone-locked-wrapper">
+                    <span id="first" class="dottt active" data-range="1">
+                    </span>
+                    <span id="second"  class="dottt" data-range="2">
+                      <div class="milestone-locked-wrapper position-relative">
                         <img src="img/st/milestone-locked.svg" alt="">
-                        <div class="">
+                        <div class="detail text-center">
+                          Bestie
+                        </div>
+                      </div>
+                    </span>
+                    <span id="third"  class="dottt" data-range="3">
+                      <div class="milestone-locked-wrapper position-relative">
+                        <img src="img/st/milestone-locked.svg" alt="">
+                        <div class="detail text-center">
                           Close Friend
                         </div>
                       </div>
                     </span>
-                    <span class="dottt" data-range="4">
-                      <div class="milestone-locked-wrapper">
+                    <span id="fourth" class="dottt" data-range="4">
+                      <div class="milestone-locked-wrapper position-relative">
                         <img src="img/st/milestone-locked.svg" alt="">
-                        <div class="">
+                        <div class="detail text-center">
                           Soulmate
                         </div>
                       </div>
@@ -263,29 +271,63 @@
 
         function updateMilestone() {
           const firstMilestone = document.querySelector(".dottt:nth-child(1)#first"),
-                secondMilestone = document.querySelector(".dottt:nth-child(2)"),
-                thrirdMilestone = document.querySelector(".dottt:nth-child(3)"),
-                lastMilestone = document.querySelector(".dottt:nth-child(4)"),
+                secondMilestone = document.querySelector(".dottt:nth-child(2)#second"),
+                thrirdMilestone = document.querySelector(".dottt:nth-child(3)#third"),
+                lastMilestone = document.querySelector(".dottt:nth-child(4)#fourth"),
                 min = this.getAttribute("min"),
                 perc = (this.value - min) * 33,
                 currentMilestone = Math.floor(this.value);
           console.log(perc);
           console.log(currentMilestone, `current`);
-          if (currentMilestone >= 1) {
+          if (currentMilestone > 1 && currentMilestone < 3) {
             this.style.backgroundImage =
               "linear-gradient(to right, #FDA22B, #FF0025 " + perc + "%, #DBDBDB " + perc + "%, #DBDBDB " + perc + "%)";
-              // firstMilestone.removeChild(firstMilestone);
               if( !document.querySelector(".dottt:nth-child(1)#first .crown-wrapper") ) {
                 $(`.dottt#first`).append(`
-                  <div class="crown-wrapper"><img src="img/st/crown.svg"></div>
+                  <div class="crown-wrapper"><img src="img/st/crown.svg"><div class="detail text-center">Casual</div></div>
                 `)
-                  // firstMilestone.appendChild(document.createElement('img')).src='img/st/crown.svg';
               }
-          } 
+          } else if (currentMilestone > 2 && currentMilestone < 4) {
+            this.style.backgroundImage =
+              "linear-gradient(to right, #FDA22B, #FF0025 " + perc + "%, #DBDBDB " + perc + "%, #DBDBDB " + perc + "%)";
 
-          if (currentMilestone >= 4) {
-            lastMilestone.textContent = "✓";
-          } 
+              if( !document.querySelector(".dottt:nth-child(1)#first .crown-wrapper") ) {
+                  $(`.dottt#first`).append(`
+                    <div class="crown-wrapper"><img src="img/st/crown.svg"><div class="detail text-center">Casual</div></div>
+                  `)
+                }
+
+              if( !document.querySelector(".dottt:nth-child(2)#second .crown-wrapper") ) {
+                $(`.dottt#second`).append(`
+                  <div class="crown-wrapper"><img src="img/st/crown.svg"><div class="detail text-center">Bestie</div></div>
+                `)
+              }
+          } else if (currentMilestone >= 3) {
+            this.style.backgroundImage =
+              "linear-gradient(to right, #FDA22B, #FF0025 " + perc + "%, #DBDBDB " + perc + "%, #DBDBDB " + perc + "%)";
+
+              if( !document.querySelector(".dottt:nth-child(1)#first .crown-wrapper") ) {
+                  $(`.dottt#first`).append(`
+                    <div class="crown-wrapper"><img src="img/st/crown.svg"><div class="detail text-center">Casual</div></div>
+                  `)
+                }
+
+              if( !document.querySelector(".dottt:nth-child(2)#second .crown-wrapper") ) {
+                $(`.dottt#second`).append(`
+                  <div class="crown-wrapper"><img src="img/st/crown.svg"><div class="detail text-center">Bestie</div></div>
+                `)
+              }
+
+              if( !document.querySelector(".dottt:nth-child(3)#third .crown-wrapper") ) {
+                $(`.dottt#third`).append(`
+                  <div class="crown-wrapper"><img src="img/st/crown.svg"><div class="detail text-center">Close Firend</div></div>
+                `)
+              }
+          }
+
+          // if (currentMilestone >= 4) {
+          //   lastMilestone.textContent = "✓";
+          // } 
           setActive();
         }
 
