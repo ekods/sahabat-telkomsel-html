@@ -44,30 +44,35 @@
 
 
                 <div class="w-100 form form-white m-top-40">
-                  <div class="row">
-                    <div class="col-sm-5">
-                      <label for="">Jenis e-wallet<span>*</span></label>
-                      <div class="select">
-                        <select>
-                          <option value="">Pilih e-wallet</option>
-                          <option value="linkaja">LinkAja</option>
-                          <option value="ovo">Ovo</option>
-                          <option value="gopay">GoPay</option>
-                          <option value="dana">Dana</option>
-                          <option value="sakuku">Sakuku</option>
-                        </select>
+                  <form action="">
+                    <div class="row">
+                      <div class="col-sm-5">
+                        <label for="">Jenis e-wallet<span>*</span></label>
+                        <div class="select" id="ewallet-type">
+                          <select>
+                            <option value="">Pilih e-wallet</option>
+                            <option value="linkaja">LinkAja</option>
+                            <option value="ovo">Ovo</option>
+                            <option value="gopay">GoPay</option>
+                            <option value="dana">Dana</option>
+                            <option value="sakuku">Sakuku</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-sm-7">
+                        <label for="">Nomor e-wallet<span>*</span></label>
+                        <input name="name" id="ewallet-num" type="text" placeholder="08xxx">
                       </div>
                     </div>
-                    <div class="col-sm-7">
-                      <label for="">Nomor e-wallet<span>*</span></label>
-                      <input name="name" id="" type="text" placeholder="08xxx">
+
+
+                    <div class="w-100 m-top-60 text-right">
+                      <input id="go" type="submit" href="#" data-toggle="modal" data-target="#snkModal" class="btn btn-main btn-theme next" value="Selanjutnya">
+                      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#errorModal">
+                        demo error 
+                      </button>
                     </div>
-                  </div>
-
-
-                  <div class="w-100 m-top-60 text-right">
-                    <a href="#" data-toggle="modal" data-target="#snkModal" class="btn btn-main btn-theme">Selanjutnya</a>
-                  </div>
+                  </form>
                 </div>
 
               </div>
@@ -131,11 +136,34 @@
     </div>
   </div>
 
+    <div class="modal fade" id="errorModal" tabindex="-1" role="dialog" aria-labelledby="errorModal" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content error-modal">
+          <div class="modal-header">
+     
+              <div class="icon-wrapper">
+                <img src="img/st/error-icon.svg" alt="">
+              </div>
+              <div class="err-msg">    
+                <h5>Lengkapi Isian Wajib!</h5>
+                <p>Ada isian wajib yang belum kamu isi, mohon cek kembali.</p>
+              </div>
+              <div class="close-button-wrapper">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span class="text-white" aria-hidden="true">&times;</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
   <script type="text/javascript">
 
     $(document).ready(function () {
       $('#snk-agree').click(function () {
+
         $('#submit-snk').prop("disabled", !$("#snk-agree").prop("checked"));
       })
     });

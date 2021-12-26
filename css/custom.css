@@ -1053,6 +1053,69 @@ input[type=file].drop-zone__input {
   margin: 0;
 }
 
+#errorModal .modal-dialog {
+  background-color: transparent;
+}
+
+#errorModal .modal-header {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 17px 20px;
+}
+
+#errorModal button {
+  opacity: 1;
+}
+
+#errorModal button span {
+  color: #fff;
+  font-weight: initial;
+}
+
+.icon-wrapper {
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin-right: 14px;
+}
+
+#errorModal img {
+  width: 40px;
+  height: 40px;
+}
+
+.error-modal {  
+  background: radial-gradient(circle at 100%, #B90024 0%, #FF0025 71.95%, #FDA22B 100%);
+  box-shadow: 0px 10px 24px rgba(185, 0, 36, 0.3);
+  border-radius: 14px;
+}
+
+.err-msg h5,
+.err-msg p {
+  color: #fff;
+  font-family: Poppins;
+  margin: 0;
+}
+
+.err-msg h5 {
+  font-weight: 600;
+}
+
+.close-button-wrapper {
+  margin-right: 0;
+  margin-left: auto;
+}
+
+.form form input.next {
+  background-color: #F2F2F2!important;
+  color: #000;
+  border-color: #F2F2F2;
+}
+
 .modal-medium {
   width: 100%;
   max-width: 800px;
