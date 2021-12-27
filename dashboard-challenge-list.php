@@ -12,7 +12,7 @@
     <div class="container">
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="#">Challenge</a></li>
+          <li class="breadcrumb-item"><a href="dashboard-challenge-list.php">Challenge</a></li>
           <li class="breadcrumb-item active" aria-current="page">Semua Challenge</li>
         </ol>
       </nav>
@@ -65,11 +65,15 @@
                           <div class="blog mission">
                             <div class="blog-inner shadow">
                               <div class="position-relative">
-                                <div class="note"><p>Sedang Berjalan</p></div>
-                                <img src="img/st/dummy/slide-dummy.jpg" alt="">
+                                <a href="detail-challenge.php">
+                                  <div class="note"><p>Sedang Berjalan</p></div>
+                                  <img src="img/st/dummy/slide-dummy.jpg" alt="">
+                                </a>
                               </div>
                               <div class="blog-post-body">
+                                <a href="detail-challenge.php">
                                   <h4 class="bold m-bottom-10">Nomor Anti Hangus</h4>
+                                </a>
                                   <div class="p-bottom-10">
                                     <div class="neutral-40 no-margin">
                                           <div class="box-12 d-inline-table "><img src="img/st/lock-icon.svg" alt=""> </div>
@@ -96,11 +100,15 @@
                           <div class="blog mission">
                             <div class="blog-inner shadow">
                               <div class="position-relative">
-                                <div class="note"><p>Sedang Berjalan</p></div>
-                                <img src="img/st/dummy/slide-dummy.jpg" alt="">
+                                <a href="detail-challenge.php">
+                                  <div class="note"><p>Sedang Berjalan</p></div>
+                                  <img src="img/st/dummy/image 2.jpg" alt="">
+                                </a>
                               </div>
                               <div class="blog-post-body">
+                                <a href="detail-challenge.php">
                                   <h4 class="bold m-bottom-10">Nomor Anti Hangus</h4>
+                                </a>
                                   <div class="p-bottom-10">
                                     <div class="neutral-40 no-margin">
                                           <div class="box-12 d-inline-table "><img src="img/st/lock-icon.svg" alt=""> </div>
@@ -127,11 +135,15 @@
                           <div class="blog mission">
                             <div class="blog-inner shadow">
                               <div class="position-relative">
-                                <div class="note"><p>Sedang Berjalan</p></div>
-                                <img src="img/st/dummy/slide-dummy.jpg" alt="">
+                                <a href="detail-challenge.php">
+                                  <div class="note"><p>Sedang Berjalan</p></div>
+                                  <img src="img/st/dummy/image 3.jpg" alt="">
+                                </a>
                               </div>
                               <div class="blog-post-body">
+                                <a href="detail-challenge.php">
                                   <h4 class="bold m-bottom-10">Nomor Anti Hangus</h4>
+                                </a>
                                   <div class="p-bottom-10">
                                     <div class="neutral-40 no-margin">
                                           <div class="box-12 d-inline-table "><img src="img/st/lock-icon.svg" alt=""> </div>
@@ -158,11 +170,15 @@
                           <div class="blog mission">
                             <div class="blog-inner shadow">
                               <div class="position-relative">
-                                <div class="note"><p>Sedang Berjalan</p></div>
-                                <img src="img/st/dummy/slide-dummy.jpg" alt="">
+                                <a href="detail-challenge.php">
+                                  <div class="note"><p>Sedang Berjalan</p></div>
+                                  <img src="img/st/dummy/slide-dummy.jpg" alt="">
+                                </a>
                               </div>
                               <div class="blog-post-body">
+                                <a href="detail-challenge.php">
                                   <h4 class="bold m-bottom-10">Nomor Anti Hangus</h4>
+                                </a>
                                   <div class="p-bottom-10">
                                     <div class="neutral-40 no-margin">
                                           <div class="box-12 d-inline-table "><img src="img/st/lock-icon.svg" alt=""> </div>
@@ -189,11 +205,15 @@
                           <div class="blog mission">
                             <div class="blog-inner shadow">
                               <div class="position-relative">
-                                <div class="note"><p>Sedang Berjalan</p></div>
-                                <img src="img/st/dummy/slide-dummy.jpg" alt="">
+                                <a href="detail-challenge.php">
+                                  <div class="note"><p>Sedang Berjalan</p></div>
+                                  <img src="img/st/dummy/image 2.jpg" alt="">
+                                </a>
                               </div>
                               <div class="blog-post-body">
+                                <a href="detail-challenge.php">
                                   <h4 class="bold m-bottom-10">Nomor Anti Hangus</h4>
+                                </a>
                                   <div class="p-bottom-10">
                                     <div class="neutral-40 no-margin">
                                           <div class="box-12 d-inline-table "><img src="img/st/lock-icon.svg" alt=""> </div>
@@ -220,11 +240,15 @@
                           <div class="blog mission">
                             <div class="blog-inner shadow">
                               <div class="position-relative">
-                                <div class="note"><p>Sedang Berjalan</p></div>
-                                <img src="img/st/dummy/slide-dummy.jpg" alt="">
+                                <a href="detail-challenge.php">
+                                  <div class="note"><p>Sedang Berjalan</p></div>
+                                  <img src="img/st/dummy/slide-dummy.jpg" alt="">
+                                </a>
                               </div>
                               <div class="blog-post-body">
+                                <a href="detail-challenge.php">
                                   <h4 class="bold m-bottom-10">Nomor Anti Hangus</h4>
+                                </a>
                                   <div class="p-bottom-10">
                                     <div class="neutral-40 no-margin">
                                           <div class="box-12 d-inline-table "><img src="img/st/lock-icon.svg" alt=""> </div>
@@ -275,11 +299,15 @@
                           <div class="blog mission">
                             <div class="blog-inner shadow">
                               <div class="position-relative">
-                                <div class="note"><p>Sedang Berjalan</p></div>
-                                <img src="img/st/dummy/image 2.jpg" alt="">
+                                <a href="detail-challenge.php">
+                                  <div class="note"><p>Sedang Berjalan</p></div>
+                                  <img src="img/st/dummy/image 2.jpg" alt="">
+                                </a>
                               </div>
                               <div class="blog-post-body">
+                                <a href="detail-challenge.php">
                                   <h4 class="bold m-bottom-10">Nomor Anti Hangus</h4>
+                                </a>
                                   <div class="p-bottom-10">
                                     <div class="neutral-40 no-margin">
                                           <div class="box-12 d-inline-table "><img src="img/st/lock-icon.svg" alt=""> </div>
@@ -306,11 +334,15 @@
                           <div class="blog mission">
                             <div class="blog-inner shadow">
                               <div class="position-relative">
-                                <div class="note"><p>Sedang Berjalan</p></div>
-                                <img src="img/st/dummy/image 2.jpg" alt="">
+                                <a href="detail-challenge.php">
+                                  <div class="note"><p>Sedang Berjalan</p></div>
+                                  <img src="img/st/dummy/image 3.jpg" alt="">
+                                </a>
                               </div>
                               <div class="blog-post-body">
+                                <a href="detail-challenge.php">
                                   <h4 class="bold m-bottom-10">Nomor Anti Hangus</h4>
+                                </a>
                                   <div class="p-bottom-10">
                                     <div class="neutral-40 no-margin">
                                           <div class="box-12 d-inline-table "><img src="img/st/lock-icon.svg" alt=""> </div>
@@ -337,11 +369,15 @@
                           <div class="blog mission">
                             <div class="blog-inner shadow">
                               <div class="position-relative">
-                                <div class="note"><p>Sedang Berjalan</p></div>
-                                <img src="img/st/dummy/image 2.jpg" alt="">
+                                <a href="detail-challenge.php">
+                                  <div class="note"><p>Sedang Berjalan</p></div>
+                                  <img src="img/st/dummy/image 2.jpg" alt="">
+                                </a>
                               </div>
                               <div class="blog-post-body">
+                                <a href="detail-challenge.php">
                                   <h4 class="bold m-bottom-10">Nomor Anti Hangus</h4>
+                                </a>
                                   <div class="p-bottom-10">
                                     <div class="neutral-40 no-margin">
                                           <div class="box-12 d-inline-table "><img src="img/st/lock-icon.svg" alt=""> </div>
@@ -368,11 +404,15 @@
                           <div class="blog mission">
                             <div class="blog-inner shadow">
                               <div class="position-relative">
-                                <div class="note"><p>Sedang Berjalan</p></div>
-                                <img src="img/st/dummy/image 3.jpg" alt="">
+                                <a href="detail-challenge.php">
+                                  <div class="note"><p>Sedang Berjalan</p></div>
+                                  <img src="img/st/dummy/slide-dummy.jpg" alt="">
+                                </a>
                               </div>
                               <div class="blog-post-body">
+                                <a href="detail-challenge.php">
                                   <h4 class="bold m-bottom-10">Nomor Anti Hangus</h4>
+                                </a>
                                   <div class="p-bottom-10">
                                     <div class="neutral-40 no-margin">
                                           <div class="box-12 d-inline-table "><img src="img/st/lock-icon.svg" alt=""> </div>
@@ -399,11 +439,15 @@
                           <div class="blog mission">
                             <div class="blog-inner shadow">
                               <div class="position-relative">
-                                <div class="note"><p>Sedang Berjalan</p></div>
-                                <img src="img/st/dummy/image 3.jpg" alt="">
+                                <a href="detail-challenge.php">
+                                  <div class="note"><p>Sedang Berjalan</p></div>
+                                  <img src="img/st/dummy/slide-dummy.jpg" alt="">
+                                </a>
                               </div>
                               <div class="blog-post-body">
+                                <a href="detail-challenge.php">
                                   <h4 class="bold m-bottom-10">Nomor Anti Hangus</h4>
+                                </a>
                                   <div class="p-bottom-10">
                                     <div class="neutral-40 no-margin">
                                           <div class="box-12 d-inline-table "><img src="img/st/lock-icon.svg" alt=""> </div>
@@ -430,11 +474,15 @@
                           <div class="blog mission">
                             <div class="blog-inner shadow">
                               <div class="position-relative">
-                                <div class="note"><p>Sedang Berjalan</p></div>
-                                <img src="img/st/dummy/image 3.jpg" alt="">
+                                <a href="detail-challenge.php">
+                                  <div class="note"><p>Sedang Berjalan</p></div>
+                                  <img src="img/st/dummy/slide-dummy.jpg" alt="">
+                                </a>
                               </div>
                               <div class="blog-post-body">
-                                  <h4 class="bold m-bottom-10">Nomor Anti Hangus</h4>
+                                  <a href="detail-challenge.php">
+                                    <h4 class="bold m-bottom-10">Nomor Anti Hangus</h4>
+                                  </a>
                                   <div class="p-bottom-10">
                                     <div class="neutral-40 no-margin">
                                           <div class="box-12 d-inline-table "><img src="img/st/lock-icon.svg" alt=""> </div>

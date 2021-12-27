@@ -1611,6 +1611,24 @@ button.close.btn-close {
 }
 
 
+.img-sqaure {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  padding-top: 100%;
+}
+
+.img-sqaure img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  object-fit: cover;
+  object-position: center;
+}
+
+
 .tabs-page ul {
   display: flex;
   gap: 30px;
