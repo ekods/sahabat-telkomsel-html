@@ -1790,6 +1790,16 @@ margin: 0px 0px;
   height: 20px;
 }
 
+.social-tabs p,
+.social-tabs h5 {
+  margin: 0;
+}
+
+.icon-social-wrapper {
+  width: 40px;
+  height: 40px;
+}
+
 #biodata .avatar-upload {
   max-width: 140px;
   height: 100%;

@@ -370,8 +370,8 @@
                   <div class="bg-content mt-5">
                     <div class="row justify-content-between">
                       <div class="col">
-                        <div class="icon-wrapper d-inline-block"><img src="img/st/profile-icon.svg" alt=""></div>
-                        <div class="text-left d-inline-block"><h4 class="bold">Dokumen Pribadi</h4></div>
+                        <div class="icon-wrapper d-inline-block"><img src="img/st/social-media-icon.svg" alt=""></div>
+                        <div class="text-left d-inline-block"><h4 class="bold">Akun Social Media</h4></div>
                       </div>
                       <div class="col-3 text-right">
                         <a href="">
@@ -382,10 +382,62 @@
                     </div>
                     <hr>
 
-                    <div class="row">
-                      <div class="col-3">
-                        <div class="avatar-h">
-                          <img src="img/st/dummy/254a838cf18e359b6692764d3eae4ec1.png" alt="">
+                    <div class="row social-tabs">
+                      <div class="col-12 py-2">
+                        <div class="row">
+                          <div class="col-auto d-flex">
+                            <div class="icon-social-wrapper">
+                              <img src="img/st/ig-icon.png" alt="">
+                            </div>
+                          </div>
+                          <div class="col-auto d-flex">
+                            <div>
+                              <p class="neutral-40">Username Instagram</p>
+                              <h5>maudy_ayunda</h5>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+
+                      <div class="col-12 py-2">
+                        <div class="row">
+                          <div class="col-auto d-flex">
+                            <div class="icon-social-wrapper">
+                              <img src="img/st/social-twitter.png" alt="">
+                            </div>
+                          </div>
+                          <div class="col-auto d-flex">
+                            <div>
+                              <p class="neutral-40">Username Instagram</p>
+                              <h5>maudy_ayunda</h5>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+
+                      <div class="col-12 py-2">
+                        <div class="row">
+                          <div class="col-auto d-flex">
+                            <div class="icon-social-wrapper">
+                              <img src="img/st/social-yt.png" alt="">
+                            </div>
+                          </div>
+                          <div class="col-auto d-flex">
+                            <div>
+                              <p class="neutral-40">Username Instagram</p>
+                              <h5>maudy_ayunda</h5>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12 py-2">
+                        <p class="neutral-40 pb-2">Tipe Influencer</p>
+                        <div>
+                          <a class="btn btn-default semi-bold tag d-inline-table">Beauty Influencer</a>
+                          <a class="btn btn-default semi-bold tag d-inline-table">Food Influencer</a>
+                          <a class="btn btn-default semi-bold tag d-inline-table">Travel Influencer</a>
                         </div>
                       </div>
                     </div>
