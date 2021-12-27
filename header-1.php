@@ -34,6 +34,6 @@
     <!-- jQuery -->
     <script src="js/jquery.min.js"></script>
 
-
+    <?php $activePage = basename($_SERVER['PHP_SELF'], ".php"); ?>
   </head>
   <body data-spy="scroll" data-target=".navbar-fixed-top" data-offset="100">

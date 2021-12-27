@@ -40,6 +40,14 @@
   background-size: cover !important;
 }
 
+.bgblueOld {
+  background-color: #001A41;
+}
+
+.bggrey {
+  background-color: #FAFAFA;
+}
+
 .fred {
   color: var(--red) !important;
 }
@@ -185,11 +193,65 @@
   padding: 8px 20px
 }
 
-
 .nav-right {
   display: flex;
   gap: 45px;
   align-items: center;
+  justify-content: flex-end;
+}
+
+.alert {
+  border-radius: 10px;
+}
+
+.alert.bgblueOld h3,
+.alert.bgblueOld {
+  color: var(--white);
+}
+
+.breadcrumb {
+  padding: 20px 0;
+  background: #fff;
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+  line-height: 24px;
+  content: '>';
+  width: 20px;
+  height: 20px;
+  background: #DBDBDB;
+  color: #fff;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  text-align: center;
+  margin-right: 10px;
+}
+
+.card {
+  margin-bottom: 1rem;
+}
+
+.list-view .row > [class*=col-] {
+  max-width: 100%;
+  flex: 0 0 100%;
+}
+.list-view .card {
+  flex-direction: row;
+}
+
+@media (max-width: 575.98px) {
+  .list-view .card {
+    flex-direction: column;
+  }
+}
+.list-view .card > .card-img-top {
+  width: auto;
+}
+.list-view .card .card-body {
+  display: inline-block;
 }
 
 .owl-dots {
@@ -901,7 +963,7 @@ input[type=file].drop-zone__input {
   display: block;
 }
 
-.user-profile .dropdown-menu li, 
+.user-profile .dropdown-menu li,
 .user-profile .dropdown-menu a {
   float: left;
   width: 100%;
@@ -1088,7 +1150,7 @@ input[type=file].drop-zone__input {
   height: 40px;
 }
 
-.error-modal {  
+.error-modal {
   background: radial-gradient(circle at 100%, #B90024 0%, #FF0025 71.95%, #FDA22B 100%);
   box-shadow: 0px 10px 24px rgba(185, 0, 36, 0.3);
   border-radius: 14px;
@@ -1547,6 +1609,55 @@ button.close.btn-close {
   background-size: cover;
   background-position: center;
 }
+
+
+.tabs-page ul {
+  display: flex;
+  gap: 30px;
+}
+
+.tabs-page ul li {
+  font-size: 18px;
+  font-weight: bold;
+  padding-bottom: 15px;
+  position: relative;
+}
+
+.tabs-page ul li a {
+  color: #B3B3B3;
+}
+
+.tabs-page ul li.active a {
+  color: var(--red);
+}
+
+.tabs-page ul li.active:after {
+  position: absolute;
+  background-color: var(--red);
+  width: 100%;
+  height: 6px;
+  bottom: 0;
+  left: 0;
+  content: '';
+}
+
+.nav-pills {
+  gap: 20px;
+}
+
+.nav-grid {
+  display: flex;
+  margin-left: auto;
+  gap: 20px;
+}
+
+.tabs-grid-title {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap : 20px;
+}
+
 
 @media screen and (max-width: 1180px) {
 

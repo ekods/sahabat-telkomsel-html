@@ -39,6 +39,8 @@
     <!-- jQuery -->
     <script src="js/jquery.min.js"></script>
 
+    <?php $activePage = basename($_SERVER['PHP_SELF'], ".php"); ?>
+
   </head>
   <body data-spy="scroll" data-target=".navbar-fixed-top" data-offset="100">
 
@@ -56,10 +58,10 @@
         <nav class="navbar navbar-fixed-top">
             <div class="navigation">
                 <div class="container-fluid">
-                    <div class="row header-inner w-100">
+                    <div class="header-inner w-100">
 
                         <!-- <div class="navbar-header">
-    
+
                             <div class="logo-container">
                                 <div class="logo-wrap local-scroll">
                                   <a href="index.php">
@@ -70,14 +72,14 @@
                         </div>  -->
                         <div class="logo-container ml-4 mr-auto ml-lg-0">
                             <div class="logo-wrap local-scroll">
-                                <a href="index.php">
+                                <a href="dashboard-index.php">
                                     <img class="logo" src="img/logo.svg" alt="logo" data-rjs="2">
                                 </a>
                             </div>
                         </div>
 
-                        <div class="col-2 nav-wrap ml-auto mr-0">
-                          <div class="flex-none flex w-40 px-2">
+                        <div class="col-2 p-0 nav-wrap ml-auto mr-0">
+                          <div class="flex-none flex w-40">
                         			<div class="nav-right">
                                 <div class="nav-right-item">
                                   <a href="#" class="">

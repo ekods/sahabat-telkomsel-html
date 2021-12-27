@@ -1,6 +1,14 @@
 <?php include('header-2.php'); ?>
 
-  <section class="ptb-40">
+  <section>
+    <div class="container">
+      <div class="alert alert-primary mt-3 mb-3 bgblueOld" role="alert">
+        <h3 class="mb-0"><b>Akunmu Sedang Dalam Verifikasi</b></h3>
+        <p>Tim admin kami sedang melakukan verifikasi akunmu. Mohon menunggu sampai akunmu aktif dan bisa digunakan</p>
+      </div>
+    </div>
+
+
     <div class="container">
 
       <div class="col-wrap">
@@ -15,7 +23,7 @@
             <!-- MileStone  -->
             <div class="p-top-50">
               <h4 class="bold">Level Sahabat Telkomsel</h4>
-              
+
               <section id="milestone" class="section">
                 <div class="rangeContainer">
                   <input id="diamondRange" class="slider" type="range" min="1" max="4" value="1">
@@ -52,7 +60,7 @@
               </section>
             </div>
             <!-- Highlight  -->
-            <div class="p-top-50"> 
+            <div class="p-top-50">
               <h4 class="bold">Ringkasan Aktivitas</h4>
               <div class="row">
 
@@ -147,7 +155,7 @@
       const sliderApproval = {
         id: "fetchSliderApproval",
         slider: [{ img: "img/st/dummy/slide-dummy.jpg",
-                  title: "Nomor Anti Hangus", 
+                  title: "Nomor Anti Hangus",
                   status: '<div class="note"><p>Menunggu</p></div>'},
                 { img: "img/st/dummy/slide-dummy.jpg",
                   title: "CHIMERA (2021-11-11)",
@@ -160,7 +168,7 @@
       const sliderPost = {
         id: "fetchSliderPost",
         slider: [{  img: "img/st/dummy/slide-dummy.jpg",
-                    title: "Nomor Anti Hangus", 
+                    title: "Nomor Anti Hangus",
                     status: '<div class="note"><p>Sedang Berjalan</p></div>'},
                   { img: "img/st/dummy/slide-dummy.jpg",
                     title: "CHIMERA (2021-11-11)",
@@ -242,7 +250,7 @@
         dots: false,
         items: 2,
         margin: 10,
-        navText: [ 
+        navText: [
           `<a><img src="img/st/${arrow.prev}-icon.svg" alt=""></a>` ,
           `<a><img src="img/st/${arrow.next}-icon.svg" alt=""></a>`
           ]
@@ -327,7 +335,7 @@
 
           // if (currentMilestone >= 4) {
           //   lastMilestone.textContent = "✓";
-          // } 
+          // }
           setActive();
         }
 
@@ -338,7 +346,7 @@
     // $(function() {
     //     const $document   = $(document),
     //         $inputRange = $('input[type="range"]');
-        
+
     //     function valueOutput(element) {
     //         let value = element.value,
     //             output = element.parentNode.getElementsByTagName('output')[0];
@@ -354,14 +362,12 @@
     //         valueOutput(e.target);
     //     });
     //     // end
-      
+
     //     $inputRange.rangeslider({
-    //       polyfill: false 
+    //       polyfill: false
     //     });
     // });
 
   </script>
 
 <?php include('footer-1.php'); ?>
-
-
