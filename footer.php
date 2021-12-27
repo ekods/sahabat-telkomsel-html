@@ -508,6 +508,16 @@
           });
     </script>
 
+    <script>
+      $(function() {
+        let loc = window.location.href;
+        console.log(loc, `ini loc`);
+        if(/login/.test(loc)) {
+          $('#offpage').addClass('open');
+        }
+      });
+    </script>
+
 
     <!-- Bootstrap -->
     <script src="bootstrap/js/bootstrap.min.js"></script>

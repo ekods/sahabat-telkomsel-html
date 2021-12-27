@@ -1231,6 +1231,17 @@ button.close.btn-close {
   background-position: center;
 }
 
+.user-silver.profile-card-bg {
+  background-repeat: repeat-x;
+  padding: 30px 0;
+  border-radius: 20px;
+}
+
+.profile-card-bg #milestone.section {
+  border-radius: 20px;
+  height: 130px;
+}
+
 .user-silver .user-box-s{
   background: linear-gradient(-90deg, #B1B0B0 42.21%, #CCCBCB 73.43%, #D8D7D7 100.2%);
 }
@@ -1307,6 +1318,15 @@ button.close.btn-close {
   position: absolute;
 }
 
+.profile-card-bg .title-gradient {
+  height: 40px;
+}
+
+.profile-card-bg .title-gradient > p {
+  line-height: 40px;
+}
+
+.title-gradient > p,
 .title-gradient > h3 {
   line-height: 60px;
   margin: 0;
@@ -1321,6 +1341,24 @@ button.close.btn-close {
   padding: 20px;
 }
 
+.biodata {
+  background: #FAFAFA;
+  border-radius: 40px;
+}
+
+.upload-pdf h4,
+.upload-pdf h6,
+.upload-pdf h5,
+.upload-pdf p {
+  margin: 0;
+}
+
+.bg-icon-profile {
+  background: #F2F2F2;
+  border-radius: 40px 40px 0px 40px;
+  padding: 15px;
+}
+
 .highlight {
   background: #FFFFFF;
   border-radius: 10px;
@@ -1330,6 +1368,7 @@ button.close.btn-close {
   padding-left: 0;
 }
 
+.highlight-content h5,
 .highlight-content h3,
 .highlight-content p {
   margin: 0;
@@ -1561,8 +1600,6 @@ button.close.btn-close {
   transform: translate(-50%, -50%);
 }
 
-
-
 .dottt.passed.active .milestone-locked-wrapper {
   display: block;
 }
@@ -1570,6 +1607,47 @@ button.close.btn-close {
 .dottt.passed .milestone-locked-wrapper,
 .dottt.passed.active img {
   display: none;
+}
+
+.profile-card-bg .milestone-wrapper .dottt {
+  width: 20px;
+  height: 20px;
+}
+
+.profile-card-bg #milestone .slider::-webkit-slider-thumb {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border: none;
+  background-image: url(../img/st/current-milestone.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 35px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.profile-card-bg #second .crown-wrapper .detail,
+.profile-card-bg #first .crown-wrapper .detail {
+  bottom: -100%;
+}
+
+.profile-card-bg .milestone-wrapper .dottt.passed.active .detail {
+  margin-top: 85px;
+}
+
+.profile-card-bg #third .milestone-locked-wrapper .detail {
+  bottom: -200%;
+}
+
+.profile-card-bg #third .crown-wrapper .detail {
+  bottom: -100%;
+}
+
+.profile-card-bg .milestone-wrapper .detail {
+  bottom: -150%;
 }
 
 /* MILESTONE END */
@@ -1626,6 +1704,119 @@ button.close.btn-close {
   top: 0;
   object-fit: cover;
   object-position: center;
+}
+
+.nav-wrapper {
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+
+height: 60px;
+left: 0px;
+top: 0px;
+
+/* Neutral/Ghost */
+
+background: #FAFAFA;
+border-radius: 20px 20px 0px 0px;
+
+/* Inside Auto Layout */
+
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+margin: 0px 0px;
+
+left: 0;
+top: 0;
+}
+
+.redeem-wrapper button {
+  font-size: 12px;
+  font-weight: 400;
+  background-color: #FF0025;
+  color: #fff;
+  border-radius: 50px;
+}
+
+
+.nav-wrapper ul li {
+  /* tab-item-brand */
+
+
+/* Auto Layout */
+
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 10px 24px;
+
+background: #FAFAFA;
+
+/* Inside Auto Layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+margin: 0px 0px;
+}
+
+.nav-wrapper ul.nav {
+  gap: 0;
+}
+
+.nav-wrapper li.active {
+  background: linear-gradient(98.73deg, #FDA22B 0%, #FF0025 45.31%, #AE1E51 75.52%, #69194A 96.35%);
+  border-radius: 20px 0px;
+}
+
+.nav-wrapper li::after{
+  display: none;
+}
+
+#biodata .nav-wrapper  ul li.active a {
+  color: #fff;
+}
+
+#biodata .tab-content .bg-content {
+  background: #fff;
+}
+
+#biodata .tab-content .icon-wrapper {
+  width: 20px;
+  height: 20px;
+}
+
+#biodata .avatar-upload {
+  max-width: 140px;
+  height: 100%;
+  max-height: 140px;
+  width: 100%;
+}
+
+#biodata .avatar-upload .avatar-preview {
+  width: 140px;
+  height: 140px;
+}
+
+#biodata .avatar-label {
+  width: auto;
+  margin: 0 auto;
+}
+
+#biodata .avatar-label .btn {
+  border-radius: 70px;
+  padding: 10px 25px;
+  background: #FAFAFA;
+  color: var(--red);
+  font-size: 14px;
+}
+
+.profile-information p {
+  margin: 0;
 }
 
 
