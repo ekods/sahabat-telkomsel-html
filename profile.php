@@ -19,7 +19,15 @@
           <div id="biodata" class="col-right">
  
             <div class="">
-              <div class="row user-silver profile-card-bg">
+              <!-- GOLD USER -->
+              <div class="row user-gold profile-card-bg"> 
+
+              <!-- Platinum USER -->
+              <!-- <div class="row user-platinum profile-card-bg"> -->
+
+              <!-- Silver USER -->
+              <!-- <div class="row user-silver profile-card-bg"> -->
+
                 <div class="col d-flex align-items-center">
                   <div class="user-box-images">
                     <img src="img/st/dummy/254a838cf18e359b6692764d3eae4ec1.png" alt="">
@@ -31,11 +39,19 @@
                       <h2 class="font-telkomselbatiksans">Maudy Ayunda Putri</h2>
 
                       <div class="user-box-s m-top-10">
-                        SAHABAT KEREN
+                        <!-- GOLD USER -->
+                        <!-- SAHABAT AKRAB -->
+
+                        <!-- Platinum USER -->
+                        SAHABAT GAUL
+
+                        <!-- Silver USER -->
+                        <!-- SAHABAT KEREN -->
                       </div>
                     </div>
                   </div>
                 </div>
+
                 <div class="col-6">
                   <section id="milestone" class="section">
                     <div class="title-gradient"><p class="bold">Level Sahabat Telkomsel</p></div>
@@ -115,6 +131,14 @@
                   </div>
                 </div>
 
+                <!-- GOLD USER -->
+                <!-- Empty -->
+
+                <!-- Platinum USER -->
+                <!-- Empty -->
+
+                <!-- Silver USER -->
+
                 <div class="col-md-4">
                   <div class="biodata">
                     <div class="row">
@@ -145,15 +169,14 @@
               <div class="nav-wrapper position-absolute">
                   <ul class="nav nav-pills">
                     <li class="active">
-                      <a href="#1a" data-toggle="tab" aria-expanded="true">Biodata
-                          <!-- <div class="title-gradient"><h3 class="bold">Biodata</h3></div> -->
-                        </a>
+                      <a href="#1a" data-toggle="tab" aria-expanded="true">Biodata</a>
                     </li>
                     <li class="">
-                    
-                      <a href="#2a" data-toggle="tab" aria-expanded="false">Social Media
-                        <!-- <div class="title-gradient"><h3 class="bold">Social Media</h3></div> -->
-                      </a>
+                      <a href="#2a" data-toggle="tab" aria-expanded="false">Social Media</a>
+                    </li>
+                    <!-- Add Rate Card Nav For Gold & Platinum -->
+                    <li class="">
+                      <a href="#3a" data-toggle="tab" aria-expanded="false">Rate Card</a>
                     </li>
                   </ul>
               </div>
@@ -440,6 +463,86 @@
                           <a class="btn btn-default semi-bold tag d-inline-table">Travel Influencer</a>
                         </div>
                       </div>
+                    </div>
+
+                  </div>
+                </div>
+                <!-- Add Rate Card for GOLD & PLATUNUM -->
+                <div class="tab-pane" id="3a">
+                  <div class="bg-content mt-5">
+                    <div class="row justify-content-between">
+                      <div class="col">
+                        <div class="icon-wrapper d-inline-block"><img src="img/st/ig-icon.png" alt=""></div>
+                        <div class="text-left d-inline-block"><h4 class="bold">Instagram</h4></div>
+                      </div>
+                      <div class="col-3 text-right">
+                        <a href="">
+                          <div class="icon-wrapper d-inline-block"><img src="img/st/edit-icon.svg" alt=""></div>
+                          <div class="text-right d-inline-block"><h6 class="fred">Edit Data</h6></div>
+                        </a>
+                      </div>
+                    </div>
+                    <hr>
+
+                    <div class="row">
+                      <div class="col-12 my-2">
+                          <div class="row">
+                            <div class="col-md-3">
+                              <div class="">
+                                <div class="row">
+                                  <div class="col-md-12">
+                                    <div class="p-top-10 p-2">
+                                      <p class="neutral-40">Story Foto</p>
+                                      <h6 class="bold">Rp 400.000</h6>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="col-md-3">
+                              <div class="">
+                                <div class="row">
+                                  <div class="col-md-12">
+                                    <div class="p-top-10 p-2">
+                                      <p class="neutral-40">Story Video</p>
+                                      <h6 class="bold">Rp 650.000</h6>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="col-md-3">
+                              <div class="">
+                                <div class="row">
+                                  <div class="col-md-12">
+                                    <div class="p-top-10 p-2">
+                                      <p class="neutral-40">Feed Foto</p>
+                                      <h6 class="bold">Rp 510.000</h6>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="col-md-3">
+                              <div class="">
+                                <div class="row">
+                                  <div class="col-md-12">
+                                    <div class="p-top-10 p-2">
+                                      <p class="neutral-40">Feed Video</p>
+                                      <h6 class="bold">Rp 790.000</h6>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+
+       
                     </div>
 
                   </div>
