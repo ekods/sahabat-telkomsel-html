@@ -1924,6 +1924,136 @@ margin: 0px 0px;
   border-radius: 50px;
 }
 
+.head-banner {
+  position: absolute;
+  width: 95%;
+  min-height: 100vh;
+  top: 0;
+  left: 5%;
+  content: '';
+  /* background: #801B4C; */
+  /* border-radius: 0px 0px 0px 100px; */
+  background-image: url(../img/st/Union.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.head-banner .breadcrumb {
+  background-color: transparent;
+}
+
+.head-banner .banner-item {
+  position: absolute;
+  top: -12vh;
+}
+
+.title-fly {
+  position: absolute;
+  top: -40vh;
+  transform: translate(-50%, -50%);
+  left: 50%;
+}
+
+/* SEARCH */
+.navigation-search {
+  margin-bottom: 24px;
+  position: relative;
+}
+.navigation-search__icon {
+  height: 25px;
+  left: 10px;
+  opacity: 1;
+  pointer-events: none;
+  position: absolute;
+  top: 10px;
+  transition: all 0.1s ease-out;
+  width: 25px;
+  z-index: 1;
+}
+[class$="--collapsed"] .navigation-search__icon {
+  left: 12px;
+}
+
+.navigation-search__input::placeholder {
+  color: #999999;
+}
+
+.navigation-search__input {
+  background-color: #fff;
+  border-radius: 5px;
+  border: 0;
+  color: #000;
+  font-family: inherit;
+  font-size: inherit;
+  height: 45px;
+  line-height: 45px;
+  outline: none;
+  padding-left: 50px;
+  transition: all 0.2s ease-out;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  border-radius: 20px;
+}
+.navigation-search__input::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+  background: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23ffffff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-x' %3E%3Cline x1='18' y1='6' x2='6' y2='18'%3E%3C/line%3E%3Cline x1='6' y1='6' x2='18' y2='18'%3E%3C/line%3E%3C/svg%3E") no-repeat center center/cover;
+  cursor: pointer;
+  height: 20px;
+  position: relative;
+  right: 10px;
+  width: 20px;
+}
+[class$="--collapsed"] .navigation-search__input:not(:focus)::-webkit-search-cancel-button {
+  display: none;
+}
+.navigation-search__input:focus {
+  padding-left: 10px;
+  background-color: #fff;
+  border-radius: 20px;
+}
+[class$="--collapsed"] .navigation-search__input:focus {
+  width: 250px;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+.navigation-search__input:focus + svg {
+  opacity: 0;
+  transform: translateX(-20%);
+  z-index: 2;
+}
+
+/* SEARCH END */
+
+.faq-question {
+  cursor: pointer;
+}
+
+.faq-wrapper {
+  padding: 10px 20px;
+  border-radius: 20px;
+  background-color: #FAFAFA;
+}
+
+.faq-icon-wrapper {
+  width: 16px;
+  height: 16px;
+}
+
+.faq-wrapper button img {
+  transform: rotate(45deg);
+}
+
+.faq-wrapper button.collapsed img {
+  transform: rotate(0);
+}
+
+.faq-ans.collapse {
+  display: none !important;
+  overflow: auto !important;
+}
+.faq-ans.collapse.in {
+  display: block !important;
+}
 
 @media screen and (max-width: 1180px) {
 

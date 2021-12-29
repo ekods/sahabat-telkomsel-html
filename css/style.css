@@ -989,6 +989,7 @@ blockquote {
   .navbar-collapse.collapse.in {
     display: block !important;
   }
+
   .navbar .container-fluid {
     padding: 0 20px;
   }

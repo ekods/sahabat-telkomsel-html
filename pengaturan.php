@@ -73,7 +73,7 @@
                     <div class="row justify-content-between mb-5"> 
                         <div class="col-md-6 my-2">
                             <div class="dark-shadow">
-                                <a href="#" target="_blank">
+                                <a href="http://localhost:8888/sahabat-telkomsel-html/faq.php" target="_blank">
                                 <div class="row p-4">
                                     <div class="col-md-3">
                                         <div class="">
