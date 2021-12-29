@@ -2055,6 +2055,22 @@ margin: 0px 0px;
   display: block !important;
 }
 
+.notif-img-wrapper {
+  border-radius: 50px;
+}
+
+.notif {
+  cursor: pointer;
+  background: linear-gradient(0deg, rgba(255, 0, 37, 0.05), rgba(255, 0, 37, 0.05)), #FFFFFF;
+}
+
+.notif .dottts {
+  background: #FF0025;
+  width: 10px;
+  height: 10px;
+  border-radius: 50px;
+}
+
 @media screen and (max-width: 1180px) {
 
   .slider-item-content-inner h1 {
