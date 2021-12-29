@@ -1905,6 +1905,15 @@ margin: 0px 0px;
   border-radius: 20px;
 }
 
+.transaksi-table {
+  border: 1px solid #dee2e6;
+  border-radius: 20px;
+}
+
+.transaksi-table .border-head {
+  border-bottom: 1px solid #dee2e6;
+}
+
 .transaksi-table td div,
 .transaksi-table th, 
 .transaksi-table td {

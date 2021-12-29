@@ -117,9 +117,9 @@
                             <h1 class="bold">Transaksi</h1>
                         </div>
             
-                        <div class="pl-3 transaksi-table">
-                            <table class="table">
-                                <thead class="">
+                        <div class="ml-3 transaksi-table">
+                            <table class="table table-borderless">
+                                <thead class="border-head">
                                     <tr>
                                         <th class="text-left">Tgl Dibuat</th>
                                         <th class="text-left">Tgl Diperbarui</th>
