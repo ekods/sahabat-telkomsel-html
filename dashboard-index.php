@@ -126,6 +126,9 @@
               <h4 class="bold">Menunggu Persetujuan (12)</h4>
               <p class="neutral">Daftar Posting Challenge yang menunggu approval dari Telkomsel</p>
               <div class="pl-3 row owl-carousel mission-slider owl-theme" id="fetchSliderApproval"></div>
+              <a class="float-right read-all position-relative pr-3" href="">
+                  <div class="text-right d-inline-block"><h6 class="fred bold">Lihat Semua</h6></div>
+              </a>
             </div>
 
             <!-- Slider Postingan Berjalan  -->
@@ -133,6 +136,9 @@
               <h4 class="bold">Postingan Berjalan (30)</h4>
               <p class="neutral">Daftar Postingan Challenge yang sedang berjalan</p>
               <div class="pl-3 row owl-carousel mission-slider owl-theme" id="fetchSliderPost"></div>
+              <a class="float-right read-all position-relative pr-3" href="">
+                  <div class="text-right d-inline-block"><h6 class="fred bold">Lihat Semua</h6></div>
+              </a>
             </div>
 
             <!-- Slider Challenge  -->
@@ -140,6 +146,9 @@
               <h4 class="bold">Postingan Challenge yang Tersedia (16)</h4>
               <p class="neutral">Daftar Postingngan Challenge yang bisa kamu ikuti</p>
               <div class="pl-3 row owl-carousel mission-slider owl-theme" id="fetchSliderChallenge"></div>
+              <a class="float-right read-all position-relative pr-3" href="">
+                  <div class="text-right d-inline-block"><h6 class="fred bold">Lihat Semua</h6></div>
+              </a>
             </div>
 
           </div>
