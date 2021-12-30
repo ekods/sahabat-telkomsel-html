@@ -11,7 +11,7 @@
 
     <div class="container">
 
-      <div class="col-wrap"> 
+      <div class="col-wrap">
         <div class="col-left">
           <?php include('dashboard-nav.php'); ?>
         </div>
@@ -21,11 +21,11 @@
                     <div class="container">
                         <h1 class="bold">Akun Saya</h1>
                     </div>
-        
-                    <div class="row justify-content-between mb-5"> 
+
+                    <div class="row justify-content-between mb-5">
                         <div class="col-md-6 my-2">
                             <div class="dark-shadow">
-                                <a href="http://localhost:8888/sahabat-telkomsel-html/security.php" target="_blank">
+                                <a href="pengaturan-security.php">
                                     <div class="row p-4">
                                         <div class="col-md-3">
                                             <div class="">
@@ -45,7 +45,7 @@
 
                         <div class="col-md-6 my-2">
                             <div class="dark-shadow">
-                                <a href="http://localhost:8888/sahabat-telkomsel-html/keuangan.php" target="_blank">
+                                <a href="pengaturan-keuangan.php">
                                 <div class="row p-4">
                                     <div class="col-md-3">
                                         <div class="">
@@ -69,11 +69,11 @@
                     <div class="container">
                         <h1 class="bold">Dukungan</h1>
                     </div>
-        
-                    <div class="row justify-content-between mb-5"> 
+
+                    <div class="row justify-content-between mb-5">
                         <div class="col-md-6 my-2">
                             <div class="dark-shadow">
-                                <a href="http://localhost:8888/sahabat-telkomsel-html/faq.php" target="_blank">
+                                <a href="pengaturan-faq.php">
                                 <div class="row p-4">
                                     <div class="col-md-3">
                                         <div class="">
@@ -93,7 +93,7 @@
 
                         <div class="col-md-6 my-2">
                             <div class="dark-shadow">
-                                <a href="#" target="_blank">
+                                <a href="hubungi-kami.php">
                                 <div class="row p-4">
                                     <div class="col-md-3">
                                         <div class="">

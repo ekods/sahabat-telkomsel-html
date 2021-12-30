@@ -73,7 +73,7 @@ img {
 }
 section {
   width: 100%;
-  display: block;
+  display: inline-table;
   position: relative;
 }
 .light-bg {
@@ -489,10 +489,10 @@ h2 {
   font-size: 26px;
 }
 h3 {
-  font-size: 22px;
+  font-size: 24px;
 }
 h4 {
-  font-size: 18px;
+  font-size: 22px;
 }
 h5 {
   font-size: 16px;
@@ -501,7 +501,7 @@ h6 {
   font-size: 14px;
 }
 p {
-  font-size: 12px;
+  font-size: 16px;
 }
 .section-title-bg {
   background-color: #f8f8f8;
@@ -784,6 +784,8 @@ blockquote {
   z-index: 999;
   position: fixed;
   padding: 13px 50px;
+  box-shadow: 0px 4px 24px rgba(179, 179, 179, 0.25);
+  backdrop-filter: blur(24px);
 }
 
 .navbar-fixed-top {
@@ -891,8 +893,6 @@ blockquote {
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
   background: #FFFFFF;
-  box-shadow: 0px 4px 24px rgba(179, 179, 179, 0.25);
-  backdrop-filter: blur(24px);
   padding: 8px 0;
 }
 .nav-transparent .navbar .navigation {

@@ -7,10 +7,10 @@
       <a href="dashboard-challenge-list.php" class="nav-menu-icon icon-challenge <?= ($activePage == 'dashboard-challenge-list') ? 'current-page':''; ?>">Challenge</a>
     </li>
     <li>
-      <a href="#" class="nav-menu-icon icon-profile">Profil Saya</a>
+      <a href="profile.php" class="nav-menu-icon icon-profile <?= ($activePage == 'profile') ? 'current-page':''; ?>">Profil Saya</a>
     </li>
     <li>
-      <a href="#" class="nav-menu-icon icon-pengaturan">Pengaturan</a>
+      <a href="pengaturan.php" class="nav-menu-icon icon-pengaturan <?= ($activePage == 'pengaturan') ? 'current-page':''; ?>">Pengaturan</a>
     </li>
   </ul>
 </div>

@@ -28,13 +28,16 @@
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.6.3/css/bootstrap-select.min.css" />
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/3.1.3/css/bootstrap-datetimepicker.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.3/css/bootstrapValidator.min.css">
+
     <!-- Custom CSS -->
     <link href="css/style.css" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
 
     <!-- jQuery -->
     <script src="js/jquery.min.js"></script>
@@ -82,7 +85,7 @@
                           <div class="flex-none flex w-40">
                         			<div class="nav-right">
                                 <div class="nav-right-item">
-                                  <a href="#" class="">
+                                  <a href="notifikasi.php" class="">
                                     <div class="notif-bell notif-in"></div>
                                   </a>
                                 </div>
@@ -94,7 +97,7 @@
                                       </div>
                                     </a>
                                     <ul class="dropdown-menu">
-                                      <li class="dropdown-item"><a href="#"><p>Account</p></a></li>
+                                      <li class="dropdown-item"><a href="pengaturan.php"><p>Account</p></a></li>
                                       <li class="dropdown-item"><a href="#"><p>Logout</p></a></li>
                                     </ul>
                                   </div>

@@ -1,6 +1,6 @@
 <?php include('header-2.php'); ?>
 
-  <section>
+  <section class="page-content">
     <div class="container">
       <div class="alert alert-primary mt-3 mb-3 bgblueOld" role="alert">
         <h3 class="mb-0"><b>Akunmu Sedang Dalam Verifikasi</b></h3>
@@ -11,7 +11,7 @@
 
     <div class="container">
 
-      <div class="col-wrap"> 
+      <div class="col-wrap">
         <div class="col-left">
           <?php include('dashboard-nav.php'); ?>
         </div>
@@ -22,7 +22,7 @@
                         <nav aria-label="breadcrumb">
                             <ol class="breadcrumb">
                                 <li class="breadcrumb-item"><a href="pengaturan.php">Pengaturan</a></li>
-                                <li class="breadcrumb-item">Akun Saya</li>
+                                <li class="breadcrumb-item"><a href="pengaturan-profile.php">Akun Saya</a></li>
                                 <li class="breadcrumb-item active" aria-current="page">Login & Keamanan</li>
                             </ol>
                         </nav>
@@ -32,10 +32,10 @@
                         <div class="container">
                             <h1 class="bold">Login</h1>
                         </div>
-            
-                        <div class="row justify-content-between mb-5 pl-2"> 
+
+                        <div class="row justify-content-between mb-5 pl-2">
                             <div class="col-md-12">
-                    
+
                                 <div class="row">
                                     <div class="col-md-8 d-flex align-items-center">
                                         <div class="p-top-10 p-2">
@@ -54,7 +54,7 @@
                                                     <label for="">Password <span>*</span></label>
                                                     <input name="password" id="password" type="password" placeholder="">
                                                 </div>
-                                                <a href="http://localhost:8888/sahabat-telkomsel-html/account-recovery.php" class="bold fred offpage-nav-login ml-3 pt-2">Lupa Password</a>
+                                                <a href="account-recovery.php" class="bold fred offpage-nav-login ml-3 pt-2">Lupa Password</a>
 
                                                 <div class="row pl-3 mt-5">
                                                     <div class="col-md-12 col-lg-6">
@@ -76,8 +76,8 @@
                                         <hr class="mt-5">
                                     </div>
 
-                                </div>                            
-                        
+                                </div>
+
                             </div>
                         </div>
                     </section>
@@ -86,10 +86,10 @@
                         <div class="container">
                             <h1 class="bold">Akun</h1>
                         </div>
-            
-                        <div class="row justify-content-between mb-5"> 
+
+                        <div class="row justify-content-between mb-5">
                             <div class="col-md-12">
-                    
+
                                 <div class="row">
                                     <div class="col-md-8 d-flex align-items-center">
                                         <div class="p-top-10 p-2">
@@ -100,15 +100,15 @@
                                         <a href="javascript:void(0);" class="bold fred offpage-nav-login">Nonaktifkan</a>
                                     </div>
 
-                                </div>                            
-                        
+                                </div>
+
                             </div>
                         </div>
                     </section>
                 </section>
 
 
-                
+
 
             </div>
       </div>

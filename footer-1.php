@@ -19,6 +19,10 @@
     <!-- <script src="inc/owlcarousel/js/owl.carousel.min.js"></script> -->
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js'></script>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.2/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/3.1.3/js/bootstrap-datetimepicker.min.js"></script><link rel="stylesheet" href="./style.css">
+
+
     <!-- Custom Plugin -->
     <script src="js/custom.js"></script>
 

@@ -1,6 +1,6 @@
 <?php include('header-2.php'); ?>
 
-  <section>
+  <section class="page-content">
     <div class="container">
       <div class="alert alert-primary mt-3 mb-3 bgblueOld" role="alert">
         <h3 class="mb-0"><b>Akunmu Sedang Dalam Verifikasi</b></h3>
@@ -25,13 +25,14 @@
               <h4 class="bold">Level Sahabat Telkomsel</h4>
 
               <section id="milestone" class="section">
-                <div class="rangeContainer">
-                  <input id="diamondRange" class="slider" type="range" min="1" max="4" value="1">
+                <!-- <div class="rangeContainer">
+                  <input id="diamondRange" class="slider" type="range" min="1" max="100" value="30">
                   <span class="nub"></span>
+
                   <div class="milestone-wrapper">
-                    <span id="first" class="dottt active" data-range="1">
-                    </span>
-                    <span id="second"  class="dottt" data-range="2">
+                    <span id="first" class="dottt active" data-range="1"></span>
+
+                    <span id="second"  class="dottt" data-range="25">
                       <div class="milestone-locked-wrapper position-relative">
                         <img src="img/st/milestone-locked.svg" alt="">
                         <div class="detail text-center">
@@ -39,7 +40,7 @@
                         </div>
                       </div>
                     </span>
-                    <span id="third"  class="dottt" data-range="3">
+                    <span id="third"  class="dottt" data-range="50">
                       <div class="milestone-locked-wrapper position-relative">
                         <img src="img/st/milestone-locked.svg" alt="">
                         <div class="detail text-center">
@@ -47,7 +48,7 @@
                         </div>
                       </div>
                     </span>
-                    <span id="fourth" class="dottt" data-range="4">
+                    <span id="fourth" class="dottt" data-range="">
                       <div class="milestone-locked-wrapper position-relative">
                         <img src="img/st/milestone-locked.svg" alt="">
                         <div class="detail text-center">
@@ -56,7 +57,32 @@
                       </div>
                     </span>
                   </div>
+                </div> -->
+
+                <div class="rangeContainer">
+
+                  <div class="range-slider">
+                      <div id="tooltip">600</div>
+
+                      <div class="wrap">
+                        <input id="range1" class="range" type="range" value="50" min="10" max="500" disabled>
+                      </div>
+
+                      <div class="wrap">
+                        <input id="range2" class="range" type="range" value="600" min="501" max="1000" disabled>
+                      </div>
+
+                      <div class="wrap">
+                        <input id="range3" class="range" type="range" value="0" min="1001" max="5000" disabled>
+                      </div>
+
+                      <div class="wrap">
+                        <input id="range4" class="range" type="range" value="0" disabled>
+                      </div>
+                  </div>
+
                 </div>
+
               </section>
             </div>
             <!-- Highlight  -->
@@ -206,7 +232,7 @@
 
       fetchSlider(sliderChallenge.id, sliderChallenge.slider);
 
-      milestone();
+      // milestone();
 
       callOwlSlider();
     });
@@ -267,90 +293,90 @@
 
     }
 
-    function milestone(){
-          const slider = document.getElementById("diamondRange"),
-          milestoneWrapper = document.querySelector(".milestone-wrapper"),
-          milestoneDetail = Array.prototype.slice.call(document.querySelectorAll(".dottt"));
-
-        function setActive() {
-          milestoneDetail.map(function (dottt) {
-            let milestoneIndex = parseInt(dottt.getAttribute("data-range"));
-            dottt.classList.remove("active");
-            dottt.classList.remove("passed");
-            if (milestoneIndex <= Math.floor(slider.value)) {
-              dottt.classList.add("passed");
-              if (milestoneIndex === Math.round(slider.value)) {
-                dottt.classList.add("active");
-              }
-            }
-          });
-        }
-
-        function updateMilestone() {
-          const firstMilestone = document.querySelector(".dottt:nth-child(1)#first"),
-                secondMilestone = document.querySelector(".dottt:nth-child(2)#second"),
-                thrirdMilestone = document.querySelector(".dottt:nth-child(3)#third"),
-                lastMilestone = document.querySelector(".dottt:nth-child(4)#fourth"),
-                min = this.getAttribute("min"),
-                perc = (this.value - min) * 33,
-                currentMilestone = Math.floor(this.value);
-          console.log(perc);
-          console.log(currentMilestone, `current`);
-          if (currentMilestone > 1 && currentMilestone < 3) {
-            this.style.backgroundImage =
-              "linear-gradient(to right, #FDA22B, #FF0025 " + perc + "%, #DBDBDB " + perc + "%, #DBDBDB " + perc + "%)";
-              if( !document.querySelector(".dottt:nth-child(1)#first .crown-wrapper") ) {
-                $(`.dottt#first`).append(`
-                  <div class="crown-wrapper"><img src="img/st/crown.svg"><div class="detail text-center">Casual</div></div>
-                `)
-              }
-          } else if (currentMilestone > 2 && currentMilestone < 4) {
-            this.style.backgroundImage =
-              "linear-gradient(to right, #FDA22B, #FF0025 " + perc + "%, #DBDBDB " + perc + "%, #DBDBDB " + perc + "%)";
-
-              if( !document.querySelector(".dottt:nth-child(1)#first .crown-wrapper") ) {
-                  $(`.dottt#first`).append(`
-                    <div class="crown-wrapper"><img src="img/st/crown.svg"><div class="detail text-center">Casual</div></div>
-                  `)
-                }
-
-              if( !document.querySelector(".dottt:nth-child(2)#second .crown-wrapper") ) {
-                $(`.dottt#second`).append(`
-                  <div class="crown-wrapper"><img src="img/st/crown.svg"><div class="detail text-center">Bestie</div></div>
-                `)
-              }
-          } else if (currentMilestone >= 3) {
-            this.style.backgroundImage =
-              "linear-gradient(to right, #FDA22B, #FF0025 " + perc + "%, #DBDBDB " + perc + "%, #DBDBDB " + perc + "%)";
-
-              if( !document.querySelector(".dottt:nth-child(1)#first .crown-wrapper") ) {
-                  $(`.dottt#first`).append(`
-                    <div class="crown-wrapper"><img src="img/st/crown.svg"><div class="detail text-center">Casual</div></div>
-                  `)
-                }
-
-              if( !document.querySelector(".dottt:nth-child(2)#second .crown-wrapper") ) {
-                $(`.dottt#second`).append(`
-                  <div class="crown-wrapper"><img src="img/st/crown.svg"><div class="detail text-center">Bestie</div></div>
-                `)
-              }
-
-              if( !document.querySelector(".dottt:nth-child(3)#third .crown-wrapper") ) {
-                $(`.dottt#third`).append(`
-                  <div class="crown-wrapper"><img src="img/st/crown.svg"><div class="detail text-center">Close Firend</div></div>
-                `)
-              }
-          }
-
-          // if (currentMilestone >= 4) {
-          //   lastMilestone.textContent = "✓";
-          // }
-          setActive();
-        }
-
-        slider.addEventListener("change", updateMilestone);
-
-    }
+    // function milestone(){
+    //       const slider = document.getElementById("diamondRange"),
+    //       milestoneWrapper = document.querySelector(".milestone-wrapper"),
+    //       milestoneDetail = Array.prototype.slice.call(document.querySelectorAll(".dottt"));
+    //
+    //     function setActive() {
+    //       milestoneDetail.map(function (dottt) {
+    //         let milestoneIndex = parseInt(dottt.getAttribute("data-range"));
+    //         dottt.classList.remove("active");
+    //         dottt.classList.remove("passed");
+    //         if (milestoneIndex <= Math.floor(slider.value)) {
+    //           dottt.classList.add("passed");
+    //           if (milestoneIndex === Math.round(slider.value)) {
+    //             dottt.classList.add("active");
+    //           }
+    //         }
+    //       });
+    //     }
+    //
+    //     function updateMilestone() {
+    //       const firstMilestone = document.querySelector(".dottt:nth-child(1)#first"),
+    //             secondMilestone = document.querySelector(".dottt:nth-child(2)#second"),
+    //             thrirdMilestone = document.querySelector(".dottt:nth-child(3)#third"),
+    //             lastMilestone = document.querySelector(".dottt:nth-child(4)#fourth"),
+    //             min = this.getAttribute("min"),
+    //             perc = (this.value - min) * 33,
+    //             currentMilestone = Math.floor(this.value);
+    //       console.log(perc);
+    //       console.log(currentMilestone, `current`);
+    //       if (currentMilestone > 1 && currentMilestone < 3) {
+    //         this.style.backgroundImage =
+    //           "linear-gradient(to right, #FDA22B, #FF0025 " + perc + "%, #DBDBDB " + perc + "%, #DBDBDB " + perc + "%)";
+    //           if( !document.querySelector(".dottt:nth-child(1)#first .crown-wrapper") ) {
+    //             $(`.dottt#first`).append(`
+    //               <div class="crown-wrapper"><img src="img/st/crown.svg"><div class="detail text-center">Casual</div></div>
+    //             `)
+    //           }
+    //       } else if (currentMilestone > 2 && currentMilestone < 4) {
+    //         this.style.backgroundImage =
+    //           "linear-gradient(to right, #FDA22B, #FF0025 " + perc + "%, #DBDBDB " + perc + "%, #DBDBDB " + perc + "%)";
+    //
+    //           if( !document.querySelector(".dottt:nth-child(1)#first .crown-wrapper") ) {
+    //               $(`.dottt#first`).append(`
+    //                 <div class="crown-wrapper"><img src="img/st/crown.svg"><div class="detail text-center">Casual</div></div>
+    //               `)
+    //             }
+    //
+    //           if( !document.querySelector(".dottt:nth-child(2)#second .crown-wrapper") ) {
+    //             $(`.dottt#second`).append(`
+    //               <div class="crown-wrapper"><img src="img/st/crown.svg"><div class="detail text-center">Bestie</div></div>
+    //             `)
+    //           }
+    //       } else if (currentMilestone >= 3) {
+    //         this.style.backgroundImage =
+    //           "linear-gradient(to right, #FDA22B, #FF0025 " + perc + "%, #DBDBDB " + perc + "%, #DBDBDB " + perc + "%)";
+    //
+    //           if( !document.querySelector(".dottt:nth-child(1)#first .crown-wrapper") ) {
+    //               $(`.dottt#first`).append(`
+    //                 <div class="crown-wrapper"><img src="img/st/crown.svg"><div class="detail text-center">Casual</div></div>
+    //               `)
+    //             }
+    //
+    //           if( !document.querySelector(".dottt:nth-child(2)#second .crown-wrapper") ) {
+    //             $(`.dottt#second`).append(`
+    //               <div class="crown-wrapper"><img src="img/st/crown.svg"><div class="detail text-center">Bestie</div></div>
+    //             `)
+    //           }
+    //
+    //           if( !document.querySelector(".dottt:nth-child(3)#third .crown-wrapper") ) {
+    //             $(`.dottt#third`).append(`
+    //               <div class="crown-wrapper"><img src="img/st/crown.svg"><div class="detail text-center">Close Firend</div></div>
+    //             `)
+    //           }
+    //       }
+    //
+    //       // if (currentMilestone >= 4) {
+    //       //   lastMilestone.textContent = "✓";
+    //       // }
+    //       setActive();
+    //     }
+    //
+    //     slider.addEventListener("change", updateMilestone);
+    //
+    // }
 
     // $(function() {
     //     const $document   = $(document),
@@ -376,6 +402,7 @@
     //       polyfill: false
     //     });
     // });
+
 
   </script>
 

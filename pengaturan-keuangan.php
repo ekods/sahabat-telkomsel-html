@@ -1,6 +1,6 @@
 <?php include('header-2.php'); ?>
 
-  <section>
+  <section class="page-content">
     <div class="container">
       <div class="alert alert-primary mt-3 mb-3 bgblueOld" role="alert">
         <h3 class="mb-0"><b>Akunmu Sedang Dalam Verifikasi</b></h3>
@@ -11,7 +11,7 @@
 
     <div class="container">
 
-      <div class="col-wrap"> 
+      <div class="col-wrap">
         <div class="col-left">
           <?php include('dashboard-nav.php'); ?>
         </div>
@@ -22,7 +22,7 @@
                         <nav aria-label="breadcrumb">
                             <ol class="breadcrumb">
                                 <li class="breadcrumb-item"><a href="pengaturan.php">Pengaturan</a></li>
-                                <li class="breadcrumb-item">Akun Saya</li>
+                                <li class="breadcrumb-item"><a href="pengaturan-profile.php">Akun Saya</a></li>
                                 <li class="breadcrumb-item active" aria-current="page">Keuangan</li>
                             </ol>
                         </nav>
@@ -32,10 +32,10 @@
                         <div class="container">
                             <h1 class="bold">Keuangan</h1>
                         </div>
-            
-                        <div class="row justify-content-between mb-5 pl-2"> 
+
+                        <div class="row justify-content-between mb-5 pl-2">
                             <div class="col-md-12">
-                    
+
                                 <div class="row">
                                     <div class="col-md-8 d-flex align-items-center">
                                         <div class="p-top-10 p-2">
@@ -49,7 +49,7 @@
 
                                     <div class="col-10 my-2">
                                         <div class="dark-shadow">
-                                            <a href="http://localhost:8888/sahabat-telkomsel-html/security.php" target="_blank">
+                                            <a href="security.php">
                                                 <div class="row p-4">
                                                     <div class="col-auto d-flex align-items-center">
                                                         <div class="">
@@ -80,7 +80,7 @@
 
                                     <div class="col-10 my-2">
                                         <div class="dark-shadow">
-                                            <a href="http://localhost:8888/sahabat-telkomsel-html/security.php" target="_blank">
+                                            <a href="security.php">
                                                 <div class="row p-4">
                                                     <div class="col-auto d-flex align-items-center">
                                                         <div class="">
@@ -106,8 +106,8 @@
                                         </div>
                                     </div>
 
-                                </div>                            
-                        
+                                </div>
+
                             </div>
                         </div>
                     </section>
@@ -116,7 +116,7 @@
                         <div class="container">
                             <h1 class="bold">Transaksi</h1>
                         </div>
-            
+
                         <div class="ml-3 transaksi-table">
                             <table class="table table-borderless">
                                 <thead class="border-head">
@@ -162,7 +162,7 @@
                 </section>
 
 
-                
+
 
             </div>
       </div>
