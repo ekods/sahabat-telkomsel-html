@@ -60,24 +60,36 @@
                 </div> -->
 
                 <div class="rangeContainer">
+                  <?php
+                    $diamond = 400;
+                   ?>
+                   <div id="tooltip-diamond"><?php echo $diamond; ?></div>
 
                   <div class="range-slider">
-                      <div id="tooltip">600</div>
 
-                      <div class="wrap">
-                        <input id="range1" class="range" type="range" value="50" min="10" max="500" disabled>
+                      <div class="wrap <?php if ($diamond >= 500) { echo 'complete-diamond'; } ?> <?php if ($diamond >= 10 && $diamond <= 500) { echo 'currrent-diamond'; } ?>">
+                        <?php if ($diamond >= 10 && $diamond <= 500): ?>
+                          <div id="tooltip"><?php echo 500 - $diamond; ?></div>
+                        <?php endif; ?>
+                        <input id="range1" class="range" type="range" value="<?php echo ($diamond >= 10) ? $diamond : '0'; ?>" min="10" max="500" disabled>
                       </div>
 
-                      <div class="wrap">
-                        <input id="range2" class="range" type="range" value="600" min="501" max="1000" disabled>
+                      <div class="wrap <?php if ($diamond >= 501) { echo 'complete-diamond'; } ?> <?php if ($diamond >= 501 && $diamond <= 1000) { echo 'currrent-diamond'; } ?>">
+                        <?php if ($diamond >= 501 && $diamond <= 1000): ?>
+                          <div id="tooltip"><?php echo 1000 - $diamond; ?></div>
+                        <?php endif; ?>
+                        <input id="range2" class="range" type="range" value="<?php echo ($diamond >= 501) ? $diamond : '0'; ?>" min="501" max="1000" disabled>
                       </div>
 
-                      <div class="wrap">
-                        <input id="range3" class="range" type="range" value="0" min="1001" max="5000" disabled>
+                      <div class="wrap <?php if ($diamond >= 1001) { echo 'complete-diamond'; } ?> <?php if ($diamond >= 1001 && $diamond <= 5000) { echo 'currrent-diamond'; } ?>">
+                        <?php if ($diamond >= 1001 && $diamond <= 5000): ?>
+                          <div id="tooltip"><?php echo 5000 - $diamond; ?></div>
+                        <?php endif; ?>
+                        <input id="range3" class="range" type="range" value="<?php echo ($diamond >= 1001) ? $diamond : '0'; ?>" min="1001" max="5000" disabled>
                       </div>
 
-                      <div class="wrap">
-                        <input id="range4" class="range" type="range" value="0" disabled>
+                      <div class="wrap <?php if ($diamond >= 5001) { echo 'complete-diamond currrent-diamond'; } ?>">
+                        <input id="range4" class="range" type="range" value="<?php echo ($diamond >= 5001) ? $diamond : '0'; ?>" disabled>
                       </div>
                   </div>
 
@@ -402,6 +414,80 @@
     //       polyfill: false
     //     });
     // });
+
+    function isOlderEdgeOrIE() {
+      return (
+        window.navigator.userAgent.indexOf("MSIE ") > -1 ||
+        !!navigator.userAgent.match(/Trident.*rv\:11\./) ||
+        window.navigator.userAgent.indexOf("Edge") > -1
+      );
+    }
+
+    function valueTotalRatio(value, min, max) {
+      return ((value - min) / (max - min)).toFixed(2);
+    }
+
+    function getLinearGradientCSS(ratio, leftColor, rightColor) {
+      return [
+        '-webkit-gradient(',
+        'linear, ',
+        'left top, ',
+        'right top, ',
+        'color-stop(' + ratio + ', ' + leftColor + '), ',
+        'color-stop(' + ratio + ', ' + rightColor + ')',
+        ')'
+      ].join('');
+    }
+
+    function updateRangeEl(rangeEl) {
+      var ratio = valueTotalRatio(rangeEl.value, rangeEl.min, rangeEl.max);
+      rangeEl.style.backgroundImage = getLinearGradientCSS(ratio, '#FDA22B', '#DBDBDB');
+    }
+
+    function initRangeEl1() {
+      var rangeEl1 = document.querySelector('#range1');
+
+       updateRangeEl(rangeEl1);
+       rangeEl1.addEventListener("input", function(e) {
+         updateRangeEl1(e.target);
+         textEl.value = e.target.value;
+       });
+    }
+
+    function initRangeEl2() {
+      var rangeEl2 = document.querySelector('#range2');
+
+       updateRangeEl(rangeEl2);
+       rangeEl2.addEventListener("input", function(e) {
+         updateRangeEl2(e.target);
+         textEl.value = e.target.value;
+       });
+    }
+
+    function initRangeEl3() {
+      var rangeEl3 = document.querySelector('#range3');
+
+       updateRangeEl(rangeEl3);
+       rangeEl3.addEventListener("input", function(e) {
+         updateRangeEl3(e.target);
+         textEl.value = e.target.value;
+       });
+    }
+
+    function initRangeEl4() {
+      var rangeEl3 = document.querySelector('#range4');
+
+       updateRangeEl(rangeEl4);
+       rangeEl4.addEventListener("input", function(e) {
+         updateRangeEl4(e.target);
+         textEl.value = e.target.value;
+       });
+    }
+
+    initRangeEl1();
+    initRangeEl2();
+    initRangeEl3();
+    initRangeEl4();
 
 
   </script>
