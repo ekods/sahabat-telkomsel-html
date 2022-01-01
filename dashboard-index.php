@@ -18,9 +18,37 @@
 
         <div class="col-right">
           <div class="bg-content">
-            <!-- Title  -->
-            <div class="title-gradient"><h3 class="bold">Dashboard</h3></div>
-            <!-- MileStone  -->
+            <!-- Nav Tab -->
+            <div class="nav-wrapper">
+                <ul class="nav nav-pills">
+                  <li class="active">
+                    <a href="#1a" data-toggle="tab" aria-expanded="true">Dashboard</a>
+                  </li>
+                </ul>
+            </div>
+
+            <?php
+              $diamond = 300;
+             ?>
+            <div class="diamond-total mt-4">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="bg-icon-profile w-100">
+                    <img src="img/st/diamond-icon.svg" alt="">
+                  </div>
+                </div>
+                <div class="col no-padding">
+                  <div class="highlight-content w-100">
+                      <p class="neutral">Total Diamond</p>
+                      <h5 class="font-telkomselbatiksans"><?php echo $diamond; ?></h5>
+                  </div>
+                </div>
+                <div class="col no-padding redeem-wrapper align-items-center d-flex">
+                  <button class="btn">Redeem</button>
+                </div>
+              </div>
+            </div>
+
             <div class="p-top-50">
               <h4 class="bold">Level Sahabat Telkomsel</h4>
 
@@ -60,39 +88,41 @@
                 </div> -->
 
                 <div class="rangeContainer">
-                  <?php
-                    $diamond = 400;
-                   ?>
-                   <div id="tooltip-diamond"><?php echo $diamond; ?></div>
-
                   <div class="range-slider">
 
-                      <div class="wrap <?php if ($diamond >= 500) { echo 'complete-diamond'; } ?> <?php if ($diamond >= 10 && $diamond <= 500) { echo 'currrent-diamond'; } ?>">
+                      <div class="wrap <?php if ($diamond >= 500) { echo 'complete-diamond'; } ?>
+                        <?php if ($diamond >= 10 && $diamond <= 500) { echo 'currrent-diamond'; } ?>">
                         <?php if ($diamond >= 10 && $diamond <= 500): ?>
-                          <div id="tooltip"><?php echo 500 - $diamond; ?></div>
+                          <div class="tooltip-range"><?php echo 500 - $diamond; ?> lagi</div>
                         <?php endif; ?>
                         <input id="range1" class="range" type="range" value="<?php echo ($diamond >= 10) ? $diamond : '0'; ?>" min="10" max="500" disabled>
+                        <label class="range-label">Casual</label>
                       </div>
 
-                      <div class="wrap <?php if ($diamond >= 501) { echo 'complete-diamond'; } ?> <?php if ($diamond >= 501 && $diamond <= 1000) { echo 'currrent-diamond'; } ?>">
+                      <div class="wrap <?php if ($diamond >= 501) { echo 'complete-diamond'; } ?>
+                        <?php if ($diamond >= 501 && $diamond <= 1000) { echo 'currrent-diamond'; } ?>">
                         <?php if ($diamond >= 501 && $diamond <= 1000): ?>
-                          <div id="tooltip"><?php echo 1000 - $diamond; ?></div>
+                          <div class="tooltip-range"><?php echo 1000 - $diamond; ?> lagi</div>
                         <?php endif; ?>
                         <input id="range2" class="range" type="range" value="<?php echo ($diamond >= 501) ? $diamond : '0'; ?>" min="501" max="1000" disabled>
+                        <label class="range-label">Bestie</label>
                       </div>
 
-                      <div class="wrap <?php if ($diamond >= 1001) { echo 'complete-diamond'; } ?> <?php if ($diamond >= 1001 && $diamond <= 5000) { echo 'currrent-diamond'; } ?>">
+                      <div class="wrap <?php if ($diamond >= 1001) { echo 'complete-diamond'; } ?>
+                        <?php if ($diamond >= 1001 && $diamond <= 5000) { echo 'currrent-diamond'; } ?>">
                         <?php if ($diamond >= 1001 && $diamond <= 5000): ?>
-                          <div id="tooltip"><?php echo 5000 - $diamond; ?></div>
+                          <div class="tooltip-range"><?php echo 5000 - $diamond; ?> lagi</div>
                         <?php endif; ?>
                         <input id="range3" class="range" type="range" value="<?php echo ($diamond >= 1001) ? $diamond : '0'; ?>" min="1001" max="5000" disabled>
+                        <label class="range-label">Close Friend</label>
                       </div>
 
                       <div class="wrap <?php if ($diamond >= 5001) { echo 'complete-diamond currrent-diamond'; } ?>">
                         <input id="range4" class="range" type="range" value="<?php echo ($diamond >= 5001) ? $diamond : '0'; ?>" disabled>
+                        <label class="range-label">Soulmate</label>
                       </div>
-                  </div>
 
+                  </div>
                 </div>
 
               </section>
@@ -104,54 +134,36 @@
 
                 <div class="col-md-4">
                   <div class="highlight">
-                    <div class="row">
-                      <div class="col-md-4">
-                        <div class="bg-aktivitas">
-                          <img src="img/st/aktifitas-icon.svg" alt="">
-                        </div>
-                      </div>
-                      <div class="col-md-8 no-padding">
-                        <div class="highlight-content p-top-10">
-                          <h3 class="font-telkomselbatiksans fred">12</h3>
-                          <p class="neutral">Menunggu Persetujuan</p>
-                        </div>
-                      </div>
+                    <div class="bg-aktivitas">
+                      <img src="img/st/aktifitas-icon.svg" alt="">
+                    </div>
+                    <div class="highlight-content">
+                      <h3 class="font-telkomselbatiksans fred">12</h3>
+                      <p class="neutral">Menunggu Persetujuan</p>
                     </div>
                   </div>
                 </div>
 
                 <div class="col-md-4">
                   <div class="highlight">
-                    <div class="row">
-                      <div class="col-md-4">
-                        <div class="bg-aktivitas">
-                          <img src="img/st/aktifitas-icon-1.svg" alt="">
-                        </div>
-                      </div>
-                      <div class="col-md-8 no-padding">
-                        <div class="highlight-content p-top-10">
-                          <h3 class="font-telkomselbatiksans fred">30</h3>
-                          <p class="neutral">Postingan Berjalan</p>
-                        </div>
-                      </div>
+                    <div class="bg-aktivitas">
+                      <img src="img/st/aktifitas-icon-1.svg" alt="">
+                    </div>
+                    <div class="highlight-content">
+                      <h3 class="font-telkomselbatiksans fred">30</h3>
+                      <p class="neutral">Postingan Berjalan</p>
                     </div>
                   </div>
                 </div>
 
                 <div class="col-md-4">
                   <div class="highlight">
-                    <div class="row">
-                      <div class="col-md-4">
-                        <div class="bg-aktivitas">
-                          <img src="img/st/aktifitas-icon-2.svg" alt="">
-                        </div>
-                      </div>
-                      <div class="col-md-8 no-padding">
-                        <div class="highlight-content p-top-10">
-                          <h3 class="font-telkomselbatiksans fred">206</h3>
-                          <p class="neutral">Postingan yang Diikuti</p>
-                        </div>
-                      </div>
+                    <div class="bg-aktivitas">
+                      <img src="img/st/aktifitas-icon-2.svg" alt="">
+                    </div>
+                    <div class="highlight-content">
+                      <h3 class="font-telkomselbatiksans fred">206</h3>
+                      <p class="neutral">Postingan yang Diikuti</p>
                     </div>
                   </div>
                 </div>
@@ -304,192 +316,6 @@
       });
 
     }
-
-    // function milestone(){
-    //       const slider = document.getElementById("diamondRange"),
-    //       milestoneWrapper = document.querySelector(".milestone-wrapper"),
-    //       milestoneDetail = Array.prototype.slice.call(document.querySelectorAll(".dottt"));
-    //
-    //     function setActive() {
-    //       milestoneDetail.map(function (dottt) {
-    //         let milestoneIndex = parseInt(dottt.getAttribute("data-range"));
-    //         dottt.classList.remove("active");
-    //         dottt.classList.remove("passed");
-    //         if (milestoneIndex <= Math.floor(slider.value)) {
-    //           dottt.classList.add("passed");
-    //           if (milestoneIndex === Math.round(slider.value)) {
-    //             dottt.classList.add("active");
-    //           }
-    //         }
-    //       });
-    //     }
-    //
-    //     function updateMilestone() {
-    //       const firstMilestone = document.querySelector(".dottt:nth-child(1)#first"),
-    //             secondMilestone = document.querySelector(".dottt:nth-child(2)#second"),
-    //             thrirdMilestone = document.querySelector(".dottt:nth-child(3)#third"),
-    //             lastMilestone = document.querySelector(".dottt:nth-child(4)#fourth"),
-    //             min = this.getAttribute("min"),
-    //             perc = (this.value - min) * 33,
-    //             currentMilestone = Math.floor(this.value);
-    //       console.log(perc);
-    //       console.log(currentMilestone, `current`);
-    //       if (currentMilestone > 1 && currentMilestone < 3) {
-    //         this.style.backgroundImage =
-    //           "linear-gradient(to right, #FDA22B, #FF0025 " + perc + "%, #DBDBDB " + perc + "%, #DBDBDB " + perc + "%)";
-    //           if( !document.querySelector(".dottt:nth-child(1)#first .crown-wrapper") ) {
-    //             $(`.dottt#first`).append(`
-    //               <div class="crown-wrapper"><img src="img/st/crown.svg"><div class="detail text-center">Casual</div></div>
-    //             `)
-    //           }
-    //       } else if (currentMilestone > 2 && currentMilestone < 4) {
-    //         this.style.backgroundImage =
-    //           "linear-gradient(to right, #FDA22B, #FF0025 " + perc + "%, #DBDBDB " + perc + "%, #DBDBDB " + perc + "%)";
-    //
-    //           if( !document.querySelector(".dottt:nth-child(1)#first .crown-wrapper") ) {
-    //               $(`.dottt#first`).append(`
-    //                 <div class="crown-wrapper"><img src="img/st/crown.svg"><div class="detail text-center">Casual</div></div>
-    //               `)
-    //             }
-    //
-    //           if( !document.querySelector(".dottt:nth-child(2)#second .crown-wrapper") ) {
-    //             $(`.dottt#second`).append(`
-    //               <div class="crown-wrapper"><img src="img/st/crown.svg"><div class="detail text-center">Bestie</div></div>
-    //             `)
-    //           }
-    //       } else if (currentMilestone >= 3) {
-    //         this.style.backgroundImage =
-    //           "linear-gradient(to right, #FDA22B, #FF0025 " + perc + "%, #DBDBDB " + perc + "%, #DBDBDB " + perc + "%)";
-    //
-    //           if( !document.querySelector(".dottt:nth-child(1)#first .crown-wrapper") ) {
-    //               $(`.dottt#first`).append(`
-    //                 <div class="crown-wrapper"><img src="img/st/crown.svg"><div class="detail text-center">Casual</div></div>
-    //               `)
-    //             }
-    //
-    //           if( !document.querySelector(".dottt:nth-child(2)#second .crown-wrapper") ) {
-    //             $(`.dottt#second`).append(`
-    //               <div class="crown-wrapper"><img src="img/st/crown.svg"><div class="detail text-center">Bestie</div></div>
-    //             `)
-    //           }
-    //
-    //           if( !document.querySelector(".dottt:nth-child(3)#third .crown-wrapper") ) {
-    //             $(`.dottt#third`).append(`
-    //               <div class="crown-wrapper"><img src="img/st/crown.svg"><div class="detail text-center">Close Firend</div></div>
-    //             `)
-    //           }
-    //       }
-    //
-    //       // if (currentMilestone >= 4) {
-    //       //   lastMilestone.textContent = "✓";
-    //       // }
-    //       setActive();
-    //     }
-    //
-    //     slider.addEventListener("change", updateMilestone);
-    //
-    // }
-
-    // $(function() {
-    //     const $document   = $(document),
-    //         $inputRange = $('input[type="range"]');
-
-    //     function valueOutput(element) {
-    //         let value = element.value,
-    //             output = element.parentNode.getElementsByTagName('output')[0];
-    //         output.innerHTML = value;
-    //         console.log(value);
-    //     }
-
-    //     for (let i = $inputRange.length - 1; i >= 0; i--) {
-    //         valueOutput($inputRange[i]);
-    //     };
-
-    //     $document.on('input', 'input[type="range"]', function(e) {
-    //         valueOutput(e.target);
-    //     });
-    //     // end
-
-    //     $inputRange.rangeslider({
-    //       polyfill: false
-    //     });
-    // });
-
-    function isOlderEdgeOrIE() {
-      return (
-        window.navigator.userAgent.indexOf("MSIE ") > -1 ||
-        !!navigator.userAgent.match(/Trident.*rv\:11\./) ||
-        window.navigator.userAgent.indexOf("Edge") > -1
-      );
-    }
-
-    function valueTotalRatio(value, min, max) {
-      return ((value - min) / (max - min)).toFixed(2);
-    }
-
-    function getLinearGradientCSS(ratio, leftColor, rightColor) {
-      return [
-        '-webkit-gradient(',
-        'linear, ',
-        'left top, ',
-        'right top, ',
-        'color-stop(' + ratio + ', ' + leftColor + '), ',
-        'color-stop(' + ratio + ', ' + rightColor + ')',
-        ')'
-      ].join('');
-    }
-
-    function updateRangeEl(rangeEl) {
-      var ratio = valueTotalRatio(rangeEl.value, rangeEl.min, rangeEl.max);
-      rangeEl.style.backgroundImage = getLinearGradientCSS(ratio, '#FDA22B', '#DBDBDB');
-    }
-
-    function initRangeEl1() {
-      var rangeEl1 = document.querySelector('#range1');
-
-       updateRangeEl(rangeEl1);
-       rangeEl1.addEventListener("input", function(e) {
-         updateRangeEl1(e.target);
-         textEl.value = e.target.value;
-       });
-    }
-
-    function initRangeEl2() {
-      var rangeEl2 = document.querySelector('#range2');
-
-       updateRangeEl(rangeEl2);
-       rangeEl2.addEventListener("input", function(e) {
-         updateRangeEl2(e.target);
-         textEl.value = e.target.value;
-       });
-    }
-
-    function initRangeEl3() {
-      var rangeEl3 = document.querySelector('#range3');
-
-       updateRangeEl(rangeEl3);
-       rangeEl3.addEventListener("input", function(e) {
-         updateRangeEl3(e.target);
-         textEl.value = e.target.value;
-       });
-    }
-
-    function initRangeEl4() {
-      var rangeEl3 = document.querySelector('#range4');
-
-       updateRangeEl(rangeEl4);
-       rangeEl4.addEventListener("input", function(e) {
-         updateRangeEl4(e.target);
-         textEl.value = e.target.value;
-       });
-    }
-
-    initRangeEl1();
-    initRangeEl2();
-    initRangeEl3();
-    initRangeEl4();
-
-
   </script>
 
 <?php include('footer-1.php'); ?>

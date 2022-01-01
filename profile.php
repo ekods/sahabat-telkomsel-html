@@ -11,16 +11,16 @@
 
     <div class="container">
 
-      <div class="col-wrap"> 
+      <div class="col-wrap">
         <div class="col-left">
           <?php include('dashboard-nav.php'); ?>
         </div>
 
           <div id="biodata" class="col-right">
- 
-            <div class="">
+
+            <div class="col-12">
               <!-- GOLD USER -->
-              <div class="row user-gold profile-card-bg"> 
+              <div class="row user-gold profile-card-bg">
 
               <!-- Platinum USER -->
               <!-- <div class="row user-platinum profile-card-bg"> -->
@@ -28,12 +28,12 @@
               <!-- Silver USER -->
               <!-- <div class="row user-silver profile-card-bg"> -->
 
-                <div class="col d-flex align-items-center">
+                <div class="col-bio-1 mb-3">
                   <div class="user-box-images">
                     <img src="img/st/dummy/254a838cf18e359b6692764d3eae4ec1.png" alt="">
                   </div>
                 </div>
-                <div class="col-4 d-flex align-items-center">
+                <div class="col-bio-2 mb-3">
                   <div class="white-color">
                     <div class="user-box-content pr-0 pt-2">
                       <h2 class="font-telkomselbatiksans">Maudy Ayunda Putri</h2>
@@ -52,39 +52,48 @@
                   </div>
                 </div>
 
-                <div class="col-6">
-                  <section id="milestone" class="section">
+                <div class="col-bio-3 mb-3">
+                  <section id="milestone" class="section card-c">
                     <div class="title-gradient"><p class="bold">Level Sahabat Telkomsel</p></div>
+
+                  <?php
+                    $diamond = 300;
+                   ?>
                     <div class="rangeContainer">
-                      <input id="diamondRange" class="slider" type="range" min="1" max="4" value="1">
-                      <span class="nub"></span>
-                      <div class="milestone-wrapper">
-                        <span id="first" class="dottt active" data-range="1">
-                        </span>
-                        <span id="second"  class="dottt" data-range="2">
-                          <div class="milestone-locked-wrapper position-relative">
-                            <img src="img/st/milestone-locked.svg" alt="">
-                            <div class="detail text-center">
-                              Bestie
-                            </div>
+                      <div class="range-slider">
+
+                          <div class="wrap <?php if ($diamond >= 500) { echo 'complete-diamond'; } ?>
+                            <?php if ($diamond >= 10 && $diamond <= 500) { echo 'currrent-diamond'; } ?>">
+                            <?php if ($diamond >= 10 && $diamond <= 500): ?>
+                              <div class="tooltip-range"><?php echo 500 - $diamond; ?> lagi</div>
+                            <?php endif; ?>
+                            <input id="range1" class="range" type="range" value="<?php echo ($diamond >= 10) ? $diamond : '0'; ?>" min="10" max="500" disabled>
+                            <label class="range-label">Casual</label>
                           </div>
-                        </span>
-                        <span id="third"  class="dottt" data-range="3">
-                          <div class="milestone-locked-wrapper position-relative">
-                            <img src="img/st/milestone-locked.svg" alt="">
-                            <div class="detail text-center">
-                              Close Friend
-                            </div>
+
+                          <div class="wrap <?php if ($diamond >= 501) { echo 'complete-diamond'; } ?>
+                            <?php if ($diamond >= 501 && $diamond <= 1000) { echo 'currrent-diamond'; } ?>">
+                            <?php if ($diamond >= 501 && $diamond <= 1000): ?>
+                              <div class="tooltip-range"><?php echo 1000 - $diamond; ?> lagi</div>
+                            <?php endif; ?>
+                            <input id="range2" class="range" type="range" value="<?php echo ($diamond >= 501) ? $diamond : '0'; ?>" min="501" max="1000" disabled>
+                            <label class="range-label">Bestie</label>
                           </div>
-                        </span>
-                        <span id="fourth" class="dottt" data-range="4">
-                          <div class="milestone-locked-wrapper position-relative">
-                            <img src="img/st/milestone-locked.svg" alt="">
-                            <div class="detail text-center">
-                              Soulmate
-                            </div>
+
+                          <div class="wrap <?php if ($diamond >= 1001) { echo 'complete-diamond'; } ?>
+                            <?php if ($diamond >= 1001 && $diamond <= 5000) { echo 'currrent-diamond'; } ?>">
+                            <?php if ($diamond >= 1001 && $diamond <= 5000): ?>
+                              <div class="tooltip-range"><?php echo 5000 - $diamond; ?> lagi</div>
+                            <?php endif; ?>
+                            <input id="range3" class="range" type="range" value="<?php echo ($diamond >= 1001) ? $diamond : '0'; ?>" min="1001" max="5000" disabled>
+                            <label class="range-label">Close Friend</label>
                           </div>
-                        </span>
+
+                          <div class="wrap <?php if ($diamond >= 5001) { echo 'complete-diamond currrent-diamond'; } ?>">
+                            <input id="range4" class="range" type="range" value="<?php echo ($diamond >= 5001) ? $diamond : '0'; ?>" disabled>
+                            <label class="range-label">Soulmate</label>
+                          </div>
+
                       </div>
                     </div>
                   </section>
@@ -95,38 +104,26 @@
             <div class="py-5">
               <div class="row">
 
-                <div class="col-md-4">
+                <div class="col-sm-12 col-md-4">
                   <div class="biodata">
-                    <div class="row">
-                      <div class="col-md-4">
-                        <div class="bg-icon-profile">
-                          <img src="img/st/hastag-icon.svg" alt="">
-                        </div>
-                      </div>
-                      <div class="col-md-8 no-padding">
-                        <div class="highlight-content p-top-10">
-                            <p class="neutral">Hastag</p>
-                            <h5 class="font-telkomselbatiksans">#STI_CAMPUS1030</h5>
-                        </div>
-                      </div>
+                    <div class="bg-icon-profile">
+                      <img src="img/st/hastag-icon.svg" alt="">
+                    </div>
+                    <div class="highlight-content">
+                        <p class="neutral">Hastag</p>
+                        <h5 class="font-telkomselbatiksans">#STI_CAMPUS1030</h5>
                     </div>
                   </div>
                 </div>
 
-                <div class="col-md-4">
+                <div class="col-sm-12 col-md-4">
                   <div class="biodata">
-                    <div class="row">
-                      <div class="col-md-4">
-                        <div class="bg-icon-profile">
-                          <img src="img/st/share-chat-icon.svg" alt="">
-                        </div>
-                      </div>
-                      <div class="col-md-8 no-padding">
-                        <div class="highlight-content p-top-10">
-                            <p class="neutral">Kode Referral</p>
-                            <h5 class="font-telkomselbatiksans">STICAMPUS1030</h5>
-                        </div>
-                      </div>
+                    <div class="bg-icon-profile">
+                      <img src="img/st/share-chat-icon.svg" alt="">
+                    </div>
+                    <div class="highlight-content">
+                        <p class="neutral">Kode Referral</p>
+                        <h5 class="font-telkomselbatiksans">STICAMPUS1030</h5>
                     </div>
                   </div>
                 </div>
@@ -139,23 +136,17 @@
 
                 <!-- Silver USER -->
 
-                <div class="col-md-4">
-                  <div class="biodata">
-                    <div class="row">
-                      <div class="col-md-4">
-                        <div class="bg-icon-profile">
-                          <img src="img/st/diamond-icon.svg" alt="">
-                        </div>
-                      </div>
-                      <div class="col no-padding">
-                        <div class="highlight-content p-top-10">
-                            <p class="neutral">Total Diamond</p>
-                            <h5 class="font-telkomselbatiksans">1,326</h5>
-                        </div>
-                      </div>
-                      <div class="col no-padding redeem-wrapper align-items-center d-flex">
-                        <button class="btn">Redeem</button>
-                      </div>
+                <div class="col-sm-12 col-md-4">
+                  <div class="biodata w-highlight-btn">
+                    <div class="bg-icon-profile">
+                      <img src="img/st/diamond-icon.svg" alt="">
+                    </div>
+                    <div class="highlight-content">
+                        <p class="neutral">Total Diamond</p>
+                        <h5 class="font-telkomselbatiksans">1,326</h5>
+                    </div>
+                    <div class="highlight-btn">
+                      <a href="#" class="btn">Redeem</a>
                     </div>
                   </div>
                 </div>
@@ -164,9 +155,9 @@
             </div>
 
             <!-- Tabs  -->
-            <div class="bg-content tabs-page position-relative pt-5">
+            <div class="bg-content tabs-page position-relative">
               <!-- Nav Tab -->
-              <div class="nav-wrapper position-absolute">
+              <div class="nav-wrapper">
                   <ul class="nav nav-pills">
                     <li class="active">
                       <a href="#1a" data-toggle="tab" aria-expanded="true">Biodata</a>
@@ -181,7 +172,7 @@
                   </ul>
               </div>
 
-       
+
               <!-- Tab Content -->
               <div class="tab-content clearfix">
                 <div class="tab-pane active" id="1a">
@@ -192,7 +183,7 @@
                         <div class="text-left d-inline-block"><h4 class="bold">Informasi Personal</h4></div>
                       </div>
                       <div class="col-3 text-right">
-                        <a href="">
+                        <a href="javascript:void(0)" data-toggle="modal" data-target="#myModal">
                           <div class="icon-wrapper d-inline-block"><img src="img/st/edit-icon.svg" alt=""></div>
                           <div class="text-right d-inline-block"><h6 class="fred">Edit Data</h6></div>
                         </a>
@@ -300,7 +291,7 @@
                         <div class="text-left d-inline-block"><h4 class="bold">Dokumen Pribadi</h4></div>
                       </div>
                       <div class="col-3 text-right">
-                        <a href="">
+                        <a href="javascript:void(0)" data-toggle="modal" data-target="#myModal">
                           <div class="icon-wrapper d-inline-block"><img src="img/st/edit-icon.svg" alt=""></div>
                           <div class="text-right d-inline-block"><h6 class="fred">Edit Data</h6></div>
                         </a>
@@ -382,8 +373,8 @@
                         </div>
                       </div>
 
-                      
-                      
+
+
                     </div>
 
                   </div>
@@ -410,7 +401,7 @@
                         <div class="row">
                           <div class="col-auto d-flex">
                             <div class="icon-social-wrapper">
-                              <img src="img/st/ig-icon.png" alt="">
+                              <img src="img/st/social-ig.svg" alt="">
                             </div>
                           </div>
                           <div class="col-auto d-flex">
@@ -427,7 +418,7 @@
                         <div class="row">
                           <div class="col-auto d-flex">
                             <div class="icon-social-wrapper">
-                              <img src="img/st/social-twitter.png" alt="">
+                              <img src="img/st/social-twitter.svg" alt="">
                             </div>
                           </div>
                           <div class="col-auto d-flex">
@@ -444,7 +435,7 @@
                         <div class="row">
                           <div class="col-auto d-flex">
                             <div class="icon-social-wrapper">
-                              <img src="img/st/social-yt.png" alt="">
+                              <img src="img/st/social-yt.svg" alt="">
                             </div>
                           </div>
                           <div class="col-auto d-flex">
@@ -542,7 +533,7 @@
                         </div>
 
 
-       
+
                     </div>
 
                   </div>
@@ -554,124 +545,30 @@
     </div>
   </section>
 
-  <script>
 
-    $(document).ready(function(){
+  <!-- The Modal -->
+  <div class="modal fade" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
 
-      milestone();
-    });
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Modal Heading</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
 
+        <!-- Modal body -->
+        <div class="modal-body">
+          Modal body..
+        </div>
 
-    function milestone(){
-          const slider = document.getElementById("diamondRange"),
-          milestoneWrapper = document.querySelector(".milestone-wrapper"),
-          milestoneDetail = Array.prototype.slice.call(document.querySelectorAll(".dottt"));
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
 
-        function setActive() {
-          milestoneDetail.map(function (dottt) {
-            let milestoneIndex = parseInt(dottt.getAttribute("data-range"));
-            dottt.classList.remove("active");
-            dottt.classList.remove("passed");
-            if (milestoneIndex <= Math.floor(slider.value)) {
-              dottt.classList.add("passed");
-              if (milestoneIndex === Math.round(slider.value)) {
-                dottt.classList.add("active");
-              }
-            }
-          });
-        }
-
-        function updateMilestone() {
-          const firstMilestone = document.querySelector(".dottt:nth-child(1)#first"),
-                secondMilestone = document.querySelector(".dottt:nth-child(2)#second"),
-                thrirdMilestone = document.querySelector(".dottt:nth-child(3)#third"),
-                lastMilestone = document.querySelector(".dottt:nth-child(4)#fourth"),
-                min = this.getAttribute("min"),
-                perc = (this.value - min) * 33,
-                currentMilestone = Math.floor(this.value);
-          console.log(perc);
-          console.log(currentMilestone, `current`);
-          if (currentMilestone > 1 && currentMilestone < 3) {
-            this.style.backgroundImage =
-              "linear-gradient(to right, #FDA22B, #FF0025 " + perc + "%, #DBDBDB " + perc + "%, #DBDBDB " + perc + "%)";
-              if( !document.querySelector(".dottt:nth-child(1)#first .crown-wrapper") ) {
-                $(`.dottt#first`).append(`
-                  <div class="crown-wrapper"><img src="img/st/crown.svg"><div class="detail text-center">Casual</div></div>
-                `)
-              }
-          } else if (currentMilestone > 2 && currentMilestone < 4) {
-            this.style.backgroundImage =
-              "linear-gradient(to right, #FDA22B, #FF0025 " + perc + "%, #DBDBDB " + perc + "%, #DBDBDB " + perc + "%)";
-
-              if( !document.querySelector(".dottt:nth-child(1)#first .crown-wrapper") ) {
-                  $(`.dottt#first`).append(`
-                    <div class="crown-wrapper"><img src="img/st/crown.svg"><div class="detail text-center">Casual</div></div>
-                  `)
-                }
-
-              if( !document.querySelector(".dottt:nth-child(2)#second .crown-wrapper") ) {
-                $(`.dottt#second`).append(`
-                  <div class="crown-wrapper"><img src="img/st/crown.svg"><div class="detail text-center">Bestie</div></div>
-                `)
-              }
-          } else if (currentMilestone >= 3) {
-            this.style.backgroundImage =
-              "linear-gradient(to right, #FDA22B, #FF0025 " + perc + "%, #DBDBDB " + perc + "%, #DBDBDB " + perc + "%)";
-
-              if( !document.querySelector(".dottt:nth-child(1)#first .crown-wrapper") ) {
-                  $(`.dottt#first`).append(`
-                    <div class="crown-wrapper"><img src="img/st/crown.svg"><div class="detail text-center">Casual</div></div>
-                  `)
-                }
-
-              if( !document.querySelector(".dottt:nth-child(2)#second .crown-wrapper") ) {
-                $(`.dottt#second`).append(`
-                  <div class="crown-wrapper"><img src="img/st/crown.svg"><div class="detail text-center">Bestie</div></div>
-                `)
-              }
-
-              if( !document.querySelector(".dottt:nth-child(3)#third .crown-wrapper") ) {
-                $(`.dottt#third`).append(`
-                  <div class="crown-wrapper"><img src="img/st/crown.svg"><div class="detail text-center">Close Firend</div></div>
-                `)
-              }
-          }
-
-          // if (currentMilestone >= 4) {
-          //   lastMilestone.textContent = "✓";
-          // }
-          setActive();
-        }
-
-        slider.addEventListener("change", updateMilestone);
-
-    }
-
-    // $(function() {
-    //     const $document   = $(document),
-    //         $inputRange = $('input[type="range"]');
-
-    //     function valueOutput(element) {
-    //         let value = element.value,
-    //             output = element.parentNode.getElementsByTagName('output')[0];
-    //         output.innerHTML = value;
-    //         console.log(value);
-    //     }
-
-    //     for (let i = $inputRange.length - 1; i >= 0; i--) {
-    //         valueOutput($inputRange[i]);
-    //     };
-
-    //     $document.on('input', 'input[type="range"]', function(e) {
-    //         valueOutput(e.target);
-    //     });
-    //     // end
-
-    //     $inputRange.rangeslider({
-    //       polyfill: false
-    //     });
-    // });
-
-  </script>
+      </div>
+    </div>
+  </div>
 
 <?php include('footer-1.php'); ?>

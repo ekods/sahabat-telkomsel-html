@@ -24,11 +24,11 @@
 
                     <div class="row justify-content-between mb-5">
                         <div class="col-md-6 my-2">
-                            <div class="dark-shadow">
+                            <div class="dark-shadow w-100 h-100">
                                 <a href="pengaturan-security.php">
                                     <div class="row p-4">
                                         <div class="col-md-3">
-                                            <div class="">
+                                          <div class="icon-faq">
                                                 <img src="img/st/protect-icon.svg" alt="">
                                             </div>
                                         </div>
@@ -44,11 +44,11 @@
                         </div>
 
                         <div class="col-md-6 my-2">
-                            <div class="dark-shadow">
+                          <div class="dark-shadow w-100 h-100">
                                 <a href="pengaturan-keuangan.php">
                                 <div class="row p-4">
                                     <div class="col-md-3">
-                                        <div class="">
+                                      <div class="icon-faq">
                                             <img src="img/st/wallet-icon.svg" alt="">
                                         </div>
                                     </div>
@@ -72,11 +72,12 @@
 
                     <div class="row justify-content-between mb-5">
                         <div class="col-md-6 my-2">
-                            <div class="dark-shadow">
+                          <div class="dark-shadow w-100 h-100">
+
                                 <a href="pengaturan-faq.php">
                                 <div class="row p-4">
                                     <div class="col-md-3">
-                                        <div class="">
+                                        <div class="icon-faq">
                                             <img src="img/st/faq-icon.svg" alt="">
                                         </div>
                                     </div>
@@ -92,11 +93,12 @@
                         </div>
 
                         <div class="col-md-6 my-2">
-                            <div class="dark-shadow">
+                          <div class="dark-shadow w-100 h-100">
+
                                 <a href="hubungi-kami.php">
                                 <div class="row p-4">
                                     <div class="col-md-3">
-                                        <div class="">
+                                      <div class="icon-faq">
                                             <img src="img/st/consultation-icon.svg" alt="">
                                         </div>
                                     </div>

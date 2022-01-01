@@ -22,7 +22,7 @@
                         <nav aria-label="breadcrumb">
                             <ol class="breadcrumb">
                                 <li class="breadcrumb-item"><a href="pengaturan.php">Pengaturan</a></li>
-                                <li class="breadcrumb-item"><a href="pengaturan-profile.php">Akun Saya</a></li>
+                                <li class="breadcrumb-item"><a href="pengaturan.php">Akun Saya</a></li>
                                 <li class="breadcrumb-item active" aria-current="page">Login & Keamanan</li>
                             </ol>
                         </nav>

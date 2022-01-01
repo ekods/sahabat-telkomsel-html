@@ -545,4 +545,80 @@ animateOut: 'fadeOut',
   }
 
 
+	    function isOlderEdgeOrIE() {
+	      return (
+	        window.navigator.userAgent.indexOf("MSIE ") > -1 ||
+	        !!navigator.userAgent.match(/Trident.*rv\:11\./) ||
+	        window.navigator.userAgent.indexOf("Edge") > -1
+	      );
+	    }
+
+	    function valueTotalRatio(value, min, max) {
+	      return ((value - min) / (max - min)).toFixed(2);
+	    }
+
+	    function getLinearGradientCSS(ratio, leftColor, rightColor) {
+	      return [
+	        '-webkit-gradient(',
+	        'linear, ',
+	        'left top, ',
+	        'right top, ',
+	        'color-stop(' + ratio + ', ' + leftColor + '), ',
+	        'color-stop(' + ratio + ', ' + rightColor + ')',
+	        ')'
+	      ].join('');
+	    }
+
+	    function updateRangeEl(rangeEl) {
+	      var ratio = valueTotalRatio(rangeEl.value, rangeEl.min, rangeEl.max);
+	      rangeEl.style.backgroundImage = getLinearGradientCSS(ratio, '#FDA22B', '#DBDBDB');
+	    }
+
+	    function initRangeEl1() {
+	      var rangeEl1 = document.querySelector('#range1');
+
+	       updateRangeEl(rangeEl1);
+	       rangeEl1.addEventListener("input", function(e) {
+	         updateRangeEl1(e.target);
+	         textEl.value = e.target.value;
+	       });
+	    }
+
+	    function initRangeEl2() {
+	      var rangeEl2 = document.querySelector('#range2');
+
+	       updateRangeEl(rangeEl2);
+	       rangeEl2.addEventListener("input", function(e) {
+	         updateRangeEl2(e.target);
+	         textEl.value = e.target.value;
+	       });
+	    }
+
+	    function initRangeEl3() {
+	      var rangeEl3 = document.querySelector('#range3');
+
+	       updateRangeEl(rangeEl3);
+	       rangeEl3.addEventListener("input", function(e) {
+	         updateRangeEl3(e.target);
+	         textEl.value = e.target.value;
+	       });
+	    }
+
+	    function initRangeEl4() {
+	      var rangeEl3 = document.querySelector('#range4');
+
+	       updateRangeEl(rangeEl4);
+	       rangeEl4.addEventListener("input", function(e) {
+	         updateRangeEl4(e.target);
+	         textEl.value = e.target.value;
+	       });
+	    }
+
+	    initRangeEl1();
+	    initRangeEl2();
+	    initRangeEl3();
+	    initRangeEl4();
+
+
+
 });
