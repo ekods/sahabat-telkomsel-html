@@ -1613,6 +1613,27 @@ button.close.btn-close {
   margin-left: 10px;
 }
 
+.btn-default.tag.dark-blue {
+  background-color: rgba(0, 26, 65, 1);
+}
+
+.btn-default.tag.green {
+  background-color: rgba(0, 167, 67, 1);
+}
+
+.btn-default.tag.status.yellow {
+  background-color: rgba(253, 162, 43, 1);
+}
+
+.btn-default.tag.status {
+  color: #fff;
+  font-size: 12px;
+  letter-spacing: 2.2px;
+  margin-top: 0;
+  margin-left: 0;
+}
+
+
 .rewards-slider .mission-slider .owl-nav {
   width: 100%;
   top: 30%;
