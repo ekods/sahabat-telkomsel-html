@@ -93,6 +93,10 @@
   color: var(--red) !important;
 }
 
+.fblack {
+  color: var(--black) !important;
+}
+
 .neutral {
   color: #666666;
 }
@@ -1200,6 +1204,10 @@ input[type=file].drop-zone__input {
 
 #errorModal .modal-dialog {
   background-color: transparent;
+}
+
+#informasiPersonal .modal-dialog {
+  max-width: 700px;
 }
 
 #errorModal .modal-header {

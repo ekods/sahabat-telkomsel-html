@@ -183,7 +183,7 @@
                         <div class="text-left d-inline-block"><h4 class="bold">Informasi Personal</h4></div>
                       </div>
                       <div class="col-3 text-right">
-                        <a href="javascript:void(0)" data-toggle="modal" data-target="#myModal">
+                        <a href="javascript:void(0)" data-toggle="modal" data-target="#informasiPersonal">
                           <div class="icon-wrapper d-inline-block"><img src="img/st/edit-icon.svg" alt=""></div>
                           <div class="text-right d-inline-block"><h6 class="fred">Edit Data</h6></div>
                         </a>
@@ -291,7 +291,7 @@
                         <div class="text-left d-inline-block"><h4 class="bold">Dokumen Pribadi</h4></div>
                       </div>
                       <div class="col-3 text-right">
-                        <a href="javascript:void(0)" data-toggle="modal" data-target="#myModal">
+                        <a href="javascript:void(0)" data-toggle="modal" data-target="#dokumenPribadi">
                           <div class="icon-wrapper d-inline-block"><img src="img/st/edit-icon.svg" alt=""></div>
                           <div class="text-right d-inline-block"><h6 class="fred">Edit Data</h6></div>
                         </a>
@@ -388,7 +388,7 @@
                         <div class="text-left d-inline-block"><h4 class="bold">Akun Social Media</h4></div>
                       </div>
                       <div class="col-3 text-right">
-                        <a href="">
+                        <a href="javascript:void(0)" data-toggle="modal" data-target="#socialMedia">
                           <div class="icon-wrapper d-inline-block"><img src="img/st/edit-icon.svg" alt=""></div>
                           <div class="text-right d-inline-block"><h6 class="fred">Edit Data</h6></div>
                         </a>
@@ -467,7 +467,7 @@
                         <div class="text-left d-inline-block"><h4 class="bold">Instagram</h4></div>
                       </div>
                       <div class="col-3 text-right">
-                        <a href="">
+                        <a href="javascript:void(0)" data-toggle="modal" data-target="#rateCard">
                           <div class="icon-wrapper d-inline-block"><img src="img/st/edit-icon.svg" alt=""></div>
                           <div class="text-right d-inline-block"><h6 class="fred">Edit Data</h6></div>
                         </a>
@@ -546,20 +546,365 @@
   </section>
 
 
-  <!-- The Modal -->
-  <div class="modal fade" id="myModal">
+  <!-- The Modal Informasi Personal-->
+  <div class="modal fade" id="informasiPersonal">
     <div class="modal-dialog">
       <div class="modal-content">
 
         <!-- Modal Header -->
         <div class="modal-header">
-          <h4 class="modal-title">Modal Heading</h4>
+          <h4 class="modal-title bold">Edit Informasi Personal</h4>
           <button type="button" class="close" data-dismiss="modal">&times;</button>
         </div>
 
         <!-- Modal body -->
         <div class="modal-body">
-          Modal body..
+          <form class="form" name="ajax-form" action="onboarding-silver-1.php" method="post">
+            <div class="col-sm-12 contact-form-item">
+                <label for="">Nama Lengkap<span>*</span></label>
+                <input name="name" id="name" type="text" placeholder="Isi nama lengkap">
+            </div>
+            <div class="col-sm-12 contact-form-item">
+                <label for="">Email<span>*</span></label>
+                <input name="name" id="name" type="text" placeholder="user@mail.com">
+            </div>
+            <div class="col-sm-12 contact-form-item">
+                <label for="">Nomor Handphone<span>*</span></label>
+                <input name="name" id="name" type="text" placeholder="cth. 08123xxx">
+            </div>
+            <div class="col-sm-12 contact-form-item">
+                <label for="">Nomor LinkAja<span>*</span></label>
+                <input name="name" id="name" type="text" placeholder="cth. 08123xxx">
+            </div>
+
+            <div class="col-sm-12 contact-form-item">
+                <label for="">Status<span>*</span></label>
+                <div class="select">
+                  <select onchange="showresult(this.value)">
+                    <option value="">Pilih status</option>
+                    <option value="pelajar">Pelajar</option>
+                    <option value="mahasiswa">Mahasiswa</option>
+                    <option value="umum">Umum</option>
+                    <option value="kol-influencer">KOL / Influencer</option>
+                    <option value="internal-telkomsel">Internal Telkomsel</option>
+                  </select>
+                </div>
+            </div>
+
+            <div class="col-sm-12 contact-form-item">
+                <label for="">Jenis Kelamin<span>*</span></label>
+                <div class="select">
+                  <select>
+                    <option value="">Pilih jenis kelamin</option>
+                    <option value="laki-laki">Laki-laki</option>
+                    <option value="perempuan">Perempuan</option>
+                  </select>
+                </div>
+            </div>
+
+            <div class="col-sm-12 contact-form-item">
+                <label for="">Passion Point<span>*</span></label>
+                <div class="dropdown">
+                  <label class="dropdown-label">Pilih Passion</label>
+
+                  <div class="dropdown-list">
+                    <div class="checkbox">
+                      <input type="checkbox" name="dropdown-group" class="check checkbox-custom" id="checkbox-custom_01"/>
+                      <label for="checkbox-custom_01" class="checkbox-custom-label">Game / Video Game</label>
+                    </div>
+
+                    <div class="checkbox">
+                      <input type="checkbox" name="dropdown-group" class="check checkbox-custom" id="checkbox-custom_02"/>
+                      <label for="checkbox-custom_02" class="checkbox-custom-label">Movie</label>
+                    </div>
+
+                    <div class="checkbox">
+                      <input type="checkbox" name="dropdown-group" class="check checkbox-custom" id="checkbox-custom_03"/>
+                      <label for="checkbox-custom_03" class="checkbox-custom-label">Sport</label>
+                    </div>
+
+                    <div class="checkbox">
+                      <input type="checkbox" name="dropdown-group" class="check checkbox-custom" id="checkbox-custom_04"/>
+                      <label for="checkbox-custom_04" class="checkbox-custom-label">Food</label>
+                    </div>
+
+                    <div class="checkbox">
+                      <input type="checkbox" name="dropdown-group" class="check checkbox-custom" id="checkbox-custom_05"/>
+                      <label for="checkbox-custom_05" class="checkbox-custom-label">Fashion</label>
+                    </div>
+
+                    <div class="checkbox">
+                      <input type="checkbox" name="dropdown-group" class="check checkbox-custom" id="checkbox-custom_06"/>
+                      <label for="checkbox-custom_06" class="checkbox-custom-label">Beauty / Makeup</label>
+                    </div>
+
+                    <div class="checkbox">
+                      <input type="checkbox" name="dropdown-group" class="check checkbox-custom" id="checkbox-custom_07"/>
+                      <label for="checkbox-custom_07" class="checkbox-custom-label">Travel</label>
+                    </div>
+
+                    <div class="checkbox">
+                      <input type="checkbox" name="dropdown-group" class="check checkbox-custom" id="checkbox-custom_08"/>
+                      <label for="checkbox-custom_08" class="checkbox-custom-label">Art / Photography</label>
+                    </div>
+
+                    <div class="checkbox">
+                      <input type="checkbox" name="dropdown-group" class="check checkbox-custom" id="checkbox-custom_09"/>
+                      <label for="checkbox-custom_09" class="checkbox-custom-label">Education</label>
+                    </div>
+
+                    <div class="checkbox">
+                      <input type="checkbox" name="dropdown-group" class="check checkbox-custom" id="checkbox-custom_10"/>
+                      <label for="checkbox-custom_10" class="checkbox-custom-label">Book / Reading</label>
+                    </div>
+
+                    <div class="checkbox">
+                      <input type="checkbox" name="dropdown-group" class="check checkbox-custom" id="checkbox-custom_11"/>
+                      <label for="checkbox-custom_11" class="checkbox-custom-label">Cooking / Baking</label>
+                    </div>
+
+                    <div class="checkbox">
+                      <input type="checkbox" name="dropdown-group" class="check checkbox-custom" id="checkbox-custom_12"/>
+                      <label for="checkbox-custom_12" class="checkbox-custom-label">Technology</label>
+                    </div>
+
+                    <div class="checkbox">
+                      <input type="checkbox" name="dropdown-group" class="check checkbox-custom" id="checkbox-custom_13"/>
+                      <label for="checkbox-custom_13" class="checkbox-custom-label">Family</label>
+                    </div>
+
+                    <div class="checkbox">
+                      <input type="checkbox" name="dropdown-group" class="check checkbox-custom" id="checkbox-custom_14"/>
+                      <label for="checkbox-custom_14" class="checkbox-custom-label">Fitness</label>
+                    </div>
+                  </div>
+                </div>
+            </div>
+
+            <div class="col-sm-12 contact-form-item">
+              <div class="row">
+                <div class="col-md-6 col-sm-6">
+                  <label for="">Tempat Lahir<span>*</span></label>
+                  <input name="" id="" type="text" placeholder="Isi kota lahir">
+                </div>
+                <div class="col-md-6 col-sm-6">
+                  <label for="">Tanggal Lahir<span>*</span></label>
+                  <div class="date-picker">
+                    <input type="text" id="datepicker" placeholder="Pilih Tanggal">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-12 contact-form-item">
+              <div class="row">
+                <div class="col-sm-6 contact-form-item">
+                  <label for="">Provinsi Tinggal / Domisili<span>*</span></label>
+                  <div class="select">
+                    <select onchange="showresult(this.value)">
+                      <option value="">Pilih Provinsi</option>
+                      <option value="dki-jakarta">DKI Jakarta</option>
+                      <option value="jawa-barat">Jawa Barat</option>
+                      <option value="jawa-timur">Jawa Timur</option>
+                      <option value="jawa-tengah">Jawa Tengah</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-sm-6 contact-form-item">
+                  <label for="">Kota Tempat Tinggal / Domisili<span>*</span></label>
+                  <div class="select">
+                    <select onchange="showresult(this.value)">
+                      <option value="">Pilih Kota</option>
+                      <option value="jakarta-pusat">Jakarta Pusat</option>
+                      <option value="jakarta-barat">Jakarta Barat</option>
+                      <option value="jakarta-selatan">Jakarta Selatan</option>
+                      <option value="jakarta-timur">Jakarta Timur</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-12 contact-form-item">
+                <label for="">Alamat Tempat Tinggal<span>*</span></label>
+                <textarea name="name" rows="8" cols="80" placeholder="Isi alamat lengkap"></textarea>
+            </div>
+
+
+            <div class="col-sm-12 contact-form-item m-top-40">
+                <button type="submit" class="send_message btn btn-main btn-theme w-100">Selanjutnya</button>
+            </div>
+            <div class="clear"></div>
+          </form>
+        </div>
+
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- The Modal Dokumen Pribadi-->
+  <div class="modal fade" id="dokumenPribadi">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title bold">Edit Dokumen Pribadi</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body">
+          <form class="form" name="ajax-form" action="onboarding-silver-1.php" method="post">
+
+            <div class="col-sm-12 contact-form-item">
+              <div class="drop-zone">
+                <div class="w-100">
+                  <div class="drop-zone__prompt">
+                    <h5 class="bold">Foto KTP</h5>
+                    <small>File format PDF, JPG, atau PNG (max 5 mb)</small>
+                  </div>
+                </div>
+                <label for="myFile" class="btn">Upload</label>
+                <input type="file" name="myFile" class="drop-zone__input">
+              </div>
+            </div>
+
+            <div class="col-sm-12 contact-form-item">
+                <label for="">Nomor KTP<span>*</span></label>
+                <input name="name" id="name" type="text" placeholder="Isi nomor ktp">
+            </div>
+
+            <div class="col-sm-12 contact-form-item">
+              <div class="drop-zone">
+                <div class="w-100">
+                  <div class="drop-zone__prompt">
+                    <h5 class="bold">Foto NPWP</h5>
+                    <small>File format PDF, JPG, atau PNG (max 5 mb)</small>
+                  </div>
+                </div>
+                <label for="myFile" class="btn">Upload</label>
+                <input type="file" name="myFile" class="drop-zone__input">
+              </div>
+            </div>
+
+            <div class="col-sm-12 contact-form-item">
+                <label for="">Nomor NPWP<span>*</span></label>
+                <input name="name" id="name" type="text" placeholder="Isi nomor NPWP">
+            </div>
+
+            <div class="col-sm-12 contact-form-item m-top-40">
+                <button type="submit" class="send_message btn btn-main btn-theme w-100">Selanjutnya</button>
+            </div>
+            <div class="clear"></div>
+
+          </form>
+        </div>
+
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- The Modal Social Media-->
+  <div class="modal fade" id="socialMedia">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title bold">Edit Social Media</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body">
+          <form class="form" name="ajax-form" action="onboarding-silver-1.php" method="post">
+
+            <div class="col-sm-12 contact-form-item">
+                <label for="">Link Akun Instagram<span>*</span></label>
+                <input name="instagram" id="instagram" type="text" placeholder="link profil instagram (cth. www.instagram.com/username)">
+            </div>
+
+            <div class="col-sm-12 contact-form-item">
+              <label for="">Link Akun Twitter<span>*</span></label>
+              <input name="instagram" id="twitter" type="text" placeholder="link profil twitter (cth. www.twitter.com/username)">
+            </div>
+
+            <div class="col-sm-12 contact-form-item">
+              <label for="">Link Akun Youtube<span>*</span></label>
+              <input name="instagram" id="youtube" type="text" placeholder="link profil channel youtube (cth. www.youtube.com/username)">
+            </div>
+
+            <div class="col-sm-12 contact-form-item m-top-40">
+                <button type="submit" class="send_message btn btn-main btn-theme w-100">Selanjutnya</button>
+            </div>
+            <div class="clear"></div>
+
+          </form>
+        </div>
+
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- The Modal Rate Card-->
+  <div class="modal fade" id="rateCard">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title bold">Edit Rate Card</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body">
+          <form class="form" name="ajax-form" action="onboarding-silver-1.php" method="post">
+
+            <div class="col-sm-12 contact-form-item">
+                <label for="">Story Foto<span>*</span></label>
+                <input name="name" id="name" type="text" placeholder="Isi Story Foto">
+            </div>
+
+            <div class="col-sm-12 contact-form-item">
+                <label for="">Story Video<span>*</span></label>
+                <input name="name" id="name" type="text" placeholder="Isi Story Video">
+            </div>
+
+            <div class="col-sm-12 contact-form-item">
+                <label for="">Feed Foto<span>*</span></label>
+                <input name="name" id="name" type="text" placeholder="Isi Feed Foto">
+            </div>
+
+            <div class="col-sm-12 contact-form-item">
+                <label for="">Feed Foto<span>*</span></label>
+                <input name="name" id="name" type="text" placeholder="Isi Feed Video">
+            </div>
+
+            <div class="col-sm-12 contact-form-item m-top-40">
+                <button type="submit" class="send_message btn btn-main btn-theme w-100">Selanjutnya</button>
+            </div>
+            <div class="clear"></div>
+
+          </form>
         </div>
 
         <!-- Modal footer -->
