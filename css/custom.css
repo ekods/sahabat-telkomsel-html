@@ -1605,6 +1605,29 @@ button.close.btn-close {
   margin-top: 3px;
 }
 
+.views-post {
+    gap: 0!important;
+    background-color: rgba(242, 242, 242, 1);
+    width: 70px;
+    height: 35px;
+    border-radius: 20px;
+    margin-top: 5px;
+}
+
+.views-post li {
+  padding: 0 10px;
+  border-radius: 50px;
+  filter: grayscale(1);
+}
+
+.views-post li.active {
+  filter: grayscale(0);
+  background-color: #fff;
+  background-size: cover;
+  height: 100%;
+  transition: .3s;
+}
+
 .btn-default.tag.neutral-40 {
   color: rgba(153, 153, 153, 1);
   font-size: 12px;

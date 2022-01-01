@@ -65,12 +65,16 @@
 
               <div class="mb-3 mt-3 nav-grid">
                 <h4>Tampilan Grid</h4>
-                <ul class="nav nav-pills">
-                  <li class="active">
-                    <a href="#grid-view-1" data-toggle="tab" aria-expanded="true">grid</a>
+                <ul class="nav nav-pills views-post align-items-center">
+                  <li class="d-flex align-items-center active">
+                    <a href="#grid-view-1" data-toggle="tab" aria-expanded="true">
+                      <img src="img/st/grid-view.png" alt="">
+                    </a>
                   </li>
-                  <li class="">
-                    <a href="#list-view-1" data-toggle="tab" aria-expanded="false">list</a>
+                  <li class="d-flex align-items-center">
+                    <a href="#list-view-1" data-toggle="tab" aria-expanded="true">
+                      <img src="img/st/list-view.png" alt="">
+                    </a>
                   </li>
                 </ul>
                 <!-- <div>
@@ -473,12 +477,16 @@
 
               <div class="mb-3 mt-3 nav-grid">
                 <h4>Tampilan Grid</h4>
-                <ul class="nav nav-pills">
-                  <li class="active">
-                    <a href="#grid-view-2" data-toggle="tab" aria-expanded="true">grid</a>
+                <ul class="nav nav-pills views-post align-items-center">
+                  <li class="d-flex align-items-center active">
+                    <a href="#grid-view-2" data-toggle="tab" aria-expanded="true">
+                      <img src="img/st/grid-view.png" alt="">
+                    </a>
                   </li>
-                  <li class="">
-                    <a href="#list-view-2" data-toggle="tab" aria-expanded="false">list</a>
+                  <li class="d-flex align-items-center">
+                    <a href="#list-view-2" data-toggle="tab" aria-expanded="true">
+                      <img src="img/st/list-view.png" alt="">
+                    </a>
                   </li>
                 </ul>
                 <!-- <div>
