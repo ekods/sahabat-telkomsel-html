@@ -337,6 +337,15 @@
   display: inline-block;
 }
 
+.custom-table table {
+  border: 1px solid #E7E7ED;
+  border-radius: 20px;
+}
+
+.custom-table thead th {
+  border-bottom:  1px solid #E7E7ED;
+}
+
 .owl-dots {
   text-align: left;
   display: flex;

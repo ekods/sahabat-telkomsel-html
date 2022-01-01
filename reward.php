@@ -121,97 +121,64 @@
                         </a>
                     </div>
 
-                    <div class="p-top-50">
+                    <div class="p-top-50 custom-table ">
                         <h4 class="bold">Riwayat Redeem</h4>
 
-                        <table id="example" class="table table-striped table-bordered" cellspacing="0" width="100%">
-                            <thead>
+                        <table id="example" class="table table-borderless" cellspacing="0" width="100%">
+                            <thead class="border-head">
                                 <tr>
-                                    <th>Order</th>
-                                    <th>Description</th>
-                                    <th>Deadline</th>
-                                    <th>Status</th>
-                                    <th>Amount</th>
+                                    <th class="align-middle">Created Date</th>
+                                    <th class="align-middle">Status</th>
+                                    <th class="align-middle">Coupon ID</th>
+                                    <th class="align-middle">Coupon Name</th>
+                                    <th class="align-middle">Cost</th>
+                                    <th class="align-middle">Reward</th>
+                                    <th class="align-middle">LinkAja</th>
+                                    <th class="align-middle">Last Updated</th>
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
-                                    <td>1</td>
-                                    <td>Alphabet puzzle</td>
-                                    <td>2016/01/15</td>
-                                    <td>Done</td>
-                                    <td data-order="1000">€1.000,00</td>
+                                <tr>      
+                                    <td>16  November 2021 08:20:24</td>
+                                    <td>Redeemed</td>
+                                    <td>GBYRLA450</td>
+                                    <td>Gebyar LinkAja 450rb</td>
+                                    <td data-order="1000">-1,230 Diamond</td>
+                                    <td>Saldo LinkAja Rp 750.000</td>
+                                    <td>080123456789</td>
+                                    <td>16  November 2021 08:20:24</td>
                                 </tr>
-                                <tr>
-                                    <td>2</td>
-                                    <td>Layout for poster</td>
-                                    <td>2016/01/31</td>
-                                    <td>Planned</td>
-                                    <td data-order="1834">€1.834,00</td>
+                                <tr>      
+                                    <td>13  November 2021 08:20:24</td>
+                                    <td>Rejected</td>
+                                    <td>GBYRLA451</td>
+                                    <td>Gebyar LinkAja 450rb</td>
+                                    <td data-order="1000">-1,230 Diamond</td>
+                                    <td>Saldo LinkAja Rp 750.000</td>
+                                    <td>080123456789</td>
+                                    <td>16  November 2021 08:20:24</td>
                                 </tr>
-                                <tr>
-                                    <td>3</td>
-                                    <td>Image creation</td>
-                                    <td>2016/01/23</td>
-                                    <td>To Do</td>
-                                    <td data-order="1500">€1.500,00</td>
+                                <tr>      
+                                    <td>12  November 2021 08:20:24</td>
+                                    <td>Redeemed</td>
+                                    <td>GBYRLA455</td>
+                                    <td>Gebyar LinkAja 450rb</td>
+                                    <td data-order="1000">-1,230 Diamond</td>
+                                    <td>Saldo LinkAja Rp 750.000</td>
+                                    <td>080123456789</td>
+                                    <td>16  November 2021 08:20:24</td>
                                 </tr>
-                                <tr>
-                                    <td>4</td>
-                                    <td>Create font</td>
-                                    <td>2016/02/26</td>
-                                    <td>Done</td>
-                                    <td data-order="1200">€1.200,00</td>
+                                <tr>      
+                                    <td>21  November 2021 08:20:24</td>
+                                    <td>Redeemed</td>
+                                    <td>GBYRLA4509</td>
+                                    <td>Gebyar LinkAja 450rb</td>
+                                    <td data-order="1000">-1,230 Diamond</td>
+                                    <td>Saldo LinkAja Rp 750.000</td>
+                                    <td>080123456789</td>
+                                    <td>16  November 2021 08:20:24</td>
                                 </tr>
-                                <tr>
-                                    <td>5</td>
-                                    <td>Sticker production</td>
-                                    <td>2016/02/18</td>
-                                    <td>Planned</td>
-                                    <td data-order="2100">€2.100,00</td>
-                                </tr>
-                                <tr>
-                                    <td>6</td>
-                                    <td>Glossy poster</td>
-                                    <td>2016/03/17</td>
-                                    <td>To Do</td>
-                                    <td data-order="899">€899,00</td>
-                                </tr>
-                                <tr>
-                                    <td>7</td>
-                                    <td>Beer label</td>
-                                    <td>2016/05/28</td>
-                                    <td>Confirmed</td>
-                                    <td data-order="2499">€2.499,00</td>
-                                </tr>
-                                <tr>
-                                    <td>8</td>
-                                    <td>Shop sign</td>
-                                    <td>2016/04/19</td>
-                                    <td>Offer</td>
-                                    <td data-order="1099">€1.099,00</td>
-                                </tr>
-                                <tr>
-                                    <td>9</td>
-                                    <td>X-Mas decoration</td>
-                                    <td>2016/10/31</td>
-                                    <td>Confirmed</td>
-                                    <td data-order="1750">€1.750,00</td>
-                                </tr>
-                                <tr>
-                                    <td>10</td>
-                                    <td>Halloween invite</td>
-                                    <td>2016/09/12</td>
-                                    <td>Planned</td>
-                                    <td data-order="400">€400,00</td>
-                                </tr>
-                                <tr>
-                                    <td>11</td>
-                                    <td>Wedding announcement</td>
-                                    <td>2016/07/09</td>
-                                    <td>To Do</td>
-                                    <td data-order="299">€299,00</td>
-                                </tr>
+                        
                             </tbody>
                         </table>
                     
@@ -325,116 +292,6 @@
       });
 
     }
-
-    // function milestone(){
-    //       const slider = document.getElementById("diamondRange"),
-    //       milestoneWrapper = document.querySelector(".milestone-wrapper"),
-    //       milestoneDetail = Array.prototype.slice.call(document.querySelectorAll(".dottt"));
-    //
-    //     function setActive() {
-    //       milestoneDetail.map(function (dottt) {
-    //         let milestoneIndex = parseInt(dottt.getAttribute("data-range"));
-    //         dottt.classList.remove("active");
-    //         dottt.classList.remove("passed");
-    //         if (milestoneIndex <= Math.floor(slider.value)) {
-    //           dottt.classList.add("passed");
-    //           if (milestoneIndex === Math.round(slider.value)) {
-    //             dottt.classList.add("active");
-    //           }
-    //         }
-    //       });
-    //     }
-    //
-    //     function updateMilestone() {
-    //       const firstMilestone = document.querySelector(".dottt:nth-child(1)#first"),
-    //             secondMilestone = document.querySelector(".dottt:nth-child(2)#second"),
-    //             thrirdMilestone = document.querySelector(".dottt:nth-child(3)#third"),
-    //             lastMilestone = document.querySelector(".dottt:nth-child(4)#fourth"),
-    //             min = this.getAttribute("min"),
-    //             perc = (this.value - min) * 33,
-    //             currentMilestone = Math.floor(this.value);
-    //       console.log(perc);
-    //       console.log(currentMilestone, `current`);
-    //       if (currentMilestone > 1 && currentMilestone < 3) {
-    //         this.style.backgroundImage =
-    //           "linear-gradient(to right, #FDA22B, #FF0025 " + perc + "%, #DBDBDB " + perc + "%, #DBDBDB " + perc + "%)";
-    //           if( !document.querySelector(".dottt:nth-child(1)#first .crown-wrapper") ) {
-    //             $(`.dottt#first`).append(`
-    //               <div class="crown-wrapper"><img src="img/st/crown.svg"><div class="detail text-center">Casual</div></div>
-    //             `)
-    //           }
-    //       } else if (currentMilestone > 2 && currentMilestone < 4) {
-    //         this.style.backgroundImage =
-    //           "linear-gradient(to right, #FDA22B, #FF0025 " + perc + "%, #DBDBDB " + perc + "%, #DBDBDB " + perc + "%)";
-    //
-    //           if( !document.querySelector(".dottt:nth-child(1)#first .crown-wrapper") ) {
-    //               $(`.dottt#first`).append(`
-    //                 <div class="crown-wrapper"><img src="img/st/crown.svg"><div class="detail text-center">Casual</div></div>
-    //               `)
-    //             }
-    //
-    //           if( !document.querySelector(".dottt:nth-child(2)#second .crown-wrapper") ) {
-    //             $(`.dottt#second`).append(`
-    //               <div class="crown-wrapper"><img src="img/st/crown.svg"><div class="detail text-center">Bestie</div></div>
-    //             `)
-    //           }
-    //       } else if (currentMilestone >= 3) {
-    //         this.style.backgroundImage =
-    //           "linear-gradient(to right, #FDA22B, #FF0025 " + perc + "%, #DBDBDB " + perc + "%, #DBDBDB " + perc + "%)";
-    //
-    //           if( !document.querySelector(".dottt:nth-child(1)#first .crown-wrapper") ) {
-    //               $(`.dottt#first`).append(`
-    //                 <div class="crown-wrapper"><img src="img/st/crown.svg"><div class="detail text-center">Casual</div></div>
-    //               `)
-    //             }
-    //
-    //           if( !document.querySelector(".dottt:nth-child(2)#second .crown-wrapper") ) {
-    //             $(`.dottt#second`).append(`
-    //               <div class="crown-wrapper"><img src="img/st/crown.svg"><div class="detail text-center">Bestie</div></div>
-    //             `)
-    //           }
-    //
-    //           if( !document.querySelector(".dottt:nth-child(3)#third .crown-wrapper") ) {
-    //             $(`.dottt#third`).append(`
-    //               <div class="crown-wrapper"><img src="img/st/crown.svg"><div class="detail text-center">Close Firend</div></div>
-    //             `)
-    //           }
-    //       }
-    //
-    //       // if (currentMilestone >= 4) {
-    //       //   lastMilestone.textContent = "✓";
-    //       // }
-    //       setActive();
-    //     }
-    //
-    //     slider.addEventListener("change", updateMilestone);
-    //
-    // }
-
-    // $(function() {
-    //     const $document   = $(document),
-    //         $inputRange = $('input[type="range"]');
-
-    //     function valueOutput(element) {
-    //         let value = element.value,
-    //             output = element.parentNode.getElementsByTagName('output')[0];
-    //         output.innerHTML = value;
-    //         console.log(value);
-    //     }
-
-    //     for (let i = $inputRange.length - 1; i >= 0; i--) {
-    //         valueOutput($inputRange[i]);
-    //     };
-
-    //     $document.on('input', 'input[type="range"]', function(e) {
-    //         valueOutput(e.target);
-    //     });
-    //     // end
-
-    //     $inputRange.rangeslider({
-    //       polyfill: false
-    //     });
-    // });
 
     function isOlderEdgeOrIE() {
       return (
