@@ -276,8 +276,8 @@
 
     function callOwlSlider(){
       const arrow = {
-        prev: "prev",
-        next: "next"
+        prev: "reward-slider",
+        next: "reward-slider"
       }
 
       $(".owl-carousel").owlCarousel({
@@ -286,8 +286,8 @@
         items: 3,
         margin: 10,
         navText: [
-          `<a><img src="img/st/${arrow.prev}-icon.svg" alt=""></a>` ,
-          `<a><img src="img/st/${arrow.next}-icon.svg" alt=""></a>`
+          `<a><img src="img/st/${arrow.prev}.svg" alt=""></a>` ,
+          `<a><img src="img/st/${arrow.next}.svg" alt=""></a>`
           ]
       });
 
