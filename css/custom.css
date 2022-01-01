@@ -1649,6 +1649,7 @@ button.close.btn-close {
 
 /* MILESTONE */
 
+#diamond.section,
 #milestone.section {
   width: 100%;
   background: #fff;
@@ -2066,6 +2067,11 @@ input[type="text"] {
   text-align: center;
   -webkit-animation: bounceTop 2s infinite;
 animation: bounceTop 2s infinite;
+}
+
+.rewards-cards a .diamonds{
+  width: 20px;
+  height: 20px;
 }
 
 .tooltip-range:before {

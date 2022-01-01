@@ -10,9 +10,9 @@
             <div class="container mt-5">
 
                 <a href="#" class="toggle-close bold fblack"><i class="fa fa-chevron-left"></i> Kembali ke Dashboard</a>
-                <div class="">
+                <div class="mt-5">
                     <!-- GOLD USER -->
-                    <div class="row user-gold profile-card-bg my-5"> 
+                    <div class="row user-gold profile-card-bg">
 
                     <!-- Platinum USER -->
                     <!-- <div class="row user-platinum profile-card-bg"> -->
@@ -20,75 +20,97 @@
                     <!-- Silver USER -->
                     <!-- <div class="row user-silver profile-card-bg"> -->
 
-                        <div class="col d-flex align-items-center">
-                            <div class="user-box-images">
-                                <img src="img/st/dummy/254a838cf18e359b6692764d3eae4ec1.png" alt="">
+                        <div class="col-bio-1 mb-3">
+                        <div class="user-box-images">
+                            <img src="img/st/dummy/254a838cf18e359b6692764d3eae4ec1.png" alt="">
+                        </div>
+                        </div>
+                        <div class="mb-3">
+                        <div class="white-color">
+                            <div class="user-box-content pr-0 pt-2">
+                            <h2 class="font-telkomselbatiksans">Maudy Ayunda Putri</h2>
+
+                            <div class="user-box-s m-top-10">
+                                <!-- GOLD USER -->
+                                <!-- SAHABAT AKRAB -->
+
+                                <!-- Platinum USER -->
+                                SAHABAT GAUL
+
+                                <!-- Silver USER -->
+                                <!-- SAHABAT KEREN -->
+                            </div>
                             </div>
                         </div>
+                        </div>
 
-                        <div class="col-3 d-flex align-items-center">
-                            <div class="white-color">
-                                <div class="user-box-content pr-0 pt-2">
-                                    <h2 class="font-telkomselbatiksans">Maudy Ayunda Putri</h2>
+                        <div class="col-bio-3 mb-3 mr-0 ml-auto">
+                            <section id="milestone" class="section card-c">
+                                <div class="title-gradient"><p class="bold">Level Sahabat Telkomsel</p></div>
 
-                                    <div class="user-box-s m-top-10">
-                                        <!-- GOLD USER -->
-                                        <!-- SAHABAT AKRAB -->
+                            <?php
+                                $diamond = 300;
+                            ?>
+                                <div class="rangeContainer">
+                                <div class="range-slider">
 
-                                        <!-- Platinum USER -->
-                                        SAHABAT GAUL
+                                    <div class="wrap <?php if ($diamond >= 500) { echo 'complete-diamond'; } ?>
+                                        <?php if ($diamond >= 10 && $diamond <= 500) { echo 'currrent-diamond'; } ?>">
+                                        <?php if ($diamond >= 10 && $diamond <= 500): ?>
+                                        <div class="tooltip-range"><?php echo 500 - $diamond; ?> lagi</div>
+                                        <?php endif; ?>
+                                        <input id="range1" class="range" type="range" value="<?php echo ($diamond >= 10) ? $diamond : '0'; ?>" min="10" max="500" disabled>
+                                        <label class="range-label">Casual</label>
+                                    </div>
 
-                                        <!-- Silver USER -->
-                                        <!-- SAHABAT KEREN -->
+                                    <div class="wrap <?php if ($diamond >= 501) { echo 'complete-diamond'; } ?>
+                                        <?php if ($diamond >= 501 && $diamond <= 1000) { echo 'currrent-diamond'; } ?>">
+                                        <?php if ($diamond >= 501 && $diamond <= 1000): ?>
+                                        <div class="tooltip-range"><?php echo 1000 - $diamond; ?> lagi</div>
+                                        <?php endif; ?>
+                                        <input id="range2" class="range" type="range" value="<?php echo ($diamond >= 501) ? $diamond : '0'; ?>" min="501" max="1000" disabled>
+                                        <label class="range-label">Bestie</label>
+                                    </div>
+
+                                    <div class="wrap <?php if ($diamond >= 1001) { echo 'complete-diamond'; } ?>
+                                        <?php if ($diamond >= 1001 && $diamond <= 5000) { echo 'currrent-diamond'; } ?>">
+                                        <?php if ($diamond >= 1001 && $diamond <= 5000): ?>
+                                        <div class="tooltip-range"><?php echo 5000 - $diamond; ?> lagi</div>
+                                        <?php endif; ?>
+                                        <input id="range3" class="range" type="range" value="<?php echo ($diamond >= 1001) ? $diamond : '0'; ?>" min="1001" max="5000" disabled>
+                                        <label class="range-label">Close Friend</label>
+                                    </div>
+
+                                    <div class="wrap <?php if ($diamond >= 5001) { echo 'complete-diamond currrent-diamond'; } ?>">
+                                        <input id="range4" class="range" type="range" value="<?php echo ($diamond >= 5001) ? $diamond : '0'; ?>" disabled>
+                                        <label class="range-label">Soulmate</label>
+                                    </div>
+
+                                </div>
+                                </div>
+                            </section>
+                        </div>
+
+                        <div class="col-3 mr-0 mb-3">
+                            <section id="diamond" class="section card-c">
+                                <div class="title-gradient"><p class="bold">Jumlah Diamond</p></div>
+                                <div class="row pt-4 mt-2">
+                                    <div class="col-6">
+                                        <div class="">
+                                            <img src="img/st/diamond-icon.svg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-6 pt-2">
+                                        <div class="highlight-content">
+                                            <h3 class="font-telkomselbatiksans fred">1,326</h3>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-
-                        <div class="col-7">
-                            <div class="row">
-                                <div class="col-8">
-                                    <section id="milestone" class="section">
-                                        <div class="title-gradient"><p class="bold">Level Sahabat Telkomsel</p></div>
-                                        <div class="rangeContainer">
-                                            <input id="diamondRange" class="slider" type="range" min="1" max="4" value="1">
-                                            <span class="nub"></span>
-                                        <div class="milestone-wrapper">
-                                            <span id="first" class="dottt active" data-range="1">
-                                            </span>
-                                            <span id="second"  class="dottt" data-range="2">
-                                                <div class="milestone-locked-wrapper position-relative">
-                                                    <img src="img/st/milestone-locked.svg" alt="">
-                                                    <div class="detail text-center">
-                                                    Bestie
-                                                    </div>
-                                                </div>
-                                            </span>
-                                            <span id="third"  class="dottt" data-range="3">
-                                            <div class="milestone-locked-wrapper position-relative">
-                                                <img src="img/st/milestone-locked.svg" alt="">
-                                                <div class="detail text-center">
-                                                Close Friend
-                                                </div>
-                                            </div>
-                                            </span>
-                                            <span id="fourth" class="dottt" data-range="4">
-                                            <div class="milestone-locked-wrapper position-relative">
-                                                <img src="img/st/milestone-locked.svg" alt="">
-                                                <div class="detail text-center">
-                                                Soulmate
-                                                </div>
-                                            </div>
-                                            </span>
-                                        </div>
-                                        </div>
-                                    </section>
-                                </div>
-                            </div>
+                            </section>
                         </div>
                     </div>
-                </div>
-                <div class="">
+                    </div>
+                <div class="rewards-slider">
                     <!-- Slider Rewards  -->
                     <div class="p-top-50">
                         <h4 class="bold">Reward Tersedia</h4>
@@ -208,17 +230,17 @@
     $(document).ready(function(){
       const sliderApproval = {
         id: "fetchSliderApproval",
-        slider: [{ img: "img/st/dummy/slide-dummy.jpg",
-                  title: "Nomor Anti Hangus",
+        slider: [{ img: "img/st/dummy/rewards-slider.png",
+                  title: "Gebyar LinkAja 750rb",
                   status: '<div class="note"><p>Menunggu</p></div>'},
-                { img: "img/st/dummy/slide-dummy.jpg",
-                  title: "CHIMERA (2021-11-11)",
+                { img: "img/st/dummy/rewards-slider.png",
+                  title: "Gebyar LinkAja 750rb",
                   status: '<div class="note"><p>Menunggu</p></div>'},
-                { img: "img/st/dummy/slide-dummy.jpg",
-                title: "CHIMERA (2021-11-11)",
+                { img: "img/st/dummy/rewards-slider.png",
+                title: "Gebyar LinkAja 750rb",
                 status: '<div class="note"><p>Menunggu</p></div>'},
-                { img: "img/st/dummy/slide-dummy.jpg",
-                  title: "Land of Dawn Mobile Legends Bang Bang",
+                { img: "img/st/dummy/rewards-slider.png",
+                  title: "Gebyar LinkAja 750rb",
                   status: '<div class="note"><p>Menunggu</p></div>'}]
       }
 
@@ -253,32 +275,31 @@
 
       slider.forEach(e => {
            $(`#${id}`).append(`
-                <div class="blog mission">
+                <div class="blog rewards-cards">
                   <div class="blog-inner shadow">
                     <div class="position-relative">
-                      ${e.status}
                       <img src="${e.img}" alt="">
                     </div>
                     <div class="blog-post-body">
-                        <h4 class="bold m-bottom-10">${e.title}</h4>
-                        <div class="p-bottom-10">
-                          <div class="neutral-40 no-margin">
-                                <div class="box-12 d-inline-table "><img src="img/st/lock-icon.svg" alt=""> </div>
-                                <p class="d-inline-table no-margin">Open Public by <span class="bold">Telkomsel</span></p>
-                          </div>
-                          <div class="neutral-40 no-margin custom-pl-2">
-                                <div class="box-9 d-inline-table "><img src="img/st/time-icon.svg" alt=""> </div>
-                                <p class="d-inline-table no-margin">20-24 November 2021</p>
-                          </div>
-                        </div>
+                        <h4 class="bold text-center pb-1">${e.title}</h4>
                         <p class="p-bottom-20">
-                          Sebuah rahasia yang terkubur muncul kembali saat insiden yang mirip dengan Kasus Chimera yang...
+                            Dapatkan saldo LinkAja sebesar Rp 750.000. Pastikan kamu sudah mengisi nomor LinkAja pada profilmu.
                         </p>
-                        <div>
-                          <a class="btn btn-default semi-bold tag d-inline-table">#Tsel4U2497</a>
-                          <a class="btn btn-default semi-bold tag d-inline-table">#TselVIU</a>
-                          <a class="btn btn-default semi-bold tag d-inline-table">#TselVIU</a>
-                        </div>
+                        
+                        <a class="btn btn-default semi-bold tag d-inline-table w-100">
+                            <div class="row pl-3">
+                                <div class="col-6 d-flex align-items-center">
+                                    <div class="diamonds">
+                                        <img src="img/st/diamond-sketch-icon.svg">
+                                    </div>
+                                    <h6 class="neutral bold pl-3"> - 1,230</h6>
+                                </div>
+                                <div class="col-6">
+                                    <h6 class="fred bold">Klaim Reward</h6>
+                                </div>
+                            </div>
+                        </a>
+                        
                     </div>
                   </div>
                 </div>
