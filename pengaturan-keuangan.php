@@ -33,7 +33,7 @@
             </div>
 
             <div class="col-auto d-flex align-items-center  ml-auto">
-                <a href="javascript:void(0);" class="bold fred offpage-nav-login">Tambah Akun</a>
+                <a href="javascript:void(0);" data-toggle="modal" data-target="#addNewAccount" class="bold fred offpage-nav-login">Tambah Akun</a>
             </div>
           </div>
         </div>
@@ -44,61 +44,60 @@
 
 
                   <div class="col-10 my-2">
-                      <div class="dark-shadow">
-                          <a href="security.php">
-                              <div class="row p-4">
-                                  <div class="col-auto d-flex align-items-center">
-                                      <div class="">
-                                          <img src="img/st/debit-icon.svg" alt="">
-                                      </div>
-                                  </div>
-                                  <div class="col-md-8 d-flex align-items-center">
-                                      <div class="p-top-10">
-                                          <h4 class="bold mt-0 d-inline-block">50035281934926</h4>
-                                          <div class="btn btn-default bold tag d-inline-block neutral-40">PRIMARY</div>
-                                          <div>
-                                              <p class="neutral-40 mb-0 d-inline-block">PT Bank Central Asia</p>
-                                              <p class="d-inline-block">•</p>
-                                              <p class="neutral-40 mb-0 d-inline-block">Maudy Ayunda Putri</p>
-                                          </div>
-                                      </div>
-                                  </div>
-                                  <div class="col-md-2 d-flex align-items-center">
-                                      <div class="row">
-                                          <div class="col-6"><img src="img/st/trash-icon.svg" alt=""></div>
-                                          <div class="col-6"><img src="img/st/black-edit-icon.svg" alt=""></div>
-                                      </div>
-                                  </div>
-                              </div>
-                          </a>
+                      <div class="dark-shadow">     
+                        <div class="row p-4">
+                            <div class="col-auto d-flex align-items-center">
+                                <div class="">
+                                    <img src="img/st/debit-icon.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="col-md-8 d-flex align-items-center">
+                                <div class="p-top-10">
+                                    <h4 class="bold mt-0 d-inline-block">50035281934926</h4>
+                                    <div class="btn btn-default bold tag d-inline-block neutral-40">PRIMARY</div>
+                                    <div>
+                                        <p class="neutral-40 mb-0 d-inline-block">PT Bank Central Asia</p>
+                                        <p class="d-inline-block">•</p>
+                                        <p class="neutral-40 mb-0 d-inline-block">Maudy Ayunda Putri</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2 d-flex align-items-center">
+                                <div class="row">
+                                    <div class="col-6"><a href="javascript:void(0);" data-toggle="modal" data-target="#removeAccount"><img src="img/st/trash-icon.svg" alt=""></a></div>
+                                    <div class="col-6"><a href="javascript:void(0);" data-toggle="modal" data-target="#editAccount"><img src="img/st/black-edit-icon.svg" alt=""></a></div>
+                                </div>
+                            </div>
+                        </div>
                       </div>
                   </div>
 
                   <div class="col-10 my-2">
-                      <div class="dark-shadow">
-                          <a href="security.php">
-                              <div class="row p-4">
-                                  <div class="col-auto d-flex align-items-center">
-                                      <div class="">
-                                          <img src="img/st/debit-icon.svg" alt="">
-                                      </div>
-                                  </div>
-                                  <div class="col-md-8 d-flex align-items-center">
-                                      <div class="p-top-10">
-                                          <h4 class="bold mt-0">50035281934926</h4>
-                                          <p class="neutral-40 mb-0 d-inline-block">PT Bank Central Asia</p>
-                                          <p class="d-inline-block">•</p>
-                                          <p class="neutral-40 mb-0 d-inline-block">Maudy Ayunda Putri</p>
-                                      </div>
-                                  </div>
-                                  <div class="col-md-2 d-flex align-items-center">
-                                      <div class="row">
-                                          <div class="col-6"><img src="img/st/trash-icon.svg" alt=""></div>
-                                          <div class="col-6"><img src="img/st/black-edit-icon.svg" alt=""></div>
-                                      </div>
-                                  </div>
-                              </div>
-                          </a>
+                      <div class="dark-shadow">     
+                        <div class="row p-4">
+                            <div class="col-auto d-flex align-items-center">
+                                <div class="">
+                                    <img src="img/st/debit-icon.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="col-md-8 d-flex align-items-center">
+                                <div class="p-top-10">
+                                    <h4 class="bold mt-0 d-inline-block">50035281934926</h4>
+                                    <div class="btn btn-default bold tag d-inline-block neutral-40">PRIMARY</div>
+                                    <div>
+                                        <p class="neutral-40 mb-0 d-inline-block">PT Bank Central Asia</p>
+                                        <p class="d-inline-block">•</p>
+                                        <p class="neutral-40 mb-0 d-inline-block">Maudy Ayunda Putri</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2 d-flex align-items-center">
+                                <div class="row">
+                                    <div class="col-6"><a href="javascript:void(0);" data-toggle="modal" data-target="#removeAccount"><img src="img/st/trash-icon.svg" alt=""></a></div>
+                                    <div class="col-6"><a href="javascript:void(0);" data-toggle="modal" data-target="#editAccount"><img src="img/st/black-edit-icon.svg" alt=""></a></div>
+                                </div>
+                            </div>
+                        </div>
                       </div>
                   </div>
 
@@ -158,6 +157,140 @@
     </div>
 
   </section>
+
+
+  <!-- The Modal Add New Account-->
+  <div class="modal fade" id="addNewAccount">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title bold">Tambah Akun</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body">
+          <form class="form" name="ajax-form" action="onboarding-silver-1.php" method="post">
+
+            <div class="col-sm-12 contact-form-item">
+                <label for="">Nomor Rekening<span>*</span></label>
+                <input name="name" id="name" type="text" placeholder="Isi Nomor Rekening">
+            </div>
+
+            <div class="col-sm-12 contact-form-item">
+                <label for="">Bank<span>*</span></label>
+                <input name="name" id="name" type="text" placeholder="Isi Bank">
+            </div>
+
+            <div class="col-sm-12 contact-form-item">
+                <label for="">Atas Nama<span>*</span></label>
+                <input name="name" id="name" type="text" placeholder="Isi Atas Nama">
+            </div>
+
+            <div class="col-sm-12 contact-form-item m-top-40">
+                <button type="submit" class="send_message btn btn-main btn-theme w-100">Selanjutnya</button>
+            </div>
+            <div class="clear"></div>
+
+          </form>
+        </div>
+
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- The Modal Edit New Account-->
+  <div class="modal fade" id="editAccount">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title bold">Edit Akun #1</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body">
+          <form class="form" name="ajax-form" action="onboarding-silver-1.php" method="put">
+
+            <div class="col-sm-12 contact-form-item">
+                <label for="">Nomor Rekening<span>*</span></label>
+                <input name="name" id="name" type="text" placeholder="Isi Nomor Rekening">
+            </div>
+
+            <div class="col-sm-12 contact-form-item">
+                <label for="">Bank<span>*</span></label>
+                <input name="name" id="name" type="text" placeholder="Isi Bank">
+            </div>
+
+            <div class="col-sm-12 contact-form-item">
+                <label for="">Atas Nama<span>*</span></label>
+                <input name="name" id="name" type="text" placeholder="Isi Atas Nama">
+            </div>
+
+            <div class="col-sm-12 contact-form-item">
+                <label for="">Primary </label>
+                <input class="ml-2" name="name" id="name" type="checkbox" placeholder="Isi Atas Nama">
+            </div>
+
+            <div class="col-sm-12 contact-form-item m-top-40">
+                <button type="submit" class="send_message btn btn-main btn-theme w-100">Selanjutnya</button>
+            </div>
+            <div class="clear"></div>
+
+          </form>
+        </div>
+
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- The Modal Remove Account-->
+  <div class="modal fade" id="removeAccount">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title bold">Remove #1 Akun</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body">
+          <form class="form" name="ajax-form" action="onboarding-silver-1.php" method="put">
+
+            <label for="">Are you sure to remove this account ?</label>
+
+            <div class="col-sm-12 contact-form-item m-top-40">
+                <button type="submit" class="send_message btn btn-main btn-theme w-100">Selanjutnya</button>
+            </div>
+            <div class="clear"></div>
+
+          </form>
+        </div>
+
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
 
 
   <script type="text/javascript">
