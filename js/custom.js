@@ -49,10 +49,10 @@ $(function () {
 	    readURL(this);
 	});
 
-
+	
 	$('#datepicker').datepicker({
-		  changeMonth: true,
-	    changeYear: true,
+		  	changeMonth: true,
+	    	changeYear: true,
 			yearRange: '1995:2010',
 			beforeShow:function(textbox, instance){
 		    $('#ui-datepicker-div').css({
