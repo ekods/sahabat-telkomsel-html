@@ -16,7 +16,7 @@
 
 @font-face {
   font-family: 'TelkomselBatikSans';
-  src: url('./fonts/TelkomselBatikSans-Bold.ttf');
+  src: url('../fonts/TelkomselBatikSans-Bold.ttf');
   font-weight: normal;
   font-style: normal;
 }

@@ -44,7 +44,7 @@
 
 
                   <div class="col-10 my-2">
-                      <div class="dark-shadow">     
+                      <div class="dark-shadow">
                         <div class="row p-4">
                             <div class="col-auto d-flex align-items-center">
                                 <div class="">
@@ -73,7 +73,7 @@
                   </div>
 
                   <div class="col-10 my-2">
-                      <div class="dark-shadow">     
+                      <div class="dark-shadow">
                         <div class="row p-4">
                             <div class="col-auto d-flex align-items-center">
                                 <div class="">
@@ -113,7 +113,7 @@
 
       <div class="row">
         <div class="col-12">
-          <table id="datatransaksi" class="table table-bordered-1 table-hover dt-responsive" style="width:100%">
+          <table id="data_transaksi" class="table table-bordered-1 table-hover dt-responsive" style="width:100%">
             <thead>
               <tr>
                 <th class="text-left">Tgl Dibuat</th>
@@ -296,7 +296,7 @@
   <script type="text/javascript">
   $(document).ready(function() {
     // DataTable initialisation
-    $('#datatransaksi').DataTable(
+    $('#data_transaksi').DataTable(
       {
         "scrollX": true,
         "paging": true

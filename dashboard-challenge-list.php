@@ -320,7 +320,7 @@
             <div class="tab-pane" id="list-view-1">
 
             <div class="ml-3 view-list-table custom-table">
-                <table id="example" class="table table-borderless" cellspacing="0" width="100%">
+                <table id="data_challenge" class="table table-bordered-1 table-hover dt-responsive" width="100%">
                   <thead class="border-head">
                       <tr>
                           <th class="align-middle">No</th>
@@ -332,7 +332,7 @@
                       </tr>
                   </thead>
                   <tbody>
-                      <tr>      
+                      <tr>
                           <td>1</td>
                           <td>
                             <div class="row">
@@ -362,7 +362,7 @@
                             </div>
                           </td>
                       </tr>
-                      <tr>      
+                      <tr>
                           <td>2</td>
                           <td>
                             <div class="row">
@@ -398,7 +398,7 @@
                             </div>
                           </td>
                       </tr>
-                      <tr>      
+                      <tr>
                           <td>3</td>
                           <td>
                             <div class="row">
@@ -428,7 +428,7 @@
                             </div>
                           </td>
                       </tr>
-                      <tr>      
+                      <tr>
                           <td>4</td>
                           <td>
                             <div class="row">
@@ -458,10 +458,10 @@
                             </div>
                           </td>
                       </tr>
-              
+
                   </tbody>
               </table>
-                
+
               </div>
 
 
@@ -733,7 +733,7 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>      
+                        <tr>
                             <td>1</td>
                             <td>
                               <div class="row">
@@ -763,7 +763,7 @@
                               </div>
                             </td>
                         </tr>
-                        <tr>      
+                        <tr>
                             <td>2</td>
                             <td>
                               <div class="row">
@@ -799,7 +799,7 @@
                               </div>
                             </td>
                         </tr>
-                        <tr>      
+                        <tr>
                             <td>3</td>
                             <td>
                               <div class="row">
@@ -829,7 +829,7 @@
                               </div>
                             </td>
                         </tr>
-                        <tr>      
+                        <tr>
                             <td>4</td>
                             <td>
                               <div class="row">
@@ -859,10 +859,10 @@
                               </div>
                             </td>
                         </tr>
-                
+
                     </tbody>
                 </table>
-                
+
               </div>
 
 
@@ -884,27 +884,23 @@
             $(this).toggleClass("active");
         });
 
-      document.title='Simple DataTable';
         // DataTable initialisation
-        $('#example').DataTable(
+        $('#data_challenge').DataTable(
             {
-                "dom": '<"dt-buttons"Bf><"clear">lirtp',
-                "paging": true,
-                "autoWidth": true,
-                "buttons": [
-                    'colvis',
-                    'copyHtml5',
-            'csvHtml5',
-                    'excelHtml5',
-            'pdfHtml5',
-                    'print'
-                ]
+              "scrollX": true,
+              "paging": true
             }
         );
 
+        $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+            $($.fn.dataTable.tables(true)).DataTable()
+               .columns.adjust()
+               .responsive.recalc();
+        });
+
 
     });
- 
+
 
     $(function () {
         var sd = new Date(), ed = new Date();
