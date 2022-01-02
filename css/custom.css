@@ -1611,20 +1611,24 @@ button.close.btn-close {
     height: 35px;
     border-radius: 20px;
     margin-top: 5px;
+    justify-content: space-around;
 }
 
-.views-post li {
-  padding: 0 10px;
+.views-post li a {
   border-radius: 50px;
   filter: grayscale(1);
+  height: 30px;
+  width: 30px;
+  transition: .3s;
+  display: flex;
+  align-items: center;
+  padding: 8px;
 }
 
-.views-post li.active {
+.views-post li a.active {
   filter: grayscale(0);
   background-color: #fff;
   background-size: cover;
-  height: 100%;
-  transition: .3s;
 }
 
 .btn-default.tag.neutral-40 {
@@ -2417,6 +2421,17 @@ margin: 0px 0px;
   margin: 0;
 }
 
+.filter-table {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.filter-table .form-control {
+  width: 100%;
+  max-width: 230px;
+}
+
 
 .tabs-page ul {
   display: flex;
@@ -2434,11 +2449,11 @@ margin: 0px 0px;
   color: #B3B3B3;
 }
 
-.tabs-page ul li.active a {
+.tabs-page ul li a.active {
   color: var(--red);
 }
 
-.tabs-page ul li.active:after {
+.tabs-page ul li a.active:after {
   position: absolute;
   background-color: var(--red);
   width: 100%;
@@ -2575,10 +2590,10 @@ margin: 0px 0px;
 .navigation-search__input::placeholder {
   color: #999999;
 }
-
+/* 
 .post .navigation-search__input {
   background-color: rgba(250, 250, 250, 1);
-}
+} */
 
 .navigation-search__input {
   background-color: #fff;

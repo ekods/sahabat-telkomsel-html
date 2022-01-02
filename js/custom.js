@@ -49,7 +49,7 @@ $(function () {
 	    readURL(this);
 	});
 
-	
+
 	$('#datepicker').datepicker({
 		  	changeMonth: true,
 	    	changeYear: true,

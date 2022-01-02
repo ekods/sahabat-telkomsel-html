@@ -80,7 +80,7 @@
                     <li class="text-center my-2 d-none d-lg-block"><a href="#" class="uppercase nav-btn offpage-nav-register">Daftar</a></li>
                 </ul>
             </div>
-    
+
         </nav>
 
     </header>
