@@ -6,12 +6,14 @@
   <title>Login &mdash; Stisla</title>
 
   <!-- General CSS Files -->
-  <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+  <!-- <link rel="stylesheet" href="./assets/css/bootstrap.min.css"> -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
   <link rel="stylesheet" href="./assets/css/all.css">
 
   <!-- Template CSS -->
   <link rel="stylesheet" href="./assets/css/style.css">
   <link rel="stylesheet" href="./assets/css/components.css">
+  <link rel="stylesheet" href="./assets/css/custom.css">
 
 </head>
 
@@ -19,10 +21,10 @@
   <div id="app">
     <section class="section">
       <div class="d-flex flex-wrap align-items-stretch">
-        <div class="col-lg-5 col-md-6 col-12 order-lg-1 min-vh-100 order-2 bg-white">
+        <div class="col-lg-5 col-md-6 col-12 order-lg-1 min-vh-100 order-2 bg-neutral-5">
           <div class="p-4 m-3">
-            <img src="./assets/img/st/logo.svg" alt="logo" width="80" class="shadow-light rounded-circle mb-5 mt-2">
-            <h4 class="text-dark font-weight-normal">Welcome to <span class="font-weight-bold">Stisla</span></h4>
+            <img src="./assets/img/st/logo.svg" alt="logo" width="80" class="mb-5 mt-2">
+            <h4 class="text-dark font-weight-bold font-telkomselbatiksans">Login Admin</span></h4>
             <p class="text-muted">Before you get started, you must login or register if you don't already have an account.</p>
             <form method="POST" action="#" class="needs-validation" novalidate="">
               <div class="form-group">
@@ -91,9 +93,11 @@
   </div>
 
   <!-- General JS Scripts -->
-  <script src="./assets/js/jquery-3.3.1.min.js"></script>
+  <!-- <script src="./assets/js/jquery-3.3.1.min.js"></script>
   <script src="./assets/js/popper.min.js"></script>
-  <script src="./assets/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="./assets/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
   <script src="./assets/js/jquery.nicescroll.min.js"></script>
   <script src="./assets/js/moment.min.js"></script>
   <script src="./assets/js/stisla.js"></script>

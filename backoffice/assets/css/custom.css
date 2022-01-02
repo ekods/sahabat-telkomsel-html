@@ -7,6 +7,12 @@
 
 /*# sourceMappingURL=custom.css.map */
 
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "TelkomselBatikSans";
+}
 
 @font-face {
   font-family: 'TelkomselBatikSans';
@@ -17,4 +23,24 @@
 
 .font-telkomselbatiksans {
   font-family: 'TelkomselBatikSans';
+}
+
+.f-dark-blue {
+  color: #001A41;
+}
+
+.f-black {
+  color: #fff;
+}
+
+.f-neutral-40 {
+  color: #999999;
+}
+
+.f-red {
+  color: #FF0025;
+}
+
+.bg-neutral-5 {
+  background-color: #F2F2F2;
 }
